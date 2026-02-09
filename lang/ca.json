@@ -1,0 +1,605 @@
+{
+    "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:" : "Si tens problemes al prémer el botó de \":actionText\", prem el següent enllaç o còpia'l i pèga'l\nen el navegador:",
+    "trans": {
+        "Back": "Tornar",
+        "Save": "Guardar",
+        "Saved": "Guardat",
+        "Saved-Error": "Error en guardar",
+        "Sent": "Enviat",
+        "Search": "Cercar",
+        "Reset": "Restablir",
+        "Policy": "Política de privacitat",
+        "Terms": "Condicions d'ús",
+        "Close": "Tancar",
+        "Yes": "Sí",
+        "No": "No",
+        "Person": "Persona",
+        "Create": "Crear",
+        "Edit": "Editar",
+        "Deleted": "Esborrat correctament",
+        "removeFilters": "Eliminar filtres",
+        "Images": "Imatges",
+        "newImage": "Nova imatge",
+        "currentImage": "Imatge actual",
+        "Remove": "Eliminar",
+        "Videos"    :   "Videos",
+        "Filter"    :   "Filtrar",
+        "Delete"    :   "Esborrar",
+        "DeleteConfirm" :   "Segur que vols esborrar?",
+        "Share" :   "Compartir",
+        "Copy"  :   "Copiar",
+        "Copied"    :   "Copiat",
+        "Export"    :   "Exportar",
+        "Link"  :   "Enllaç",
+        "Form"  :   "Formulari",
+        "Field-Empty" :   "Camp vuit",
+        "All-Male-Singular"  :   "Tot",
+        "All-Plural"  :   "Tots/Totes",
+        "Update"    :   "Actualitzar",
+        "noElementsSelected" : "No has seleccionat cap element" 
+    },
+    "pwa"   :   {
+        "text" : "¡Instal·la la app!",
+        "button" : "Instal·lar APP",
+        "apple" : {
+            "title" : "Instal·la la app",
+            "subtitle" : "SPAX",
+            "description" : "Afegeix la notra app per a major comoditat.",
+            "share" : "Prem el botó 'Compartir'",
+            "add" : "Prem 'Afegir a inici'"
+        }
+    },
+    "notifications"   :   {
+        "text" : "Activa les notificacions",
+        "button" : "Activar notificacions"
+    },
+    "Cookies" : {
+        "button-accept" : "Acceptar",
+        "message" : "Esta web utilitza les cookies mínimes necessàries per a funcionar. No es recopila informació de cap tipus. Pots consultar la política de cookies des d'",
+        "here"  :   "açí"
+    },
+    "Title": {
+        "Home": "Inici",
+        "Animals": "Animals",
+        "News": "Notícies",
+        "Contact": "Contacte",
+        "User": "Usuari",
+        "Login": "Iniciar sessió"
+    },
+    "MenuBar": {
+        "Home": "Inici",
+        "Animals": "Animals",
+        "News": "Notícies",
+        "Contact": "Contacte",
+        "User"  :   "Usuari",
+        "Menu"  :   "Menú",
+        "Language" : "Idioma",
+        "Contact" : "Contacte",
+        "Logout" : "Eixir",
+        "Whatsapp" : "Whatsapp"
+    },
+    "under-development" : "En desenvolupament",
+    "introduction": {
+        "title" : "Societat protectora d'Animals de Xàtiva",
+        "colaboration" : {
+            "title" : "Col·labora",
+            "bizum": "Bizum",
+            "line1" : "Si vols fer una donació a la SPAX a través de <b>Bizum</b> segueix les següents instruccions:",
+            "line2" : "Entra a l'app bancària del teu mòbil a <b>Bizum</b> clica a <b>\"fer una donació\"</b>, <b>\"col·laborar en una causa solidària\"</b> o similar, segons la teva entitat bancària, i després l'aplicació et demanarà el nostre <b>\"codi de campanya\"</b> o <b>\"codi de l'ONG\"</b> o similar, també segons la teva entitat bancària.",
+            "line3" : "El nostre <b>codi</b> és:",
+            "line4" : "<h1 class='text-xl'>04318</h1>",
+            "line5" : "Moltes gràcies.",
+            "line6" : "<b>Nota important:</b> No facis la donació enviant el Bizum directament al nostre mòbil. D'aquesta manera no quedarà registrada com a donatiu i no podràs deduir-la a la renda.",
+            "bank": "Transferència bancària",
+            "line7" : "També pots fer una donació mitjançant <b>transferència bancària</b>.",
+            "line8" : "Aquí tens les dades bancàries per fer la teva donació:",
+            "line9" : "Caixa Popular<br><b>ES1031590004662253405720</b><br>BIC BCOEESMM159",
+            "line10": "Caixa Ontinyent<br><b>ES5820456008743000036569</b><br>BIC CECAESMM045",
+            "line11": "Gràcies",
+            "materials": "Donatius materials",
+            "line12": "Pots donar qualsevol tipus de material al refugi:",
+            "line13": "<ul><li>Material de construcció</li><li>Productes de neteja</li><li>Mantes</li><li>Material quirúrgic</li><li>Medicaments</li><li>Accessoris per a gossos</li><li>Productes desinfectants</li><li>Utensilios de neteja</li><li>Pissarra</li><li>Etc.</li></ul>",
+            "partner" :  "Sòcia",
+            "line14" : "La quota mínima mensual és de {{price_partner}}€.",
+            "line15" : "Per a jubilats i pensionistes és de {{price_retired}}€.",
+            "line16" : "Per a menors de 14 anys (sempre amb autorització dels seus representants legals) és de {{price_child}}€.",
+            "line17" : "Si vols fer-te sòcia, pots posar-te en contacte amb:",
+            "form-line1"    :   "Formulari",
+            "form-line2"    :   "Acte seguit després d'omplir el formulari, deus descarregar, omplir i enviar el següent mandat:",
+            "form-line3"    :   "SEPA",
+            "form-line4"    :   "A la direcció:",
+            "sponsorship" : "Apadrinament",
+            "line18" : "La quota mínima mensual és de {{price_sponsorship}}€.",
+            "line19" : "Poden col·laborar tant persones físiques com empreses.",
+            "form-sponsor-line1"    :   "Si vols apadrinar deus omplir el següent formulari:",
+            "form-sponsor-line2"    :   "Formulari",
+            "form-sponsor-line3"    :   "Acte seguit després d'omplir el formulari, deus descarregar, omplir i enviar el següent mandat:",
+            "form-sponsor-line4"    :   "SEPA",
+            "form-sponsor-line5"    :   "A la direcció:", 
+            "line20" : "Hi ha dos tipus d'apadrinament:",
+            "line21" : "<ul><li><b>Gossos del refugi</b><br>{{shelter}}</li><li><b>Gossos de APU</b><br>{{apu}}</li></ul>",
+            "shelter": "L'horari de visites de padrins/madrines és de 11:00h a 14:00h els dissabtes, avisant amb antelació. No està permès portar-los qualsevol tipus d'aliment o llaminadura per raons de seguretat i per evitar baralles entre ells/elles. Sempre que el padrí/madrina ho sol·liciti, se li donarà la informació deguda sobre l'estat del seu apadrinat/da. Si fos adoptat/da o qualsevol altra circumstància li seria comunicada immediatament, tant per coneixement del padrí/madrina com per oferir la possibilitat d'apadrinar/amadrinar un altre animal.",
+            "apu": "Adquisició i/o col·laboració en projectes o compra de material d'útils necessaris, puntuals o periòdics. Aquests projectes de construcció, reparació o adquisició de productes necessaris poden apadrinar-se de manera total o parcial. Es pot donar diners per a la compra o subministrar directament el material per a comprar-lo. Es demanarà permís en el seu cas perquè la persona o entitat que apadrinés aparegui en el nostre web com a padrí/madrina de l'objectiu aconseguit.",
+            "volunteering": "Voluntariat",
+            "line22": "Activitat totalment necessària en aquest tipus d'associacions on l'ajuda i col·laboració resulta bàsica i gairebé imprescindible.",
+            "line23": "És de vital importància, ja que les activitats estan basades en la cooperació solidària.",
+            "line24": "Si estàs interessat/da en col·laborar com a voluntari/a, pots posar-te en contacte en:",
+            "lottery": "Loteria",
+            "line25": "És una altra font d'ingressos per a l'associació.",
+            "line26": "Solem participar en aquest joc d'atzar a la Loteria Nacional de Nadal del 22 de desembre.",
+            "line27": "L'àmbit de venda és local però ho posarem sempre en coneixement de qui pugui estar interessat/da a col·laborar amb l'associació.",
+            "line28": "Per a qualsevol informació sobre aquest tema podeu adreçar-vos a:",
+            "hosting": "Cases d'acollida",
+            "line29": "Busquem cases d'acollida per a alguns animals, i alguns d'ells són casos especials. Aquests \"animals especials\" poden ser gossos o gats que no s'integren bé en la vida del refugi (majoritàriament per haver viscut abans en la calidesa d'una llar), que tenen problemes d'alimentació o que viure en una gàbia els crea estrès. També poden ser animals molt grans, amb problemes físics o que necessiten medicació especial. A vegades busquem casa d'acollida per als que ja han estat operats, ja que necessiten un període curt de temps per poder recuperar-se. Hi ha moltes raons més per les quals un animal pot necessitar una casa d'acollida.",
+            "line30": "Si estàs interessat a fer de casa d'acollida, posa't en contacte amb nosaltres. Nosaltres ens fem càrrec de les despeses veterinàries dels animals acollits. Aquests han de viure a casa amb la família que els acull i ser tractats com un més de la família. Haurien de disposar de prou temps per ocupar-se de l'animal i estar disposats a estimar-lo molt mentre duri l'acollida.",
+            "line31": "Per acollir un animal, envia'ns un WhatsApp al:",
+            "line32"    :   "A més a més has d'omplir el següent formulari:",
+            "line33": "Aquí tens les clàusules per a una casa d'acollida:"
+        },
+        "social": {
+            "title": "Xarxes socials",
+            "whatsapp": "Whatsapp",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "twitter": "Twitter",
+            "youtube": "Youtube",
+            "blog": "Blog",
+            "soundcloud": "Soundcloud",
+            "ladridos": "Lladrucs i llepades",
+            "tiktok"    :   "TikTok"
+        },
+        "partners": {
+            "title": "Col·laboradors",
+            "companies": {
+                "title": "Entitats i empreses"
+            },
+            "friends": {
+                "title": "Webs amigues"
+            },
+            "apu"  :   {
+                "title"  :   "APU"
+            },
+            "subsidized"    :   {
+                "title" :   "Entitats subvencionadores",
+                "line1" :   "Aquestes entitats subvencionen parcialment la protectora."
+            }
+        },
+        "info" : {
+            "title" : "Qui som?",
+            "paragraph1" : "Associació sense ànim de lucre, legalment constituïda i inscrita al Registre Autonòmic d'Associacions de València. Tots els seus càrrecs directius són gratuïts. La tasca desenvolupada per tots els seus membres és altruista i desinteressada.<br/><br/>La seva major activitat es desenvolupa al Refugi per a gossos abandonats que té al municipi de Xàtiva. Té totes les llicències i autoritzacions administratives, tant municipals com autonòmiques. Posseïx la declaració de Nucli Zoològic número V-207 des del 7 de maig de 2002 i és Entitat Col·laboradora de la Conselleria d'Agricultura, Pesca i Alimentació de la Generalitat Valenciana per resolució de data 14 d'octubre de 1997.<br/><br/>Aquest Refugi es troba ubicat en uns terrenys propietat gràcies a la primera donació de D. Roberto Cortes i posteriorment de D. Francisco Aguado, qui, aquest últim, va facilitar econòmicament l'adquisició d'un terreny adjacent que va propiciar la instal·lació i assentament definitiu de l'alberg.<br/><br/>Han estat molts els esforços tant personals com econòmics per acondicionar-lo mitjançant noves construccions, instal·lació d'instal·lació elèctrica, bevedors automàtics, espai lliure per a l'esbarjo, clínica veterinària per a l'assistència dels animals acollits, plantació d'arbres per a ombra, construcció de fosses sèptiques, desguassos, magatzem per a l'alimentació i pinso i molts projectes necessaris que encara queden per realitzar.<br/><br/>Situat en una zona altament inundable, ha provocat en diverses ocasions la inundació d'una part del recinte, si bé, a poc a poc, gràcies a l'ajuda inestimable de donacions puntuals i extraordinàries, s'ha pogut garantir noves obres tendents a què l'impacte de les pluges i torrents causin el menor dany possible.<br/><br/>El seu ÚNIC COMPROMÍS és la protecció i defensa dels animals en general i dels gossos en particular. NOMÉS ACULL GOSSOS. No alberga gats al mancar de recursos econòmics i humans per oferir-los una vida digna en captivitat, disposant de poques i saturades cases d'acollida que en cap cas pal·liïn el gravíssim problema que pateixen aquests animals.<br/><br/>S'OPOSA I CONDENA qualsevol maltractament, agressió o injustícia envers ells. Vingui d'on vingui i de qui vingui. De qui ho aplaudeixi i de qui ho promogui. De qui ho justifiqui i de qui ho tolere i difongui. Una legislació tova, insensible i permissiva en aquest sentit és, continua sent i serà la millor aliada perquè la brutalitat en aquest país, sigui desgraciadament, el nostre signe distintiu.<br/><br/>Només desitgem ADOPCIONS RESPONSABLES. Som contraris a regalar animals per Nadal, aniversaris i dates assenyalades i molt cansats de la passivitat i indiferència dels poders públics respecte a les injustícies que es comenten contra els animals. També dels propietaris incapaços i capritxosos que abandonen els seus animals sense importar-los res del que els pugui passar i d'aquells que, irresponsablement, ens llancen animals per les reixes del refugi o els deixen lligats a la seva sort. O animals domèstics ancians que moriran de tristesa i de pena i, de vegades, no podrem fer res per impedir-ho.<br/><br/>Mai ha estat ni serà obstacle per a la permanència al nostre alberg, qualsevol animal tingui l'edat que tingui o estigui limitat física o funcionalment, mantenint especial atenció pels animals grans abandonats, els no adaptats i els cadells.<br/><br/>Considerem l'ESTERILITZACIÓ com l'únic mitjà per eradicar les camades indesitjades que omplen de mort i sang les gosseres municipals i les carreteres, i creiem en l'educació i sensibilització sobre aquest drama silenciosament sagnant que es viu dia a dia en aquest país.<br/><br/>Confiem en el VOLUNTARIAT com a peça clau per al funcionament d'aquesta Societat i basem la supervivència econòmica de l'Associació en els socis, padrins, donacions de particulars, subvencions públiques, empreses i APU.<br/><br/>Als qui ens ajuden, socis, padrins, particulars i empreses, els agraïm que continuïn facilitant-nos la tasca com fins ara i confiïn en tota la feina que hem realitzat durant tots aquests anys. Als qui accedeixen per primera vegada, si no pots donar-los una oportunitat als que tant ho desitgen i ho mereixen, almenys que, amb la teva ajuda, puguin viure una mica millor, gràcies.",
+            "paragraph2-title" : "Una mica d'història",
+            "paragraph2" : "La idea de crear una associació de defensa dels animals a Xàtiva va sorgir després de la reunió d'un grup de persones sensibilitzades amb el tema dels animals, amb moltes ganes i il·lusions de fer coses en aquest àmbit, ja que l'alternativa municipal al problema de l'animal abandonat era que, després d'uns dies a la gossera municipal, si ningú el reclamava (com solia ser el més freqüent), l'animal era sacrificat.<br/><br/>La reunió que es menciona anteriorment va tenir lloc a l'antiga 4a planta de la Casa de la Cultura cap al mes de febrer de 1985; posteriorment, amb data del 5 de març del mateix any, es va constituir la Societat Protectora d'Animals i Plantes de Xàtiva, legalitzant-se posteriorment el 10 d'abril del mateix any.<br/><br/>Com que no hi havia cap tipus d'infraestructura, una sòcia anomenada \"Rosarín\" va cedir el seu terreny, que era part de la seva pròpia casa, per començar a acollir gossos abandonats ja des del primer moment del naixement d'aquesta societat.<br/><br/>Després va ser el soci Antonio Romero qui va cedir també temporalment el seu xalet a Rotglà, envaït i amb grans desperfectes deguts a la gran quantitat de gossos que s'hi van allotjar.<br/><br/>Finalment, gràcies al soci D. Roberto Cortés, l'associació va tenir un lloc propi i definitiu. Va ser l'any 1987 quan va donar els <b>actuals terrenys</b> i un donatiu (que no va ser l'últim) per començar les obres de les actuals instal·lacions.",
+            "paragraph2-footer" : "Peu de foto: D. <b>Roberto Cortés</b> amb la seva dona en la construcció de les instal·lacions del refugi del Puig.",
+            "paragraph3" : "L'Associació, amb les sigles SPAX, al llarg dels seus anys de funcionament ha tingut a la Presidència a: Mercedes Hernández, Roberto Cortés (que va ser nomenat abans de morir \"<b>president honorífic perpetu</b>\") alguna Junta Gestora, Pilar Baraza, Lucía Liva, Mª Carmen Jachán i Noemi Engo. Actualment, el càrrec de President està representat per Jordi Ruiz.<br/><br/>Totes les accions i millores d'aquesta associació no haurien estat possibles sense l'ajuda de totes les persones voluntàries, els nostres dos treballadors (Salva i Eric) i membres de les Juntes Directives que han passat per aquesta associació, que amb la seva feina i lluita constants han aportat el seu gra de sorra a la nostra causa.",
+            "poem-title" : "A vosaltres",
+            "poem" : "A aquells que, sense rumb, per les carrers vaguen.<br>A aquells que, entre reixes, malviuen captius.<br>A aquells que estan sols, vells, desvalguts,<br>sense ningú que vetlli pel seu benestar.<br><br>A vosaltres dedico aquests versos,<br>que surten de l'ànima i que a l'aire van,<br>confiant al paper els meus desitjos,<br>per si l'aire els porta fins al cel,<br>i el cel s'apiada de la vostra orfandat.<br><br>Compartir amb vosaltres voldria<br>els jocs alegres, les llargues passejades,<br>i les sobretaules de tarda estival,<br>i en les nits fredes de l'hivern fosc,<br>sota el mateix sostre, junts descansar,<br>lluny dels cops, de la fam i de la por,<br>a la calor del foc, saciats, i en pau.<br><br>Però sé que estic demanant massa,<br>i que el meu desig no es complirà.<br>Al món hi ha tants gossos oblidats,<br>demanant carícies i un tros de pa,<br>que, encara que obri els braços de bat a bat,<br>no podré abraçar a tots.<br><br>I aquells que es queden fora del meu si<br>són els que més pesen al cor,<br>omplint les meves nits de somnis amargs,<br>tacant els meus dies de desolació.<br><br>Fins i tot en les bones hores de la vida,<br>fugissers oasis de felicitat,<br>m'invaeix de sobte la malenconia,<br>perquè la seva mirada, clavada a la meva,<br>no aconsegueixo apartar del meu pensament.<br><br>El seu trist record enterboleix l'alegria,<br>que sentir podria, si pogués oblidar,<br>que en tot moment, en algun lloc,<br>un gos perdut i desorientat,<br>al seu desagraït amo encara espera,<br>sense saber ni tan sols... que l'ha abandonat.",
+            "poem-footer" : "Elena Negueroles"
+        }
+
+    },
+    "news"    :   {
+        "title" : "Notícies",
+        "empty" :   "No hi ha notícies",
+        "load-more" :   "Carregar més",
+        "record"    :   {
+            "user"  :   "Usuari/a",
+            "user_name"  :   "Usuari/a",
+            "name"  :   "Usuari/a",
+            "date"  :   "Data",
+            "hidden"  :   "Ocult",
+            "title"  :   "Títol",
+            "description"   :   "Descripció",
+            "image" :   "Imatge"
+        }
+    },
+    "animals":   {
+        "title" :   "Animals",
+        "order" : {
+            "name" : "Ordenat per nom",
+            "date" : "Ordenat per data més recent"
+        },
+        "adopt" :   {
+            "icon"  :   "Adoptar",
+            "title" :   "Adoptar",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Informació",
+                "title-preadoptions"    :   "Pre-Adopció",
+                "line1" :   "Si estàs interessat/da en adoptar un gos o gat de la nostra associació, descarrega el següent formulari:",
+                "form"  :   "Formulari",
+                "line2" :   "Has d'omplir-lo i enviar-lo al següent correu electrònic:",
+                "title-protocol": "VOLS ADOPTAR UN DELS NOSTRES PELUTS?",
+                "line3": "Abans de fer qualsevol tràmit, has de ser conscient de si realment podràs cuidar de l'animal i oferir-li una vida digna durant tots els anys de la seva vida. Un animal necessita cures bàsiques com alimentació, passejos, socialització, cures veterinàries, higiene, exercici...",
+                "line4": "És per això que des de la SPAX apostem per les adopcions responsables. Els animals adoptats normalment necessiten un període d'adaptació d'entre 1 i 3 mesos, i sempre busquem trobar una llar que els ofereixi una vida digna, ja que ja han patit l'abandonament una vegada.",
+                "line5": "Per adoptar, primer has d'accedir a l'apartat on apareixen tots els nostres animals per poder triar qui serà l'afortunat que compartirà amb tu la resta de la seva vida. Un cop hagis decidit l'afortunat, pots contactar amb nosaltres enviant-nos un correu electrònic a <a href='mailto:{{email_adoptions}}' target='_blank'>{{email_adoptions}}</a> indicant-nos el nom de l'animal. FES AQUEST PAS NOMÉS SI ESTÀS COMPLETAMENT DECIDIT A CUIDAR D'ELL PER SEMPRE I SER COMPRENSIU DURANT EL PERÍODE D'ADAPTACIÓ A CASA TEVA! Si no, no malgastem el nostre temps.",
+                "line6": "Un cop rebut el correu, ens posarem en contacte amb tu per enviar-te un qüestionari que hauràs de respondre per conèixer-te millor i així assessorar-te segons les característiques de l'animal. SI US PLAU, MANTÉ LA MENT OBERTA I DEIXA'T ASSESSORAR PER NOSALTRES. També rebràs les indicacions del nostre protocol d'adopció i informació important per millorar la seva adaptació o consells en cas de gossos amb necessitats especials. També pots accedir al nostre qüestionari entrant en el següent enllaç:",
+                "line7": "Tots els animals es lliuren amb microxip, vacuna antiràbica i Versican DHPPi, i les respectives desparasitacions internes i externes, així com esterilitzats. En el moment de l'adopció, se't lliurarà el passaport europeu, la seva fitxa veterinària, i se t'informarà de l'estat de salut de l'animal abans de l'adopció.",
+                "line8": "SPAX informa els adoptants que hauran de fer un donatiu econòmic de {{price_donative}} a l'associació com a ajuda per cobrir les despeses veterinàries. LES ADOPCIONS SÓN GRATUÏTES.",
+                "line9": "En el moment de l'adopció, signaràs un contracte que garantirà que l'animal estarà ben atès i amb les cures necessàries per a una tinença responsable. Per a això, hauràs de facilitar-nos el DNI original per fer-ne una còpia.",
+                "line10": "És IMPORTANT recalcar que el donatiu en el moment de l'adopció ens ajuda a afrontar els costos veterinaris ocasionats per l'animal, ja que es lliura amb tots els requisits que exigeix la nova Llei de Protecció Animal, de manera que la protectora pot seguir ajudant altres animals. Tots els diners recaptats es destinen íntegrament a cobrir les despeses veterinàries i d'alimentació dels animals custodiats.",
+                "line11": "Gairebé ens oblidem: per poder portar-te el teu animal, hauràs de portar el seu arnès i una corretja. Si l'arnès és de seguretat, molt millor, perquè el nou membre de la teva família encara no et coneix i no sap que li canviaràs la vida.",
+                "line12": "A continuació, et deixem unes guies amb consells importants a l'hora d'adoptar un pelut."
+            },
+            "animals"  :   {
+                "icon"  :   "Adoptar",
+                "title" :   "Adoptar"
+            },
+            "adopted"  :   {
+                "icon"  :   "Finals feliços",
+                "title" :   "Finals feliços"
+            }
+        },
+        "sponsor" :   {
+            "icon"  :   "Apadrinar",
+            "title" :   "Apadrinar",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Informació",
+                "title-details" :   "Detalls",
+                "line1" :   "Aquesta secció està dedicada tant a l'apadrinament/madrinatge dels nostres animals albergats com als particulars o empreses que, per la seva col·laboració o donació, han apadrinat/madrinat algunes necessitats del refugi i, amb això, que la vida que hi ha dins pugui millorar o, almenys, mantenir-se.",
+                "line2" :   "Pel que fa als animals aquí exposats, alguns es troben a l'apartat d'adopció, altres acaben d'arribar i altres, però, per les seves circumstàncies, edat, patologia, malalties cròniques, seqüeles físiques o traumes que arrosseguen, caràcter, inadaptació o característiques peculiars, són igualment adoptables però potser (i desgraciadament) amb menys possibilitats que la resta.",
+                "line3" :   "Mai ho entendrem per què, però és així. Hi ha animals que passen tota la seva vida al refugi i pensem que moriran de vells en ell. Els animals grans gairebé ningú els vol.",
+                "line4" :   "Per això, i per a que no ens oblidem de la seva existència, de que estan vius, de que necessiten el mateix afecte i atenció que la resta, t'oferim la possibilitat d'apadrinar-los si no els pots adoptar.",
+                "line5" :   "Si desitges informació sobre qualsevol d'ells, només has de demanar-la. Te l'enviem encantats, perquè normalment ningú no es recorda ni es fixa en ells.",
+                "line6" :   "Pel que fa als particulars i empreses que han col·laborat i col·laboren des de fa anys amb algunes de les necessitats del nostre refugi, i a aquells que ens puguin ajudar a partir d'ara, el nostre agraïment serà permanent.",
+                "line7" :   "Tant als padrins/madrines dels nostres animals com de les necessitats del refugi, només els podem dir una cosa que sentim i sentirem sempre molt profundament: <b>GRÀCIES</b>",
+                "title-steps"    :   "Pasos",                
+                "line8"    :   "La quota mínima mensual és de {{price_sponsorship}}€.",
+                "line9"    :   "Poden colaborar tant persones físiques com empreses.",
+                "form-sponsor-line1"    :   "Si vols apadrinar deus omplir el següent formulari:",
+                "form-sponsor-line2"    :   "Formulari",
+                "form-sponsor-line3"    :   "Acte seguit després d'omplir el formulari, deus descarregar, omplir i enviar el següent mandat:",
+                "form-sponsor-line4"    :   "SEPA",
+                "form-sponsor-line5"    :   "A la direcció:"
+            },
+            "animals"  :   {
+                "icon"  :   "Apadrinar",
+                "title" :   "Apadrinar"
+            },
+            "sponsored"  :   {
+                "icon"  :   "Apadrinats",
+                "title" :   "Apadrinats"
+            },
+            "apu"  :   {
+                "icon"  :   "APU",
+                "title" :   "Padrins/madrines APU"
+            }
+        },
+        "sanctuary" :   {
+            "icon"  :   "Santuari",
+            "title" :   "Santuari d'animals",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Informació",
+                "title-target" : "Objectiu general",
+                "line1" : "Convertir part del refugi SPAX en un espai de santuari permanent per a animals que, per la seva història, edat, malaltia o caràcter, no poden ser adoptats, garantint el seu benestar físic, emocional i social durant la resta de la seva vida.",
+                "title-destinataries" : "Animals destinataris",
+                "line2" : "<ul><li>Gossos i gats geriàtrics.</li><li>Animals amb discapacitat física o neurològica.</li><li>Gossos i gats amb traumes severs o agressivitat crònica no rehabilitable.</li><li>Animals amb malalties cròniques que requereixen cures especials.</li><li>Casos d'abandonament extrem o maltractament sever amb seqüeles permanents.</li></ul>",
+                "title-characteristics" : "Característiques del santuari",
+                "line3" : "<ul><li>Zona delimitada dins de SPAX amb accés controlat.</li><li>Ambients enriquits: zones verdes, ombres, llits adaptats, estímuls sensorials.</li><li>Accés a veterinària continuada i plans individuals de cures.</li><li>Relació estable amb cuidadors i voluntariat especialitzat.</li><li>Baixa rotació, rutina estable, zero pressió d’adopció.</li></ul>",
+                "title-focus" : "Enfocament ètic",
+                "line4" : "<ul><li>Respecte absolut a la individualitat i límits de l’animal.</li><li>Prioritat al confort, seguretat i tranquil·litat de l’entorn.</li><li>Cura fins al final de la vida amb acompanyament digne.</li></ul>",
+                "title-operation" : "Funcionament",
+                "line5" : "<ul><li>Valoració d’entrada al programa per part de l’equip tècnic de SPAX.</li><li>Elaboració d’un pla individualitzat de cures.</li><li>Registre com a “animal en santuari” i seguiment mensual.</li><li>Coordinació amb voluntariat estable i formació específica.</li><li>Documentació de la història de l’animal després de la seva mort.</li></ul>",
+                "title-agents" : "Agents implicats",
+                "line6" : "<ul><li>Equip tècnic de SPAX.</li><li>Voluntaris.</li><li>Entitats col·laboradores: clíniques, donants, padrins/es, associacions socials.</li><li>Possible col·laboració amb escoles d’educació especial i teràpies assistides.</li></ul>",
+                "title-diffusion" : "Difusió i sensibilització",
+                "line7" : "<ul><li>Històries de vida explicades a les xarxes.</li><li>Programa de padrinatge ètic.</li><li>Visites pedagògiques organitzades sota supervisió.</li></ul>",
+                "title-funding" : "Finançament",
+                "line8" : "<ul><li>Campanyes de donació contínua.</li><li>Subvencions públiques.</li><li>Acords amb clíniques per a atenció veterinària solidària.</li><li>Venda de marxandatge amb històries reals del santuari.</li></ul>",
+                "title-relationship" : "Relació amb la resta del refugi",
+                "line9" : "<ul><li>Programa complementari: no substitueix l’adopció, la reforça amb ètica.</li><li>Evita l’eutanàsia d’animals no adoptables per criteris humans.</li><li>Espai d’aprenentatge sobre cures compassives i final de vida.</li></ul>"
+            },
+            "animals"   :   {
+                "icon"  :   "Santuari",
+                "title" :   "Santuari"
+            }
+        },
+        "heaven" :   {
+            "icon"  :   "Cel",
+            "title" :   "Dormint amb les estrelles",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Informació",
+                "line1" :   "Una menció especial en aquest apartat a tots aquells animals que ens han deixat, que ens han tocat el cor i que mai podrem oblidar. Dedicat a tots ells.",
+                "line2" :   "Per aquells companys de viatge que es van anar i van deixar un gran buit en el nostre cor i en el de la nostra família. També per aquells que amb especial afecte van morir sense haver trobat llar o en tràgiques circumstàncies. Va dedicat a tots els animals del món i de totes les espècies.",
+                "line3" :   "Si vols que la teva mascota estimada dormi amb les estrelles, envia'ns una foto i una breu frase o dedicatòria i la posarem per a que brilli juntament amb la resta de petites estrelles que nien allà dalt al bell cel.",
+                "line4" :   "Per afegir una mascota o més informació:",
+                "line5" :   "En aquest espai hem volgut retre tribut a aquelles mascotes que ja no estan amb nosaltres.",
+                "line6" :   "Mai no oblidarem aquell company de jocs, els seus típics lladrucs, els seus miols, el seu relinchar o simplement la seva mirada.",
+                "line7" :   "Dedicat a més a totes aquelles persones que, a crits o en silenci, han plorat per la partida de les seves mascotes...",
+                "poem-title"    :   "No llores por mi...",
+                "poem" :   "Me has dado un hogar donde cobijarme,<br/>me has proporcionado alimento y sobre todo,<br/>me has dado tu amor y tu compañía.<br/>Lo último que me gustaría es verte sufrir por mi.<br/><br/>Ahora que no estoy contigo,<br/>no quiero verte triste.<br/>Deseo que cuando pienses en mi sonrías,<br/>pues así sabré que mi recuerdo te hace feliz.<br/><br/>Quiero que recuerdes los buenos momentos que compartíamos,<br/>nuestras muestras de cariño, nuestros juegos...<br/>y si alguna vez te defraudé, o me porte mal, perdóname...<br/><br/>Por favor, no tires mis juguetes, ni mi cama, ni mis cosas,<br/>porque en este mundo hay muchos otros colegas que viven en soledad, tristes y sin cariño...<br/>muchos que darían su vida por compartir la tuya.<br/><br/>No, no lo digas, no digas que no quieres tener mas animales...<br/>eso me hace pensar que el tiempo que estuve contigo no te hice feliz.<br/>Por favor, que mi muerte no sea en vano,<br/>que sirva para que otro tenga la suerte de poder vivir<br/>y conocer lo maravillosa que es tu amistad,<br/>que conozca la verdadera \"vida de perro\",<br/>que descubra el cariño.<br/><br/>No estés triste... <br/>Yo no lo estoy, <br/>porque se que guardas ese rinconcito especial para mi en tu corazón."
+            },
+            "animals"   :   {
+                "icon"  :   "Animals",
+                "title" :   "Cementiri Virtual"
+            }
+        },
+        "record"    :   {
+            "Parents"  :   "Pares/Mares",
+            "Sponsors"  :   "Padrins/Madrines",
+            "Code"  :   "Codi",
+            "Name"  :   "Nom",
+            "Status"    :   {
+                "title" :   "Estat",
+                "adopt" :   "Adoptar",
+                "adopted"   :   "Adoptat",
+                "sanctuary"   :   "Santuari",
+                "heaven"    :   "Cel",
+                "hidden"    :   "Ocult"
+            },
+            "Sponsored"  :   {
+                "title" :   "Apadrinat",
+                "not-sponsored" :   "No",
+                "sponsored" :   "Sí",
+                "potentially-sponsor" :   "Potencial apadrinament"
+            },
+            "Type"  :   {
+                "title" :   "Tipus",
+                "dog" :   "Gos",
+                "cat" :   "Gat"
+            },
+            "Age"  :   {
+                "title" :   "Edat",                
+                "puppy" :   "Cadell",
+                "adult" :   "Adult"
+            },
+            "Gender"  :   {
+                "title" :   "Gènere",                
+                "male" :   "Mascle",
+                "female" :   "Femella"
+            },
+            "Size"  :   {
+                "title" :   "Mida",
+                "xs" :   "Molt petit",
+                "s" :   "Petit",
+                "m" :   "Mitjà",
+                "l" :   "Gran",
+                "xl" :   "Molt gran"
+            },
+            "Breed"  :   {
+                "title" :   "Raça"
+            },
+            "Weight"  :   "Pes",
+            "Location"  :   "Ubicació",
+            "Birthdate" :   "Data de naixement",
+            "Dead"  :   "Mort",
+            "Hidden"    :   "Ocult",
+            "Deathdate" :   "Data de defunció",
+            "Description"   :   "Descripció",
+            "Image" :   "Imatge",
+            "Image2"    :   "Imatge2",
+            "Image-Sponsored"   :   "Imatge apadrinat/adoptat",
+            "Person"    :   "Responsables",
+            "Video" :   "Video",
+            "Video2" :   "Video2",
+            "Updated"   :   "Actualitzat",
+            "Internal-Info" :   "Informació interna",
+            "vaccines"  :   "Vacunes",
+            "treatment"  :   "Tractament",
+            "castrated"  :   "Castrat",
+            "date_entry"  :   "Data entrada",
+            "date_exit"  :   "Data eixida",
+            "date_entry2"  :   "Data entrada2",
+            "date_exit2"  :   "Data eixida2",
+            "internal"  :   "Notes internes"
+        }
+    },
+    "people"    :   {
+        "record"    :   {
+            "name"  :   "Nom",
+            "surname"  :   "Cognoms",
+            "dni"  :   "DNI/NIE/CIF",
+            "birthdate"  :   "Data de naixement",
+            "email" :   "Email",
+            "phone"  :   "Telèfon",
+            "address" :   "Direcció",
+            "name2"  :   "Nom2",
+            "surname2"  :   "Cognoms2",
+            "dni2"  :   "DNI2/NIE2/CIF2",
+            "birthdate2"  :   "Data de naixement2",
+            "email2" :   "Email2",
+            "phone2"  :   "Telèfon2",
+            "address2" :   "Direcció2",
+            "others"  :   "Altres",
+            "other_people"  :   "Altres",
+            "description"   :   "Descripció",
+            "animals"   :   "Animals",
+            "users" :   "Usuaris"
+        }
+    },
+    "user": {
+        "title" : "Usuari",
+        "news": {
+            "icon"  :   "Notícies",
+            "title"  :   "Notícies",
+            "empty" :   "No hi ha notícies"
+        },
+        "profile": {
+            "icon"  :   "Perfil",
+            "title"  :   "Perfil",
+            "information": {
+                "icon"  :   "info",                
+                "title" : "Actualitzar informació",
+                "name" : "Nom",
+                "email" : "Email",
+                "email-not-verified" : "La teva adreça de correu electrònic no està verificada.",
+                "email-verify" : "Enviar correu de verificació",
+                "email-sent" : "S'ha enviat un nou correu de verificació a la teva adreça de correu.",
+                "personal-data" : "Dades personals",
+                "update-personal-data" : "Si vols actualitzar les dades personals contacta amb la protectora, per favor:"
+            },
+            "animals": {
+                "icon"  :   "Animals",
+                "title" :   "Animals"                
+            },
+            "settings": {
+                "icon"  :   "Config",
+                "title" :   "Configuració",
+                "description" : "Aquí pots canviar diferents ajustos del teu compte",
+                "dark-mode" : "Mode fosc",
+                "biometric" :   "Login amb biometria",                
+                "notifications" :   {
+                    "switch"    :   "Notificacions",
+                    "enabled"   :   "Notificacions habilitades",
+                    "setup"  :   "Cal que habilites les notificacions del teu dispositiu per a poder activar aquesta configuració",
+                    "disabled"    :   "Les notificacions del teu dispositiu estan desactivades per a aquesta app. Cal que les actives per a poder canviar aquesta configuració.",
+                    "push" : "Push",
+                    "email" : "Email",
+                    "method" : "Mètodes",
+                    "type" : "Categories",
+                    "appDisabled" : "Has de donar permís a l'aplicació per a poder rebre notificacions"
+                },
+                "authentication" : {
+                    "notAllowed" : "Aquest dispositiu/navegador no permet usar autenticació amb biometría"
+                }
+            },
+            "password": {
+                "icon"  :   "Contrasenya",
+                "title" :   "Canviar contrasenya",                
+                "password" : "Contrasenya",
+                "password-current" : "Contrasenya actual",
+                "password-new" : "Contrasenya nova",
+                "password-confirm" : "Confirmar contrasenya"
+            },
+            "account": {
+                "icon" : "Compte",
+                "title" : "Esborrar compte",
+                "description" : "Un cop el teu compte ha estat esborrat, totes les dades i recursos seran esborrats permanentment. Abans d'esborrar el teu compte, si us plau guarda les dades que necessitis.",
+                "confirm" : "Esborrar compte",
+                "password-confirm" : "Si us plau, introdueix la teva contrasenya per esborrar el compte permanentment.",
+                "password" : "Contrasenya",
+                "cancel" : "Cancel·lar",
+                "delete" : "Esborrar",
+                "deleted" : "Compte borrat"
+            }         
+        },
+        "animals"   :   {
+            "icon"  :   "Animals",
+            "title" :   "Animals",
+            "create"    :   "Crear",
+            "edit"  :   "Editar",
+            "borrar"  :   "Esborrar",
+            "empty" :   "No hi ha animals",
+            "images-sponsored" : "Imatge apadrinat/adoptat",
+            "adopt" :   {
+                "icon"  :   "Adoptar",
+                "title" :   "Adoptar"
+            },
+            "adopted"   : {
+                "icon"  :   "Adoptats",
+                "title" :   "Adoptats"
+            },
+            "sanctuary"   : {
+                "icon"  :   "Santuari",
+                "title" :   "Santuari"
+            },
+            "heaven"    :   {
+                "icon"  :   "Cel",
+                "title" :   "Cel"
+            },
+            "hidden"    :   {
+                "icon"  :   "Ocults",
+                "title" :   "Ocults"
+            }
+        },
+        "people"  :   {
+            "icon"  :   "Persones",
+            "title"  :   "Persones",
+            "create"    :   "Crear",
+            "edit"  :   "Editar",
+            "borrar"  :   "Esborrar",
+            "empty" :   "No hi ha persones"
+        },
+        "notifications": {
+            "icon"  :   "Notificacions",
+            "title"  :   "Notificacions",
+            "form" : {
+                "title" : "Títol",            
+                "message" : "Missatge",
+                "users" : "Usuaris",
+                "peopleAll" : "Tot el món",
+                "usersAll" : "Usuaris registrats",
+                "type" : "Tipus"
+            },
+            "success" : "Notificació enviada",
+            "error" : "Error enviant la notificació",
+            "button" : "Enviar",
+            "empty" : "No es pot enviar un missatge vuit"
+        },
+        "email": {
+            "title" : "Verificar correu",
+            "description" : "T'hem enviar un email per a verificar el teu compte. Si no l'has rebut prova a reenviar-te'l, per favor.",
+            "verified" : "Correu verificat",
+            "verification-link-sent" : "Correu enviat",
+            "resend-link" : "Reenviar"
+        }
+    },
+    "login": {
+        "title" : "Identificar-se",
+        "description"   :   "Aquesta zona és per al personal del refugi, no per a usuaris.",
+        "title-forgot" : "Recordar contrasenya",
+        "login" : "Accedir",
+        "login2" : "Login",
+        "name" : "Nom",
+        "email" : "Email",
+        "password" : "Contrasenya",
+        "password-confirm": "Confirmar contrasenya",
+        "remember" : "Recorda'm",
+        "forgot" : "Recordar contrasenya",
+        "forgot-sentence" : "Indica el teu correu electrònic per enviar-te un enllaç per poder restablir la contrasenya",
+        "forgot-send" : "Enviar",
+        "reset" : "Restablir",
+        "register" : "Registrar-se",
+        "google" : "Google",
+        "apple" : "Apple"
+    },
+    "contact": {
+        "title" : "Contactar",
+        "name" : "Nom",
+        "email" : "Email",
+        "message" : "Missatge",
+        "send" : "Enviar",
+        "info"  :   {
+            "title1"  :   "Informació general i Refugi",
+            "title2"  :   "Col·laborar socis/sòcies i padrins/madrines",
+            "title3"  :   "Adopcions",
+            "shift-adoptions" : "Dilluns a divendres de 17:00h a 21:00h",
+            "title4"  :   "Voluntariat",
+            "email" : "Email",
+            "phone"  :   "Telèfon",
+            "whatsapp": "Whatsapp",
+            "shift-phone-title"  :   "Horari d'atenció telefònica",
+            "shift-phone-line1"  :   "Dilluns a divendres de 16:00h a 18:00h",
+            "shift-phone-line2"   :   "Dissabtes de 10:30h a 13:30h",
+            "shift-phone-footer1"  :   "Es prega respectar aquest horari.",
+            "shift-phone-footer2" :   "És atès per personal voluntari.",
+            "shift-live-title"  :   "Horari d'atenció al públic",            
+            "shift-live-line1"  :   "Dissabtes de 09:30h a 13:30h",
+            "title5"    :   "Refugi atès els 365 dies de l'any"
+        }
+    },
+    "share" :   {
+        "title" :   "Compartir",
+        "title-native"  :   "SPAX - protectoraxativa",
+        "text"  :   "Mira aquest animalet"
+    },
+    "info" : {
+        "terms" : {
+            "icon": "Terminis",
+            "title" :   "Terminis d'ús",
+            "content" : "<h1 class='title-info-pages'>LLEI DELS SERVEIS DE LA SOCIETAT DE LA INFORMACIÓ (LSSI)</h1><br/><br/>SOCIETAT PROTECTORA D'ANIMALS DE XÀTIVA, responsable del lloc web, d'ara endavant RESPONSABLE, posa a disposició dels usuaris el present document, amb el qual pretén complir amb les obligacions disposades en la Llei 34/2002, de l'11 de juliol, de Serveis de la Societat de la Informació i de Comerç Electrònic (LSSICE), BOE N º 166, així com informar a tots els usuaris del lloc web respecte a quines són les condicions d'ús.<br/>Tota persona que accedeix a aquest lloc web assumeix el paper d'usuari, comprometent-se a l'observança i compliment rigorós de les disposicions aquí disposades, així com a qualsevol altra disposició legal que fos d'aplicació.<br/><br/>SOCIETAT PROTECTORA D'ANIMALS DE XÀTIVA es reserva el dret de modificar qualsevol tipus d'informació que poguera aparéixer al lloc web, sense que existisca obligació d'avisar prèviament o posar en coneixement dels usuaris aquestes obligacions, considerant-se suficient amb la publicació al lloc web de SOCIETAT PROTECTORA D'ANIMALS DE XÀTIVA.<br/><br/><h1 class='subtitle-info-pages'>1. DADES IDENTIFICATIVES</h1><br/>Nom de domini: <a href='https://protectoraxativa.org' target='_blank'>protectoraxativa.org</a><br/>Nom comercial: SPAX<br/>Denominació social: SOCIETAT PROTECTORA D'ANIMALS DE XÀTIVA I LA COSTERA.<br/>NIF: G46388385<br/>Domicili social: Apartat DE correus 544<br/>Telèfon: <a href='tel:671870889' target='_blank'>671870889</a><br/>Correu electrònic: <a href='mailto:colabora@protectoraxativa.org' target='_blank'>colabora@protectoraxativa.org</a><br/><br/><h1 class='subtitle-info-pages'>2. DRETS DE PROPIETAT INTEL·LECTUAL I INDUSTRIAL</h1><br/>El lloc web, incloent-hi a títol enunciatiu però no limitatiu la seua programació, edició, compilació i altres elements necessaris per al seu funcionament, els dissenys, logotips, text i/o gràfics, són propietat del RESPONSABLE o, si és el cas, disposa de llicència o autorització expressa per part dels autors. Tots els continguts del lloc web es troben degudament protegits per la normativa de propietat intel·lectual i industrial, així com inscrits en els registres públics corresponents.<br/>Independentment de la finalitat per a la qual foren destinats, la reproducció total o parcial, ús, explotació, distribució i comercialització, requereix en tot cas de l'autorització escrita prèvia per part del RESPONSABLE. Qualsevol ús no autoritzat prèviament es considera un incompliment greu dels drets de propietat intel·lectual o industrial de l'autor.<br/><br/>Els dissenys, logotips, text i/o gràfics aliens al RESPONSABLE i que pogueren aparéixer en el lloc web, pertanyen als seus respectius propietaris, sent ells mateixos responsables de qualsevol possible controvèrsia que poguera sorgir respecte als mateixos. El RESPONSABLE autoritza expressament que tercers puguen redirigir directament als continguts concrets del lloc web, i en tot cas redirigir al lloc web principal de <a href='https://protectoraxativa.org' target='_blank'>protectoraxativa.org</a><br/><br/>El RESPONSABLE reconeix a favor dels seus titulars els drets de propietat intel·lectual i industrial corresponents, no implicant la seua sola menció o aparició en el lloc web l'existència de drets o responsabilitat alguna sobre els mateixos, com tampoc recolzament, patrocini o recomanació per part del mateix.<br/>Per a realitzar qualsevol tipus d'observació respecte a possibles incompliments dels drets de propietat intel·lectual o industrial, així com sobre qualsevol dels continguts del lloc web, pot fer-ho a través del correu electrònic: <a href='mailto:colabora@protectoraxativa.org' target='_blank'>colabora@protectoraxativa.org</a><br/><br/><h1 class='subtitle-info-pages'>3. EXEMPCIÓ DE RESPONSABILITATS</h1><br/>El RESPONSABLE s'eximeix de qualsevol tipus de responsabilitat derivada de la informació publicada en el seu lloc web sempre que aquesta informació haja sigut manipulada o introduïda per un tercer alié al mateix.<br/><br/><b>Ús de Cookies</b><br/>Aquest lloc web pot utilitzar cookies tècniques (petits fitxers d'informació que el servidor envia a l'ordinador de qui accedeix a la pàgina) per a dur a terme determinades funcions que són considerades imprescindibles per al correcte funcionament i visualització del lloc. Les cookies utilitzades tenen, en tot cas, caràcter temporal, amb l'única finalitat de fer més eficaç la navegació, i desapareixen en acabar la sessió de l'usuari. En cap cas, aquestes cookies proporcionen per si mateixes dades de caràcter personal i no s'utilitzaran per a la recollida dels mateixos.<br/><br/>Mitjançant l'ús de cookies també és possible que el servidor on es troba la web reconega el navegador utilitzat per l'usuari amb la finalitat que la navegació siga més senzilla, permetent, per exemple, l'accés dels usuaris que s'hagen registrat prèviament a les àrees, serveis, promocions o concursos reservats exclusivament a ells sense haver de registrar-se en cada visita. També es poden utilitzar per a mesurar l'audiència, paràmetres de trànsit, controlar el progrés i nombre d'entrades, etc., sent en aquests casos cookies prescindibles tècnicament però beneficioses per a l'usuari. Aquest lloc web no instal·larà cookies prescindibles sense el consentiment previ de l'usuari.<br/><br/>L'usuari té la possibilitat de configurar el seu navegador per a ser alertat de la recepció de cookies i per a impedir la seua instal·lació en el seu equip. Per favor, consulte les instruccions del seu navegador per a ampliar aquesta informació.<br/><br/><b>Política d'enllaços</b><br/>Des del lloc web, és possible que es redirigisca a continguts de tercers llocs web. Com que el RESPONSABLE no pot controlar sempre els continguts introduïts pels tercers en els seus respectius llocs web, no assumeix cap tipus de responsabilitat respecte a aquests continguts. En tot cas, procedirà a la retirada immediata de qualsevol contingut que poguera contravenir la legislació nacional o internacional, la moral o l'ordre públic, procedint a la retirada immediata de la redirecció a aquest lloc web, posant en coneixement de les autoritats competents el contingut en qüestió.<br/><br/>El RESPONSABLE no es fa responsable de la informació i continguts emmagatzemats, a títol enunciatiu però no limitatiu, en fòrums, xats, generadors de blogs, comentaris, xarxes socials o qualsevol altre mitjà que permeta a tercers publicar continguts de forma independent en la pàgina web del RESPONSABLE. No obstant això, i en compliment del que es disposa en els articles 11 i 16 de la LSSICE, es posa a disposició de tots els usuaris, autoritats i forces de seguretat, col·laborant de forma activa en la retirada o, si és el cas, bloqueig de tots aquells continguts que puguen afectar o contravenir la legislació nacional o internacional, els drets de tercers o la moral i l'ordre públic. En cas que l'usuari considere que existeix en el lloc web algun contingut que poguera ser susceptible d'aquesta classificació, es prega que ho notifique de forma immediata a l'administrador del lloc web.<br/><br/>Aquest lloc web ha sigut revisat i provat perquè funcione correctament. En principi, es pot garantir el correcte funcionament els 365 dies de l'any, 24 hores al dia. No obstant això, el RESPONSABLE no descarta la possibilitat que existisquen certs errors de programació, o que esdevinguen causes de força major, catàstrofes naturals, vagues o circumstàncies semblants que facen impossible l'accés a la pàgina web.<br/><br/><b>Adreces IP</b><br/>Els servidors del lloc web podran detectar de manera automàtica l'adreça IP i el nom de domini utilitzats per l'usuari. Una adreça IP és un número assignat automàticament a un ordinador quan aquest es connecta a Internet. Tota aquesta informació és registrada en un fitxer d'activitat del servidor degudament inscrit que permet el posterior processament de les dades amb la finalitat d'obtenir mesuraments únicament estadístics que permeten conéixer el nombre d'impressions de pàgines, el nombre de visites realitzades als servidors web, l'ordre de visites, el punt d'accés, etc.<br/><br/><h1 class='subtitle-info-pages'>4. LLEI APLICABLE I JURISDICCIÓ</h1><br/>Per a la resolució de totes les controvèrsies o qüestions relacionades amb el present lloc web o de les activitats en ell desenvolupades, serà d'aplicació la legislació espanyola, a la qual se sotmeten expressament les parts, sent competents per a la resolució de tots els conflictes derivats o relacionats amb el seu ús els Jutjats i Tribunals més pròxims a València."
+        },
+        "policy" : {
+            "icon": "Privacitat",
+            "title" :   "Política de privacitat",
+            "content" : "<h1 class='title-info-pages'>1. INFORMACIÓ A L'USUARI<br/></h1><br/><b>SOCIETAT PROTECTORA D'ANIMALS DE XÀTIVA</b>, en endavant RESPONSABLE, és el Responsable del tractament de les dades personals de l'Usuari i l'informa que aquestes dades seran tractades de conformitat amb el disposat en el Reglament (UE) 2016/679 de 27 d'abril de 2016 (GDPR) relatiu a la protecció de les persones físiques pel que fa al tractament de dades personals i a la lliure circulació d'aquestes dades, per la qual cosa se li facilita la següent informació del tractament:<br/><br/><b>Finalitat del tractament:</b> mantenir una relació comercial amb l'Usuari. Les operacions previstes per realitzar el tractament són:<ul class='list-info-pages'><li>Enviament de comunicacions comercials publicitàries per email, fax, SMS, MMS, comunitats socials o qualsevol altre mitjà electrònic o físic, present o futur, que possibiliti realitzar comunicacions comercials. Aquestes comunicacions seran realitzades pel RESPONSABLE i relacionades amb els seus productes i serveis, o dels seus col·laboradors o proveïdors amb els quals aquest hagi arribat a algun acord de promoció. En aquest cas, els tercers mai tindran accés a les dades personals.</li><li>Realitzar estudis estadístics.</li><li>Tramitar encàrrecs, sol·licituds o qualsevol tipus de petició que sigui realitzada per l'usuari a través de qualsevol de les formes de contacte que es posen a la seva disposició.</li><li>Enviament del butlletí de notícies de la pàgina web.</li></ul><br/><b>Base jurídica del tractament:</b> consentiment de l'interessat.<br/><br/><b>Criteris de conservació de les dades:</b> es conservaran mentre existeixi un interès mutu per mantenir la finalitat del tractament i quan ja no sigui necessari per a aquesta finalitat, se suprimiran amb mesures de seguretat adequades per garantir la seudonimització de les dades o la destrucció total d'aquests.<br/><br/><b>Comunicació de les dades:</b> No es comunicaran les dades a tercers, excepte obligació legal.<br/><br/><b>Drets que assisteixen l'Usuari:</b><ul class='list-info-pages'><li>Dret a retirar el consentiment en qualsevol moment.</li><li>Dret d'accés, rectificació, portabilitat i supressió de les seves dades i a la limitació o oposició al seu tractament.</li><li>Dret a presentar una reclamació davant l'autoritat de control (www.aepd.es) si considera que el tractament no s'ajusta a la normativa vigent.</li></ul><br/><b>Dades de contacte per exercir els seus drets:</b><br/>SOCIETAT PROTECTORA D'ANIMALS DE XÀTIVA. APARTAT DE CORREUS 544 XÀTIVA – 46800 (VALÈNCIA). Email: <a href='mailto:colabora@protectoraxativa.org'>colabora@protectoraxativa.org</a><br/><br/><h1 class='title-info-pages'>2. CARÀCTER OBLIGATORI O FACULTATIU DE LA INFORMACIÓ FACILITADA PER L'USUARI</h1><br/>Els Usuaris, mitjançant la selecció de les caselles corresponents i entrada de dades en els camps, marcats amb un asterisc (*) en el formulari de contacte o presentats en formularis de descàrrega, accepten expressament i de forma lliure i inequívoca, que les seves dades són necessàries per atendre la seva petició, per part del prestador, essent voluntària la inclusió de dades en els camps restants. L'Usuari garanteix que les dades personals facilitades al RESPONSABLE són veraces i es fa responsable de comunicar qualsevol modificació d'aquestes. <br/><br/>El RESPONSABLE informa i garanteix expressament als usuaris que les seves dades personals no seran cedides en cap cas a tercers, i que sempre que realitzi algun tipus de cessió de dades personals, es demanarà prèviament el consentiment exprés, informat i inequívoc per part dels Usuaris. Totes les dades sol·licitades a través del lloc web són obligatòries, ja que són necessàries per a la prestació d'un servei òptim a l'Usuari. En cas que no siguin facilitades totes les dades, no es garanteix que la informació i serveis facilitats siguin completament ajustats a les seves necessitats.<br/><br/><h1 class='title-info-pages'>3. MESURES DE SEGURETAT</h1><br/>Que de conformitat amb el disposat en les normatives vigents en protecció de dades personals, el RESPONSABLE està complint amb totes les disposicions de les normatives GDPR per al tractament de les dades personals de la seva responsabilitat, i manifestament amb els principis descrits en l'article 5 del GDPR, pels quals són tractats de manera lícita, lleial i transparent en relació amb l'interessat i adequats, pertinents i limitats al necessari en relació amb les finalitats per les quals són tractats.<br/><br/>El RESPONSABLE garanteix que ha implementat polítiques tècniques i organitzatives apropiades per aplicar les mesures de seguretat que estableix el GDPR amb la finalitat de protegir els drets i llibertats dels Usuaris i els ha comunicat la informació adequada perquè puguin exercir-los."
+        },
+        "cookies" : {
+            "icon": "Cookies",
+            "title" :   "Política de cookies",
+            "content" : "L'informem que aquest lloc web instal·la cookies pròpies i de tercers en navegar per les seves pàgines amb la finalitat de facilitar la seva navegació i obtenir dades estadístiques. Si continua navegant, considerem que accepta el seu ús i instal·lació.<br/><br/><h1 class='subtitle-info-pages'>Definició i funció de les cookies</h1><br/><b>Què són les cookies?</b><br/>Una cookie és un fitxer de text no executable que es descarrega al seu ordinador en accedir a determinades pàgines web. Les cookies permeten a una pàgina web, entre altres coses, emmagatzemar i recuperar informació sobre els hàbits de navegació d'un usuari o del seu equip i, depenent de la informació que continguin i de la forma en que utilitzi el seu equip, poden utilitzar-se per reconèixer l'usuari. Les cookies també es poden utilitzar per registrar informació anònima sobre com un visitant utilitza un lloc. Per exemple, des de quina pàgina web ha accedit, o si ha utilitzat un banner publicitari per arribar.<br/><br/><b>Per què aquest lloc utilitza cookies?</b><br/>utilitza cookies estrictament necessàries i essencials perquè vostè utilitzi el nostre lloc web i li permeti moure's lliurement, utilitzar àrees privades, opcions personalitzades, etc. A més, utilitza cookies que recullen dades relatives a l'anàlisi d'ús de la web. Aquestes s'utilitzen per ajudar a millorar el servei al visitant, mesurant l'ús i el rendiment de la pàgina, per optimitzar-la i personalitzar-la.<br/><br/>Quins tipus de cookies utilitza aquesta pàgina web?<br/><br/>Segons la seva finalitat:<ul class='list-info-pages'><li><b>Cookies tècniques:</b><br/>Les cookies tècniques són aquelles imprescindibles i estrictament necessàries per al correcte funcionament d'un portal web i la utilització de les diferents opcions i serveis que ofereix.<br/><br/>Per exemple, les que serveixen per al manteniment de la sessió, la gestió del temps de resposta, rendiment o validació d'opcions, utilitzar elements de seguretat, compartir contingut amb xarxes socials, etc.</li><br/><li><b>Cookies de personalització:</b><br/>Aquestes cookies permeten a l'usuari especificar o personalitzar algunes característiques de les opcions generals de la pàgina web.<br/><br/>Per exemple, definir l'idioma, configuració regional o tipus de navegador.</li><br/><li><b>Cookies d'anàlisi (Google Analytics):</b><br/>Les cookies analítiques són les utilitzades pel nostre portal web, per elaborar perfils de navegació i poder conèixer les preferències dels usuaris del mateix amb la finalitat de millorar l'oferta de productums i serveis.<br/><br/>Per exemple, mitjançant una cookie analítica es controlarien les àrees geogràfiques de major interès d'un usuari, quin és el producte de més acceptació, etc.</li><br/><li><b>Cookies publicitàries / de publicitat comportamental (Google Adsense):</b><br/>Les cookies publicitàries permeten la gestió dels espais publicitaris en base a criteris concrets.<br/><br/>Per exemple la freqüència d'accés, el contingut editat, etc.<br/><br/>Les cookies de publicitat comportamental permeten a través de la gestión de la publicitat emmagatzemar informació del comportament a través de l'observació d'hàbits, estudiant els accessos i formant un perfil de preferències de l'usuari, per oferir-li publicitat relacionada amb els interessos del seu perfil.</li></ul><br/>Consulteu en aquest enllaç on pot consultar la política de privacitat d'aquests serveis de Google.<br/><br/>Segons el termini de temps que romanen activades:<ul class='list-info-pages'><li><b>Cookies de sessió:</b> Les cookies de sessió són aquelles que duren el temps que l'usuari està navegant per la pàgina web i es borren al terme.</li><li><b>Cookies persistents:</b> Aquestes cookies queden emmagatzemades en el terminal de l'usuari, per un temps més llarg, facilitant així el control de les preferències escollides sense haver de repetir certs paràmetres cada vegada que es visiti el lloc web.</li></ul><br/><h1 class='subtitle-info-pages'>Revocació i eliminació de cookies</h1><br/>Pot permetre, bloquejar o eliminar les cookies instal·lades en el seu ordinador mitjançant la configuració de les opcions del navegador instal·lat en el seu ordinador.<ul class='list-info-pages'><li>Per a més informació sobre el navegador Firefox des d' <a href='https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-' target='_blank'>aquí</a>.</li><li>Per a més informació sobre el navegador Chrome des d' <a href='https://support.google.com/chrome/answer/95647?hl=es' target='_blank'>aquí</a>.</li><li>Per a més informació sobre el navegador Explorer des d' <a href='https://support.microsoft.com/en-gb/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5940fc64d#ie=ie-11' target='_blank>aquí</a>.</li><li>Per a més informació sobre el navegador Safari des d' <a href='https://support.apple.com/es-es/105082' target='_blank'>aquí</a>.</li><li>Per a més informació sobre el navegador Opera des d' <a href='https://help.opera.com/en/latest/web-preferences/#cookies' target='_blank'>aquí</a>.</li>"
+        }
+    }
+}

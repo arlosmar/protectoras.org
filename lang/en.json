@@ -1,0 +1,605 @@
+{
+    "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:" : "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto the browser:",
+    "trans": {      
+        "Back" : "Back",
+        "Save" : "Save",
+        "Saved-Male" : "Saved",
+        "Saved-Error" : "Error saving",
+        "Sent-Male" : "Sent",
+        "Search" : "Search",
+        "Reset" : "Clear",
+        "Policy" : "Privacy Policy",
+        "Terms" : "Terms of Use",
+        "Close" : "Close",
+        "Yes"   :   "Yes",
+        "No"    :   "No",
+        "Person"    :   "Person",
+        "Create"    :   "Create",
+        "Edit"  :   "Edit",
+        "Deleted"   :   "Successfully deleted",
+        "removeFilters" :  "Remove filters",
+        "Images"    :   "Images",
+        "newImage"  :   "New image",
+        "currentImage"  :   "Current image",
+        "Remove"    :   "Remove",
+        "Videos"    :   "Videos",
+        "Filter"    :   "Filter",
+        "Delete"    :   "Delete",
+        "DeleteConfirm" :   "Are you sure you want to delete?",
+        "Share" :   "Share",
+        "Copy"  :   "Copy",
+        "Copied"    :   "Copied",
+        "Export"    :   "Export",
+        "Link"  :   "Link",
+        "Form"  :   "Form",
+        "Field-Empty" :   "Empty field",
+        "All-Male-Singular"  :   "All",
+        "All-Plural"  :   "All",
+        "Update"    :   "Update",
+        "noElementsSelected" : "No items selected" 
+    },
+    "pwa"   :   {
+        "text" : "Install the app!",
+        "button" : "Install APP",
+        "apple" : {
+            "title" : "Add the app",
+            "subtitle" : "SPAX",
+            "description" : "Add our app for more comfort",
+            "share" : "Press the 'Share' button",
+            "add" : "Press 'Add to Home Screen'"           
+        }
+    },
+    "notifications"   :   {
+        "text" : "Enable notifications",
+        "button" : "Enable notifications"
+    },
+    "Cookies" : {
+        "button-accept" : "Accept",
+        "message" : "This web uses the minimum necessary cookies to work. We do not collect information of any type. You can check the cookies policy from ",
+        "here"  :   "here"
+    },
+    "Title" : {
+        "Home" : "Home",
+        "Animals" : "Animals",
+        "News" : "News",
+        "Contact" : "Contact",
+        "User" : "User",
+        "Login" : "Login"
+    },
+    "MenuBar": {
+        "Home" : "Home",
+        "Animals" : "Animals",
+        "News" : "News",
+        "Contact" : "Contact",
+        "User"  :   "User",
+        "Menu"  :   "Menu",
+        "Language" : "Language",
+        "Contact" : "Contact",
+        "Logout" : "Logout",
+        "Whatsapp" : "Whatsapp"
+    },
+    "under-development" : "In development",
+    "introduction": {
+        "title" : "Animals shelter from Xàtiva",
+        "colaboration" : {
+            "title" : "Collaborate",
+            "bizum": "Bizum",
+            "line1" : "If you want, you can make a donation to SPAX via <b>Bizum</b>. Follow the instructions below:",
+            "line2" : "Enter the banking app on your phone under <b>Bizum</b>, click <b>\"make a donation\"</b>, <b>\"contribute to a charitable cause\"</b> or similar depending on the bank, and then the app will ask for our <b>\"campaign code\"</b> or <b>\"NGO code\"</b>, also depending on your bank.",
+            "line3" : "Our <b>code</b> is:",
+            "line4" : "<h1 class='text-xl'>04318</h1>",
+            "line5" : "Thank you very much.",
+            "line6" : "<b>Very important note:</b> Do not send Bizum directly to our phone. That way it will not be considered a donation and you won’t be able to deduct it from your tax return.",
+            "bank": "Bank transfer",
+            "line7" : "You can also make a donation via <b>bank transfer</b>.",
+            "line8" : "Here are the bank offices and account numbers where you can transfer your donation:",
+            "line9" : "Caixa Popular<br><b>ES1031590004662253405720</b><br>BIC BCOEESMM159",
+            "line10": "Caixa Ontinyent<br><b>ES5820456008743000036569</b><br>BIC CECAESMM045",
+            "line11": "Thank you",
+            "materials": "Material donations",
+            "line12": "You can donate by delivering any type of material to the shelter:",
+            "line13": "<ul><li>Construction</li><li>Cleaning</li><li>Blankets</li><li>Surgical equipment</li><li>Medications</li><li>Dog accessories</li><li>Disinfectant materials</li><li>Cleaning supplies</li><li>Dog food</li><li>etc.</li></ul>",
+            "partner"  :    "Partner",
+            "line14"    :   "The minimum monthly fee is {{price_partner}}€.",
+            "line15"    :   "For retirees and pensioners it is {{price_retired}}€.",
+            "line16"    :   "For minors under 14 (always with authorization from their legal representatives) it is {{price_child}}€.",
+            "line17"    :   "If you want to become a partner, you can contact:",
+            "form-line1"    :   "Form",
+            "form-line2"    :   "Once filled in the form, you must download, fill in and send the following bank statement:",
+            "form-line3"    :   "SEPA",
+            "form-line4"    :   "To the following email:",
+            "sponsorship"    :   "Sponsorship",
+            "line18"    :   "The minimum monthly fee is {{price_sponsorship}}€.",
+            "line19"    :   "Both individuals and companies can collaborate.",
+            "form-sponsor-line1"    :   "If you want to sponsor you must fill in the following form:",
+            "form-sponsor-line2"    :   "Form",
+            "form-sponsor-line3"    :   "Once filled in the form, you must download, fill in and send the following bank statement:",
+            "form-sponsor-line4"    :   "SEPA",
+            "form-sponsor-line5"    :   "To the following email:",
+            "line20"    :   "There are two types of sponsorship:",
+            "line21"    :   "<ul><li><b>Shelter dogs</b><br>{{shelter}}</li><li><b>APU dogs</b><br>{{apu}}</li></ul>",
+            "shelter"    :  "Visiting hours for sponsors are from 11:00 a.m. to 2:00 p.m. on Saturdays, with prior notice. Bringing any type of food or treats is not allowed for safety reasons and to prevent fights between them. Whenever the sponsor requests it, they will be given the necessary information about the condition of their sponsored animal. If the animal is adopted or any other circumstance arises, it will be communicated immediately both for the sponsor's knowledge and to offer the possibility of sponsoring another animal.",
+            "apu"   :   "Acquisition and/or collaboration in projects or purchase of necessary materials, either one-time or periodic. These construction, repair, or acquisition projects can be sponsored partially or in full. Money can be donated for their purchase, or the materials can be provided directly. Permission will be requested in some cases for the person or entity sponsoring to appear on our website as the sponsor of the achieved goal.",
+            "volunteering"  :   "Volunteering",
+            "line22"    :   "A completely necessary activity in this type of association, where help and collaboration are essential and almost indispensable.",
+            "line23"    :   "It is of vital importance since activities are based on cooperative solidarity.",
+            "line24"    :   "If you are interested in collaborating as a volunteer, you can contact us at:",
+            "lottery"   :   "Lottery",
+            "line25"    :   "This is another source of income for the association.",
+            "line26"    :   "We usually participate in this game of chance in the National Christmas Lottery on December 22.",
+            "line27"    :   "The sales area is local, but we will always make it known to those who may be interested in collaborating with the association.",
+            "line28"    :   "For any information on this topic, you can contact us at:",
+            "hosting": "Foster Homes",
+            "line29": "We are looking for foster homes for some animals, and some of them are special cases. These \"special animals\" may include dogs or cats that do not adapt well to life in the shelter (often due to previously living in the warmth of a home), those with dietary issues, or those who experience stress from living in a kennel. They may also be very elderly animals, animals with physical issues, or those requiring special medication. Sometimes, we seek foster homes for animals that have undergone surgery and need a short recovery period. There are many more reasons why an animal might need a foster home.",
+            "line30": "If you are interested in fostering, please contact us. We cover the veterinary expenses for foster animals. These animals must live in the home with the family that fosters them and be treated as a family member. The foster family should have enough time to care for the animal and be willing to show them love during their stay.",
+            "line31": "To foster an animal, send us a WhatsApp message at:",
+            "line32"    :   "Moreover you must fill in the following form:",
+            "line33": "Here are the terms for a foster home:"
+        },
+        "social"    :   {
+            "title" :   "Social media",
+            "whatsapp"  :   "Whatsapp",
+            "facebook" :   "Facebook",
+            "instagram" :   "Instagram",
+            "twitter" :   "Twitter",
+            "youtube" :   "Youtube",
+            "blog" :   "Blog",
+            "soundcloud" :   "Soundcloud",
+            "ladridos" :   "Barks and licks",
+            "tiktok"    :   "TikTok"
+        },
+        "partners"  :   {
+            "title"  :   "Collaborators",
+            "companies"  :   {
+                "title" :   "Entities and companies"
+            },
+            "friends"  :   {
+                "title"  :   "Friendly websites"
+            },
+            "apu"  :   {
+                "title"  :   "APU"
+            },
+            "subsidized"    :   {
+                "title" :   "Subsidizer entities",
+                "line1" :   "These entities partially subsidize the Shelter."
+            }
+        },
+        "info": {
+            "title": "Who Are We?",
+            "paragraph1": "Non-profit association, legally constituted and registered in the Autonomous Registry of Associations of Valencia. All board positions are unpaid. The work carried out by all its members is altruistic and voluntary.<br/><br/>Most of its activity is developed in the Shelter for abandoned dogs located in the municipality of Xàtiva. It holds all the necessary licenses and administrative authorizations, both municipal and regional. It has been recognized as a Zoological Center number V-207 since May 7, 2002, and is a Collaborating Entity of the Ministry of Agriculture, Fishing, and Food of the Generalitat Valenciana by resolution dated October 14, 1997.<br/><br/>This Shelter is located on its own land thanks to the first donation from Mr. Roberto Cortes, and later from Mr. Francisco Aguado, who financially facilitated the acquisition of an adjoining plot, allowing the installation and permanent establishment of the shelter.<br/><br/>Many personal and financial efforts have gone into conditioning it with new constructions, electrical installations, automatic drinkers, open areas for recreation, a veterinary clinic for the animals' care, tree planting for shade, construction of septic tanks, drainage, storage for food and feed, and many necessary projects still to be carried out.<br/><br/>Situated in a highly flood-prone area, part of the premises has been flooded on several occasions; however, thanks to the invaluable help of timely and extraordinary donations, new works have gradually been carried out to reduce the damage caused by rains and floods as much as possible.<br/><br/>Its ONLY COMMITMENT is the protection and defense of animals in general and dogs in particular. IT ONLY TAKES IN DOGS. It does not house cats due to a lack of economic and human resources necessary to provide them with a dignified life in captivity, as the few foster homes available are already full and do not address the severe problem these animals face.<br/><br/>IT OPPOSES AND CONDEMNS any mistreatment, aggression, or injustice towards animals, no matter where or from whom it comes. From those who applaud it to those who promote it. From those who justify it to those who tolerate and spread it. A soft, insensitive, and permissive legislation on this issue is, continues to be, and will be the greatest ally to the brutality in this country, sadly making it our distinguishing mark.<br/><br/>We only wish for RESPONSIBLE ADOPTIONS. We are against giving animals as gifts for Christmas, birthdays, and other special dates, and we are very tired of the public authorities' indifference to the injustices committed against animals. Also, of irresponsible, whimsical owners who abandon their animals without caring about their fate, and of those who, irresponsibly, throw animals over the refuge’s fences or leave them tied up to their fate. Or elderly house pets who will die from sorrow, and sometimes we cannot do anything to prevent it.<br/><br/>Any animal, regardless of age or physical or functional limitations, is always welcome in our shelter, with special attention given to abandoned elderly animals, unadapted ones, and puppies.<br/><br/>We consider STERILIZATION as the only means to eradicate unwanted litters, which fill municipal shelters and roads with death and blood, and we believe in education and awareness about this silent, bloody tragedy happening every day in this country.<br/><br/>We rely on VOLUNTEERS as the key to this Society’s operations and base the Association's economic survival on members, sponsors, individual donations, public subsidies, companies, and APU.<br/><br/>To those who help us — members, sponsors, individuals, and companies — we are grateful for continuing to support our work as they have until now and trusting all the work we have done over the years. To those who are here for the first time, if you cannot give an opportunity to those who so desire and deserve it, at least, with your help, they can live a little better, thank you.",
+            "paragraph2-title": "A Bit of History",
+            "paragraph2": "The idea of creating an animal welfare association in Xàtiva came up after a meeting of a group of people sensitized to the issue of animal welfare, eager and excited to take action in this field, as the municipal alternative to abandoned animals was that after a few days in the municipal pound, if no one claimed them (as was often the case), the animal would be euthanized.<br/><br/>The aforementioned meeting took place on the fourth floor of the former Casa de la Cultura around February 1985. Later, on March 5 of the same year, the Society for the Protection of Animals and Plants of Xàtiva was established, and it was legalized on April 10 of the same year.<br/><br/>Since there was no infrastructure, a member named \"Rosarín\" donated her land, which was part of her home, to begin sheltering abandoned dogs from the very first moment this society was founded.<br/><br/>Later, member Antonio Romero temporarily offered his chalet in Rotglà, which suffered from damages due to the large number of dogs housed there.<br/><br/>Finally, thanks to Mr. Roberto Cortés, the association secured a permanent location. In 1987, he donated the <b>current land</b> and a donation (which was not his last) to begin construction of the current facilities.",
+            "paragraph2-footer": "Caption: Mr. <b>Roberto Cortés</b> with his wife during the construction of the Puig shelter facilities.",
+            "paragraph3": "The Association, known by the acronym SPAX, has had the following presidents throughout its history: Mercedes Hernández, Roberto Cortés (who was posthumously named \"<b>perpetual honorary president</b>\"), various Management Committees, Pilar Baraza, Lucía Liva, Mª Carmen Jachán, and Noemi Engo. Currently, the President is Jordi Ruiz.<br/><br/>All the actions and improvements of this association would not have been possible without the help of all the volunteers, our two employees (Salva and Eric), and the members of the Board of Directors who have been part of this association, and with their constant work and dedication, they have contributed to our cause.",
+            "poem-title": "To You",
+            "poem": "To those who, aimlessly, wander the streets.<br>To those who live caged, merely surviving.<br>To those who are alone, old, vulnerable,<br>with no one to look out for their well-being.<br><br>I dedicate these verses to you,<br>that come from the heart and float into the air,<br>entrusting to paper my desires,<br>hoping the wind carries them to the sky,<br>and that heaven takes pity on your loneliness.<br><br>I would like to share with you<br>joyful games, long walks,<br>and summer evening gatherings,<br>and on cold nights of the dark winter,<br>to rest under the same roof,<br>away from blows, hunger, and fear,<br>by the warmth of the fire, satisfied, and in peace.<br><br>But I know I am asking for too much,<br>and that my wish will not come true.<br>There are so many forgotten dogs in the world,<br>seeking caresses and a piece of bread,<br>that, even if I open my arms wide,<br>I will not be able to embrace them all.<br><br>And those left outside my embrace<br>weigh the most on my heart,<br>filling my nights with bitter dreams,<br>staining my days with desolation.<br><br>Even in the good moments of life,<br>fleeting oases of happiness,<br>suddenly, melancholy seizes me,<br>for their gaze, fixed upon mine,<br>I cannot keep out of my thoughts.<br><br>Their sad memory clouds the joy,<br>that I might feel, if I could forget,<br>that at every moment, somewhere,<br>a lost and disoriented dog,<br>still waits for its ungrateful owner,<br>not even knowing... it has been abandoned.",
+            "poem-footer": "Elena Negueroles"
+        }
+    },
+    "news"    :   {
+        "title" : "News",
+        "empty" :   "No news",
+        "load-more" :   "Load more",
+        "record"    :   {
+            "user"  :   "User",
+            "user_name"  :   "User",
+            "name"  :   "User",
+            "date"  :   "Date",
+            "hidden"  :   "Hidden",
+            "title"  :   "Title",
+            "description"   :   "Description",
+            "image" :   "Image"
+        }
+    },
+    "animals": {
+        "title": "Animals",
+        "order" : {
+            "name" : "Ordered by name",
+            "date" : "Ordered by recent date"
+        },
+        "adopt": {
+            "icon": "Adopt",
+            "title": "Adopt",
+            "info": {
+                "icon": "Info",
+                "title": "Information",
+                "title-preadoptions": "Pre-Adoption",
+                "line1": "If you are interested in adopting a dog or cat from our association, please download the following form:",
+                "form": "Form",
+                "line2": "You need to fill it out and send it to the following email:",
+                "title-protocol": "DO YOU WANT TO ADOPT ONE OF OUR FURRY FRIENDS?",
+                "line3": "Before beginning any procedures, you need to be sure that you can truly care for the animal and provide a dignified life throughout all its years. An animal requires basic care such as food, walks, socialization, veterinary care, hygiene, exercise...",
+                "line4": "That’s why at SPAX we encourage responsible adoptions. Adopted animals typically need an adaptation period of about 1 to 3 months, and we always aim to find a home that will offer them a dignified life, as they have already suffered abandonment once.",
+                "line5": "To adopt, you first need to access the section where all our animals appear to choose the lucky one who will share the rest of their life with you. Once you have decided on the lucky one, you can contact us by sending an email to <a href='mailto:{{email_adoptions}}' target='_blank'>{{email_adoptions}}</a> with the animal's name. ONLY TAKE THIS STEP IF YOU ARE FULLY COMMITTED TO CARING FOR THEM FOREVER AND ARE PATIENT THROUGH THE ADJUSTMENT PERIOD TO YOUR HOME! Otherwise, let’s not waste our time.",
+                "line6": "Once we receive your email, we will contact you to send a questionnaire that you’ll need to fill out so we can get to know you better and provide guidance based on the animal’s characteristics. PLEASE KEEP AN OPEN MIND AND LET US ADVISE YOU. You will also receive instructions on our adoption protocol and important information to ease their adaptation or specific advice in the case of dogs with special needs. You can also access our questionnaire by clicking the following link:",
+                "line7": "All animals are provided with a microchip, rabies vaccination, Versican DHPPi, and internal and external deworming, and they are spayed/neutered. At the time of adoption, you will receive a European passport, their veterinary record, and information on the animal’s health status prior to adoption.",
+                "line8": "SPAX informs adopters that they must make a financial donation of {{price_donative}} to the association to help cover veterinary expenses. ADOPTIONS ARE FREE OF CHARGE.",
+                "line9": "At the time of adoption, you will sign a contract that guarantees the animal will be well cared for and provided with the necessary care for responsible ownership. To do this, you will need to provide your original ID to make a copy.",
+                "line10": "It is IMPORTANT to emphasize that the donation at the time of adoption helps us cover the veterinary costs incurred by the animal, as they are handed over with all the requirements mandated by the new Animal Protection Law, enabling the shelter to continue helping other animals. All funds collected are entirely used to cover the veterinary and food expenses of the animals under our care.",
+                "line11": "Almost forgot – to take your animal home, you’ll need to bring a harness and a leash. If the harness is secure, even better, as the new family member doesn’t yet know you and doesn’t realize you’re going to change their life.",
+                "line12": "Below, we’ve included guides with important advice for adopting a furry friend."
+            },
+            "animals": {
+                "icon": "Adopt",
+                "title": "Adopt"
+            },
+            "adopted": {
+                "icon": "Happy ends",
+                "title": "Happy ends"
+            }
+        },
+        "sponsor": {
+            "icon": "Sponsor",
+            "title": "Sponsor",
+            "info": {
+                "icon": "Info",
+                "title": "Information",
+                "title-details"    :   "Details",
+                "line1": "This section is dedicated to both the sponsorship of our housed animals and to individuals or companies that, through their collaboration or donation, have sponsored some needs of the shelter, thus improving or at least maintaining the life inside it.",
+                "line2": "Regarding the animals displayed here, some are available for adoption, others are newly arrived, and others, however, due to their circumstances, age, pathologies, chronic illnesses, physical sequelae or traumas they carry, character, maladaptation or peculiar characteristics, are also adoptable but perhaps (and unfortunately) with fewer chances than the rest.",
+                "line3": "We will never understand why, but it is so. There are animals that have spent their whole lives in the shelter, and we think they will die old there. Very few people want older animals.",
+                "line4": "For this reason, and to ensure we do not forget their existence, that they are alive, that they need the same affection and attention as the rest, we offer you the possibility to sponsor them if you cannot adopt them.",
+                "line5": "If you would like information about any of them, just ask. We will gladly send it to you because normally no one remembers or pays attention to them.",
+                "line6": "Regarding individuals and companies that have collaborated and continue to collaborate for years with some needs of our shelter, to those who may help us from now on or in their project if such collaboration is found in the form of sponsorship from APU, our gratitude will be permanent.",
+                "line7": "To both the sponsors of our animals and the needs of the shelter, we can only say something we feel and will always feel very deeply: <b>THANK YOU</b>",
+                "title-steps"    :   "Steps",
+                "line8"    :   "The minimum monthly fee is {{price_sponsorship}}€.",
+                "line9"    :   "Both individuals and companies can collaborate.",
+                "form-sponsor-line1"    :   "If you want to sponsor you must fill in the following form:",
+                "form-sponsor-line2"    :   "Form",
+                "form-sponsor-line3"    :   "Once filled in the form, you must download, fill in and send the following bank statement:",
+                "form-sponsor-line4"    :   "SEPA",
+                "form-sponsor-line5"    :   "To the following email:"
+            },
+            "animals": {
+                "icon": "Sponsor",
+                "title": "Sponsor"
+            },
+            "sponsored": {
+                "icon": "Sponsored",
+                "title": "Sponsored"
+            },
+            "apu": {
+                "icon": "APU",
+                "title": "APU Sponsors"
+            }
+        },
+        "sanctuary" :   {
+            "icon"  :   "Sanctuary",
+            "title" :   "Animals sanctuary",
+            "info"  : {
+                "icon"  : "Info",
+                "title" : "Information",
+                "title-target" : "General Objective",
+                "line1" : "Convert part of the SPAX shelter into a permanent sanctuary space for animals that, due to their history, age, illness, or character, cannot be adopted, ensuring their physical, emotional, and social well-being for the rest of their lives.",
+                "title-destinataries" : "Target Animals",
+                "line2" : "<ul><li>Senior dogs and cats.</li><li>Animals with physical or neurological disabilities.</li><li>Dogs and cats with severe trauma or chronic, non-rehabilitable aggression.</li><li>Animals with chronic illnesses requiring special care.</li><li>Cases of extreme abandonment or severe abuse with permanent consequences.</li></ul>",
+                "title-characteristics" : "Sanctuary Characteristics",
+                "line3" : "<ul><li>Designated area within SPAX with controlled access.</li><li>Enriched environments: green areas, shade, adapted beds, sensory stimulation.</li><li>Continuous veterinary care and individual care plans.</li><li>Stable relationship with caregivers and specialized volunteers.</li><li>Low turnover, stable routines, zero adoption pressure.</li></ul>",
+                "title-focus" : "Ethical Approach",
+                "line4" : "<ul><li>Absolute respect for the animal's individuality and boundaries.</li><li>Priority on comfort, safety, and a peaceful environment.</li><li>End-of-life care with dignity and companionship.</li></ul>",
+                "title-operation" : "Operation",
+                "line5" : "<ul><li>Entry assessment by the SPAX technical team.</li><li>Development of an individualized care plan.</li><li>Registration as a “sanctuary animal” with monthly follow-ups.</li><li>Coordination with stable volunteers and specific training.</li><li>Documentation of the animal’s history after passing.</li></ul>",
+                "title-agents" : "Involved Agents",
+                "line6" : "<ul><li>SPAX technical team.</li><li>Volunteers.</li><li>Collaborating entities: clinics, donors, sponsors, social associations.</li><li>Possible collaboration with special education schools and assisted therapies.</li></ul>",
+                "title-diffusion" : "Outreach and Awareness",
+                "line7" : "<ul><li>Life stories shared on social media.</li><li>Ethical sponsorship program.</li><li>Educational visits organized under supervision.</li></ul>",
+                "title-funding" : "Funding",
+                "line8" : "<ul><li>Ongoing donation campaigns.</li><li>Public grants.</li><li>Agreements with clinics for solidarity-based veterinary care.</li><li>Merchandise sales featuring real sanctuary stories.</li></ul>",
+                "title-relationship" : "Relationship with the Rest of the Shelter",
+                "line9" : "<ul><li>Complementary program: does not replace adoption, but ethically strengthens it.</li><li>Prevents euthanasia of non-adoptable animals based on human criteria.</li><li>Learning space for compassionate and end-of-life care.</li></ul>"
+            },
+            "animals"   :   {
+                "icon"  :   "Sanctuary",
+                "title" :   "Sanctuary"
+            }
+        },
+        "heaven": {
+            "icon": "Heaven",
+            "title": "Sleeping with the Stars",
+            "info": {
+                "icon": "Info",
+                "title": "Information",
+                "line1": "A special mention in this section to all those animals that left us, that touched our hearts and that we will never forget. Dedicated to all of them.",
+                "line2": "For those travel companions who left and left a great void in our hearts and in our family. Also for those who, with special affection, died without having found it or under tragic circumstances. This is dedicated to all the animals in the world and of all species.",
+                "line3": "If you want your beloved pet to sleep with the stars, send us a photo and a brief phrase or dedication and we will place it to shine alongside the rest of the little stars that nest up in the beautiful sky.",
+                "line4": "To add a pet or for more information:",
+                "line5": "In this space, we wanted to pay tribute to those pets that are no longer with us.",
+                "line6": "We will never forget that playmate, their typical barks, their purring, their whinny, or simply their gaze.",
+                "line7": "Also dedicated to all those people who, shouting or in silence, cried for the departure of their pets...",
+                "poem-title"    :   "No llores por mi...",
+                "poem" :   "Me has dado un hogar donde cobijarme,<br/>me has proporcionado alimento y sobre todo,<br/>me has dado tu amor y tu compañía.<br/>Lo último que me gustaría es verte sufrir por mi.<br/><br/>Ahora que no estoy contigo,<br/>no quiero verte triste.<br/>Deseo que cuando pienses en mi sonrías,<br/>pues así sabré que mi recuerdo te hace feliz.<br/><br/>Quiero que recuerdes los buenos momentos que compartíamos,<br/>nuestras muestras de cariño, nuestros juegos...<br/>y si alguna vez te defraudé, o me porte mal, perdóname...<br/><br/>Por favor, no tires mis juguetes, ni mi cama, ni mis cosas,<br/>porque en este mundo hay muchos otros colegas que viven en soledad, tristes y sin cariño...<br/>muchos que darían su vida por compartir la tuya.<br/><br/>No, no lo digas, no digas que no quieres tener mas animales...<br/>eso me hace pensar que el tiempo que estuve contigo no te hice feliz.<br/>Por favor, que mi muerte no sea en vano,<br/>que sirva para que otro tenga la suerte de poder vivir<br/>y conocer lo maravillosa que es tu amistad,<br/>que conozca la verdadera \"vida de perro\",<br/>que descubra el cariño.<br/><br/>No estés triste... <br/>Yo no lo estoy, <br/>porque se que guardas ese rinconcito especial para mi en tu corazón."
+            },
+            "animals": {
+                "icon": "Animals",
+                "title": "Virtual Cemetery"
+            }
+        },
+        "record": {
+            "Parents": "Parents",
+            "Sponsors": "Sponsors",
+            "Code": "Code",
+            "Name": "Name",
+            "Status": {
+                "title": "Status",
+                "adopt": "Adopt",
+                "adopted": "Adopted",
+                "sanctuary" : "Sanctuary",
+                "heaven": "Heaven",
+                "hidden"    :   "Hidden"
+            },
+            "Sponsored": {
+                "title": "Sponsored",
+                "not-sponsored": "No",
+                "sponsored": "Yes",
+                "potentially-sponsor": "Potential sponsorship"
+            },
+            "Type": {
+                "title": "Type",
+                "dog": "Dog",
+                "cat": "Cat"
+            },
+            "Age": {
+                "title": "Age",
+                "puppy": "Puppy",
+                "adult": "Adult"
+            },
+            "Gender": {
+                "title": "Gender",
+                "male": "Male",
+                "female": "Female"
+            },
+            "Size": {
+                "title": "Size",
+                "xs": "Very small",
+                "s": "Small",
+                "m": "Medium",
+                "l": "Large",
+                "xl": "Very large"
+            },
+            "Breed": {
+                "title": "Breed"
+            },
+            "Weight": "Weight",
+            "Location": "Location",
+            "Birthdate": "Date of birth",
+            "Dead"  :   "Dead",
+            "Hidden"    :   "Hidden",
+            "Deathdate": "Date of death",
+            "Description": "Description",
+            "Image": "Image",
+            "Image2": "Image2",
+            "Image-Sponsored"   :   "Image sponsored/adopted",
+            "Person": "Responsible persons",
+            "Video" :   "Video",
+            "Video2" :   "Video2",
+            "Updated"   :   "Updated",
+            "Internal-Info" :   "Internal information",
+            "vaccines"  :   "Vaccines",
+            "treatment"  :   "Treatment",
+            "castrated"  :   "Castrated",
+            "date_entry"  :   "Entry date",
+            "date_exit"  :   "Exit date",
+            "date_entry2"  :   "Entry date2",
+            "date_exit2"  :   "Exit date2",
+            "internal"  :   "Internal notes"
+        }
+    },
+    "people": {
+        "record": {
+            "name": "Name",
+            "surname": "Last Names",
+            "dni": "DNI/NIE/CIF",
+            "birthdate": "Date of Birth",
+            "email" :   "Email",
+            "phone": "Phone",
+            "address" :   "Address",
+            "name2": "Name2",
+            "surname2": "Last Names2",
+            "dni2": "DNI2/NIE2/CIF2",
+            "birthdate2": "Date of Birth2",
+            "email2" :   "Email2",
+            "phone2": "Phone2",
+            "address2" :   "Address2",
+            "others"  :   "Others",
+            "other_people"  :   "Others",
+            "description": "Description",
+            "animals": "Animals",
+            "users" :   "Users"
+        }
+    },
+    "user": {
+        "title": "User",
+        "news": {
+            "icon"  :   "News",
+            "title"  :   "News",
+            "empty" :   "No news"
+        },
+        "profile": {
+            "icon": "Profile",
+            "title": "Profile",
+            "information": {
+                "icon": "info",
+                "title": "Update Information",
+                "name": "Name",
+                "email": "Email",
+                "email-not-verified": "Your email address is not verified.",
+                "email-verify": "Send verification email",
+                "email-sent": "A new verification email has been sent to your email address.",
+                "personal-data" : "Personal data",
+                "update-personal-data" : "If you want to update your personal data get in contact with the shelter, please:"
+            },
+            "animals": {
+                "icon"  :   "Animals",
+                "title" :   "Animals"                
+            },
+            "settings": {
+                "icon": "Config",
+                "title": "Settings",
+                "description": "Here you can change different settings for your account",
+                "dark-mode": "Dark Mode",
+                "biometric" :   "Login with biometric",
+                "notifications" :   "Notifications",
+                "notifications" :   {
+                    "switch"    :   "Notifications",
+                    "enabled"   :   "Notifications enabled",
+                    "setup"  :   "You must enable your device notifications to can change this setting",
+                    "disabled"    :   "Your device notifications are disabled for this app. You must enable them to can change this setting.",
+                    "push" : "Push",
+                    "email" : "Email",
+                    "method" : "Methods",
+                    "type" : "Categories",
+                    "appDisabled" : "You must grant permission to the app to receive notifications"
+                },
+                "authentication" : {
+                    "notAllowed" : "This device/browser does not allow the biometric authentication"
+                }
+            },
+            "password": {
+                "icon": "Password",
+                "title": "Change Password",
+                "password": "Password",
+                "password-current": "Current Password",
+                "password-new": "New Password",
+                "password-confirm": "Confirm Password"
+            },
+            "account": {
+                "icon": "Account",
+                "title": "Delete Account",
+                "description": "Once your account has been deleted, all data and resources are permanently deleted. Please save any data you need before deleting your account.",
+                "confirm": "Delete Account",
+                "password-confirm": "Please enter your password to permanently delete the account.",
+                "password": "Password",
+                "cancel": "Cancel",
+                "delete": "Delete",
+                "deleted" : "Account deleted"
+            }
+        },
+        "animals": {
+            "icon": "Animals",
+            "title": "Animals",
+            "create": "Create",
+            "edit": "Edit",
+            "borrar": "Delete",
+            "empty": "No animals",
+            "images-sponsored" : "Image sponsored/adopted",
+            "adopt": {
+                "icon": "Adopt",
+                "title": "Adopt"
+            },
+            "adopted": {
+                "icon": "Adopted",
+                "title": "Adopted"
+            },
+            "sanctuary"   : {
+                "icon"  :   "Sanctuary",
+                "title" :   "Sanctuary"
+            },
+            "heaven": {
+                "icon": "Heaven",
+                "title": "Heaven"
+            },
+            "hidden"    :   {
+                "icon"  :   "Hidden",
+                "title" :   "Hidden"
+            }
+        },
+        "people": {
+            "icon": "People",
+            "title": "People",
+            "create": "Create",
+            "edit": "Edit",
+            "borrar": "Delete",
+            "empty": "No people"
+        },
+        "notifications": {
+            "icon"  :   "Notifications",
+            "title"  :   "Notifications",
+            "form" : {
+                "title" : "Title",            
+                "message" : "Message",
+                "users" : "Users",
+                "peopleAll" : "All people",
+                "usersAll" : "Registered users",
+                "type" : "Type"
+            },
+            "success" : "Notification sent",
+            "error" : "Error sending notification",
+            "button" : "Send"
+        },
+        "email": {
+            "title": "Verify Email",
+            "description" : "We have sent you an email to verify your account. If you have not received it try to resend it, please.",
+            "verified": "Email verified",
+            "verification-link-sent": "Email sent",
+            "resend-link": "Resend",
+            "empty" : "Cannot send an empty message"
+        }
+    },
+    "login": {
+        "title": "Log In",
+        "description": "This area is for shelter staff, not for users.",
+        "title-forgot": "Forgot Password",
+        "login": "Access",
+        "login2": "Log In",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "password-confirm": "Confirm Password",
+        "remember": "Remember Me",
+        "forgot": "Forgot Password",
+        "forgot-sentence": "Please enter your email to send you a link to reset your password.",
+        "forgot-send": "Send",
+        "reset": "Reset",
+        "register": "Register",
+        "google": "Google",
+        "apple" : "Apple"
+    },
+    "contact": {
+        "title": "Contact",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "info": {
+            "title1": "General Information and Shelter",
+            "title2": "Collaborate partners and sponsors",
+            "title3": "Adoptions",
+            "shift-adoptions" : "Monday to Friday from 05:00PM to 09:00PM",
+            "title4": "Volunteering",
+            "email" : "Email",
+            "phone": "Phone",
+            "whatsapp": "Whatsapp",
+            "shift-phone-title": "Phone Service Hours",
+            "shift-phone-line1": "Monday to Friday from 04:00PM to 06:00PM",
+            "shift-phone-line2": "Saturdays from 10:30 AM to 01:30PM",
+            "shift-phone-footer1": "Please respect these hours.",
+            "shift-phone-footer2": "It is attended by volunteer staff.",
+            "shift-live-title": "Public Service Hours",
+            "shift-live-line1": "Saturdays from 09:30AM to 01:30PM",
+            "title5": "Shelter attended 365 days a year"
+        }
+    },
+    "share" :   {
+        "title" :   "Share",
+        "title-native"  :   "SPAX - protectoraxativa",
+        "text"  :   "Have a look at this animal"
+    },
+    "info" : {
+        "terms" : {
+            "icon": "Terms",
+            "title" :   "Terms of use",
+            "content" : "<h1 class='title-info-pages'>INFORMATION SOCIETY SERVICES ACT (LSSI)</h1><br/><br/>SOCIEDAD PROTECTORA DE ANIMALES DE XÀTIVA, responsible for the website, hereinafter referred to as RESPONSIBLE, provides users with this document in order to comply with the obligations set forth in Law 34/2002, of July 11, on Information Society Services and Electronic Commerce (LSSICE), BOE Nº 166, as well as to inform all users of the website regarding the conditions of use.<br/>Anyone who accesses this website assumes the role of user, committing to the observance and strict compliance with the provisions outlined here, as well as with any other applicable legal provisions.<br/><br/>SOCIEDAD PROTECTORA DE ANIMALES DE XÀTIVA reserves the right to modify any type of information that may appear on the website, with no obligation to give prior notice or inform users of these obligations, with publication on the SOCIEDAD PROTECTORA DE ANIMALES DE XÀTIVA website considered sufficient.<br/><br/><h1 class='subtitle-info-pages'>1. IDENTIFICATION DETAILS</h1><br/>Domain name: <a href='https://protectoraxativa.org' target='_blank'>protectoraxativa.org</a><br/>Trade name: SPAX<br/>Company name: SOCIEDAD PROTECTORA DE ANIMALES DE XÀTIVA Y LA COSTERA.<br/>Tax ID: G46388385<br/>Corporate address: PO Box 544<br/>Phone: <a href='tel:671870889' target='_blank'>671870889</a><br/>Email: <a href='mailto:colabora@protectoraxativa.org' target='_blank'>colabora@protectoraxativa.org</a><br/><br/><h1 class='subtitle-info-pages'>2. INTELLECTUAL AND INDUSTRIAL PROPERTY RIGHTS</h1><br/>The website, including but not limited to its programming, editing, compilation, and other elements necessary for its functioning, the designs, logos, text, and/or graphics, are the property of the RESPONSIBLE or, if applicable, have a license or express authorization from the authors. All website content is duly protected by intellectual and industrial property laws and registered in the appropriate public registries.<br/>Regardless of the purpose, total or partial reproduction, use, exploitation, distribution, and commercialization always requires prior written authorization from the RESPONSIBLE. Any unauthorized use is considered a serious infringement of the author’s intellectual or industrial property rights.<br/><br/>Designs, logos, text, and/or graphics that do not belong to the RESPONSIBLE and may appear on the website belong to their respective owners, who are responsible for any possible dispute that may arise regarding them. The RESPONSIBLE expressly authorizes third parties to redirect directly to specific content on the website, and in any case, to redirect to the main website <a href='https://protectoraxativa.org' target='_blank'>protectoraxativa.org</a><br/><br/>The RESPONSIBLE recognizes in favor of its owners the corresponding intellectual and industrial property rights, and their mere mention or appearance on the website does not imply any rights or responsibility for them, nor endorsement, sponsorship, or recommendation.<br/>To make any observations about possible violations of intellectual or industrial property rights, or any of the website's content, you can do so via email at: <a href='mailto:colabora@protectoraxativa.org' target='_blank'>colabora@protectoraxativa.org</a><br/><br/><h1 class='subtitle-info-pages'>3. DISCLAIMER</h1><br/>The RESPONSIBLE disclaims any liability for the information published on its website if such information has been altered or introduced by a third party not related to it.<br/><br/><b>Use of Cookies</b><br/>This website may use technical cookies (small information files that the server sends to the computer accessing the page) to perform certain functions deemed essential for the proper operation and viewing of the site. The cookies used are, in any case, temporary, with the sole purpose of making browsing more efficient and disappearing at the end of the user session. In no case do these cookies provide personal data by themselves and will not be used to collect such data.<br/><br/>By using cookies, the server where the web is located may recognize the user’s browser to make navigation easier, for example, to allow access to users who have previously registered to areas, services, promotions, or contests exclusively reserved for them without needing to log in on each visit. Cookies may also be used to measure audience, traffic parameters, track progress, and number of entries, etc. In such cases, cookies are not technically essential but beneficial to the user. This website will not install unnecessary cookies without prior user consent.<br/><br/>The user has the option of configuring their browser to be alerted to the reception of cookies and to prevent their installation on their device. Please refer to your browser's instructions for further information.<br/><br/><b>Link Policy</b><br/>From this website, it is possible to redirect to content on third-party websites. Given that the RESPONSIBLE cannot always control the content introduced by third parties on their respective websites, it does not assume any responsibility for such content. In any case, it will proceed to the immediate removal of any content that may violate national or international law, morality, or public order, promptly removing the link to the website in question and informing the competent authorities.<br/><br/>The RESPONSIBLE is not liable for the information and content stored, including but not limited to, in forums, chats, blog generators, comments, social networks, or any other means that allows third parties to publish content independently on the RESPONSIBLE’s website. However, in compliance with the provisions of articles 11 and 16 of the LSSICE, it makes itself available to all users, authorities, and security forces, actively collaborating in the removal or blocking of any content that may affect or violate national or international legislation, third-party rights, or morality and public order. If the user considers that there is any content on the website that could be subject to this classification, please notify the website administrator immediately.<br/><br/>This website has been reviewed and tested to work correctly. In principle, correct operation can be guaranteed 365 days a year, 24 hours a day. However, the RESPONSIBLE does not rule out the possibility of certain programming errors or force majeure events, natural disasters, strikes, or similar circumstances that may make access to the website impossible.<br/><br/><b>IP Addresses</b><br/>The website servers may automatically detect the IP address and domain name used by the user. An IP address is a number automatically assigned to a computer when it connects to the Internet. All this information is recorded in a duly registered server activity file that allows subsequent processing of the data to obtain statistical measurements only to determine the number of page impressions, the number of visits to web servers, the order of visits, the point of access, etc.<br/><br/><h1 class='subtitle-info-pages'>4. APPLICABLE LAW AND JURISDICTION</h1><br/>For the resolution of all disputes or questions related to this website or the activities carried out on it, Spanish law will apply, to which the parties expressly submit, with the Courts and Tribunals closest to Valencia being competent for the resolution of all conflicts arising or related to its use."
+        },
+        "policy" : {
+            "icon": "Privacy",
+            "title" :   "Privacy policy",
+            "content" : "<h1 class='title-info-pages'>1. USER INFORMATION<br/></h1><br/><b>SOCIEDAD PROTECTORA DE ANIMALES DE XÀTIVA</b>, hereinafter referred to as RESPONSIBLE, is the Data Controller for the User's personal data and informs that these data will be processed in accordance with the provisions of Regulation (EU) 2016/679 of April 27, 2016 (GDPR), on the protection of natural persons concerning the processing of personal data and the free movement of such data, and therefore provides the following information on processing:<br/><br/><b>Purpose of processing:</b> to maintain a commercial relationship with the User. The planned processing operations are:<ul class='list-info-pages'><li>Sending commercial advertising communications by email, fax, SMS, MMS, social communities, or any other electronic or physical means, present or future, that enables commercial communications. These communications will be carried out by the RESPONSIBLE and related to its products and services, or those of its collaborators or suppliers with whom it has reached a promotional agreement. In this case, third parties will never have access to personal data.</li><li>Conducting statistical studies.</li><li>Processing orders, requests, or any type of request made by the user through any of the contact methods provided.</li><li>Sending the website newsletter.</li></ul><br/><b>Legal basis for processing:</b> consent of the data subject.<br/><br/><b>Data retention criteria:</b> data will be kept as long as there is a mutual interest in maintaining the purpose of processing and when it is no longer necessary for that purpose, it will be deleted with appropriate security measures to ensure data pseudonymization or total destruction.<br/><br/><b>Data communication:</b> Data will not be communicated to third parties, except under legal obligation.<br/><br/><b>Rights of the User:</b><ul class='list-info-pages'><li>Right to withdraw consent at any time.</li><li>Right of access, rectification, portability, and erasure of data and to restrict or object to processing.</li><li>Right to file a complaint with the supervisory authority (www.aepd.es) if processing is deemed not in compliance with current regulations.</li></ul><br/><b>Contact information to exercise rights:</b><br/>SOCIEDAD PROTECTORA DE ANIMALES DE XÀTIVA. PO Box 544, XÀTIVA – 46800 (VALENCIA). Email: <a href='mailto:colabora@protectoraxativa.org'>colabora@protectoraxativa.org</a><br/><br/><h1 class='title-info-pages'>2. MANDATORY OR OPTIONAL NATURE OF THE INFORMATION PROVIDED BY THE USER</h1><br/>By marking the corresponding boxes and entering data in the fields, marked with an asterisk (*) in the contact form or presented in download forms, Users expressly, freely, and unequivocally accept that their data are necessary to fulfill their request by the provider, with the inclusion of data in the remaining fields being voluntary. The User guarantees that the personal data provided to the RESPONSIBLE are accurate and is responsible for notifying any changes to them.<br/><br/>The RESPONSIBLE expressly informs and guarantees Users that their personal data will not be transferred to third parties under any circumstances, and that any time it makes any type of personal data transfer, the prior, express, informed, and unequivocal consent of Users will be requested. All data requested through the website are mandatory, as they are necessary to provide an optimal service to the User. If not all data are provided, it is not guaranteed that the information and services provided will be fully adapted to their needs.<br/><br/><h1 class='title-info-pages'>3. SECURITY MEASURES</h1><br/>In compliance with current personal data protection regulations, the RESPONSIBLE is complying with all provisions of the GDPR for the processing of personal data under its responsibility, and manifestly with the principles described in Article 5 of the GDPR, whereby they are processed lawfully, fairly, and transparently in relation to the data subject and are adequate, relevant, and limited to what is necessary concerning the purposes for which they are processed.<br/><br/>The RESPONSIBLE guarantees that it has implemented appropriate technical and organizational policies to apply the security measures established by the GDPR to protect the rights and freedoms of Users and has communicated the appropriate information so they can exercise their rights."
+        },
+        "cookies" : {
+            "icon": "Cookies",
+            "title" :   "Cookies policy",
+            "content" : "We inform you that this website installs its own and third-party cookies when you browse its pages to facilitate your navigation and obtain statistical data. If you continue browsing, we consider that you accept their use and installation.<br/><br/><h1 class='subtitle-info-pages'>Definition and Function of Cookies</h1><br/><b>What are cookies?</b><br/>A cookie is a non-executable text file downloaded to your computer when you access certain web pages. Cookies allow a website, among other things, to store and retrieve information about a user's or device's browsing habits and, depending on the information they contain and how the device is used, they can be used to recognize the user. Cookies can also be used to record anonymous information about how a visitor uses a site, for example, from which website they accessed or if they used an advertising banner to arrive.<br/><br/><b>Why does this site use cookies?</b><br/>This site uses strictly necessary and essential cookies to allow you to use our website and to move freely, access private areas, customize options, etc. Additionally, it uses cookies that collect data related to website usage analysis. These are used to help improve service to the visitor by measuring page usage and performance, in order to optimize and customize it.<br/><br/>What types of cookies does this website use?<br/><br/>According to their purpose:<ul class='list-info-pages'><li><b>Technical Cookies:</b><br/>Technical cookies are essential and strictly necessary for the proper functioning of a website and the use of the various options and services it offers.<br/><br/>For example, those used to maintain a session, manage response times, performance, or validation of options, use security features, share content on social networks, etc.</li><br/><li><b>Personalization Cookies:</b><br/>These cookies allow the user to specify or customize certain characteristics of the website’s general options.<br/><br/>For example, setting the language, regional configuration, or browser type.</li><br/><li><b>Analytical Cookies (Google Analytics):</b><br/>Analytical cookies are used by our website to create browsing profiles and understand users' preferences to improve the offer of products and services.<br/><br/>For example, an analytical cookie might monitor the geographic areas of most interest to a user, which product has the most acceptance, etc.</li><br/><li><b>Advertising / Behavioral Advertising Cookies (Google Adsense):</b><br/>Advertising cookies allow the management of advertising spaces based on specific criteria.<br/><br/>For example, frequency of access, edited content, etc.<br/><br/>Behavioral advertising cookies allow the management of advertising by storing information on behavior through observation of habits, studying access, and forming a profile of user preferences to offer advertising related to their profile interests.</li></ul><br/>See this link for Google services' privacy policies.<br/><br/>According to the length of time they remain active:<ul class='list-info-pages'><li><b>Session Cookies:</b> Session cookies last only as long as the user is browsing the website and are deleted at the end.</li><li><b>Persistent Cookies:</b> These cookies remain stored on the user’s device for a longer period, thus facilitating control of the chosen preferences without having to repeat certain parameters each time they visit the website.</li></ul><br/><h1 class='subtitle-info-pages'>Revocation and Deletion of Cookies</h1><br/>You can allow, block, or delete cookies installed on your computer by configuring the options of the browser installed on your computer.<ul class='list-info-pages'><li>For more information about Firefox browser, click <a href='https://support.mozilla.org/en/kb/cookies-information-websites-store-on-your-computer' target='_blank'>here</a>.</li><li>For more information about Chrome browser, click <a href='https://support.google.com/chrome/answer/95647?hl=en' target='_blank'>here</a>.</li><li>For more information about Explorer browser, click <a href='https://support.microsoft.com/en-gb/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d#ie=ie-11' target='_blank'>here</a>.</li><li>For more information about Safari browser, click <a href='https://support.apple.com/en-gb/guide/safari/sfri11471/mac' target='_blank'>here</a>.</li><li>For more information about Opera browser, click <a href='https://help.opera.com/en/latest/web-preferences/#cookies' target='_blank'>here</a>.</li>"
+        }
+    }
+}

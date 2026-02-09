@@ -1,0 +1,954 @@
+/*https://tailwindcss.com/docs*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* scroll bar hidden */
+::-webkit-scrollbar {
+ 	/*width: 5px;*/
+ 	display: none;
+}
+
+::-webkit-scrollbar-track {
+ 	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+.hide-scroll{
+	/* IE and Edge */
+ 	-ms-overflow-style: none !important;  
+
+ 	/* Firefox */
+ 	scrollbar-width: none !important;
+}
+
+html{
+	/*font-family: 'Roboto';*/
+	background-color: #000000; /* it tints the navigation bar on android's google chrome */	
+	@apply hide-scroll;
+}
+
+body{
+	background-color: #DCDCDC;
+	@apply md:pt-0 pt-0 md:px-1 px-0;
+}
+
+.lightmode{
+	@apply text-black;
+}
+
+.darkmode{
+	@apply text-white;	
+}
+
+/* orange */
+.app-text-color{
+	color: #FF8C00;
+}
+
+.app-border-color{
+	border-color: #FF8C00;
+}
+
+/* orange */
+.app-background-color{
+	background-color: #FF8C00;
+}
+
+.app-background-color-gradient{
+	background-color: rgba(255, 140, 0, 0.3);
+}
+
+.main-color-lightmode{
+	@apply text-black;
+}
+
+.main-color-darkmode{
+	@apply text-white;
+}
+
+.main-background-color-lightmode{
+	@apply bg-white;
+}
+
+.main-background-color-darkmode{
+	@apply bg-neutral-800 !important;
+}
+
+.input-background-color-ligthmode{
+	background-color: #FFFFFF;
+}
+
+.input-background-color-darkmode{
+	background-color: #DCDCDC;
+}
+
+.box-background-color-lightmode{
+	background-color: #F8F8F8 !important;
+}
+
+.box-background-color-darkmode{
+	@apply bg-neutral-700 !important;
+}
+
+.lightmode .social-link{
+	@apply main-color-lightmode;
+}
+
+.darkmode .social-link{
+	@apply main-color-darkmode;
+}
+
+.paddings-main-sticky{
+	@apply md:px-4 sm:px-2 px-1;
+}
+
+.main-generic{
+	@apply paddings-main-sticky;
+	@apply pt-1 mb-1 shadow-lg min-h-screen;	
+	@apply pb-32;
+	/*@apply rounded;*/
+	/*@apply rounded-b;*/
+}
+
+.app-width{
+	@apply max-w-screen-lg;
+}
+
+#bartop{
+	@apply app-width mx-auto mb-1;
+}
+
+.pwa-banner,.notifications-banner{
+	@apply flex items-center;
+	@apply app-width mx-auto mb-1;
+	@apply rounded-none !important;
+	@apply py-0 px-2 !important;
+}
+
+.lightmode main{
+	@apply main-generic main-background-color-lightmode;
+	@apply app-width mx-auto;
+}
+
+.darkmode main{
+	@apply main-generic main-background-color-darkmode;
+	@apply app-width mx-auto;
+}
+
+.sticky-general {  	
+    @apply w-full fixed;
+    top: 0;
+    left: 0;
+    /*min-h-screen*/;
+}
+
+.lightmode .sticky-item {
+	@apply sticky-general main-background-color-lightmode;
+	@apply border-b;
+	@apply app-width mx-auto left-0 right-0;
+	@apply paddings-main-sticky;
+}
+
+.darkmode .sticky-item {
+	@apply sticky-general main-background-color-darkmode;
+	/*@apply border-b border-black;*/
+	@apply app-width mx-auto left-0 right-0;
+	@apply paddings-main-sticky;
+}
+
+.modal-div{
+	@apply flex flex-col overflow-y-auto hide-scroll pb-4;
+}
+
+.language-modal-div{
+	@apply overflow-y-auto hide-scroll text-center;
+}
+
+#versions{
+	@apply border border-neutral-800 rounded p-2 mt-4 text-center;
+}
+
+.tab{
+	transform: scale(0.5);
+}
+
+.content-container{
+	@apply mt-4;
+}
+
+.subcontent-container{
+	@apply mt-4;
+}
+
+.cookies-consent{
+	@apply justify-center block pb-2 !important;
+}
+
+.cookies-button{
+	@apply app-button app-background-color !important;
+}
+
+.title-generic{
+	@apply text-3xl font-bold text-center;
+}
+
+.title{
+	@apply title-generic mb-8;
+}
+
+.title-info{
+	@apply title-generic mb-4;
+}
+
+.title-news{
+	@apply text-3xl font-bold text-center mb-4;
+}
+
+.title-home{
+	@apply text-2xl font-bold text-center mb-8 border-b;
+}
+
+.title-carousel{
+	@apply text-xl font-bold text-center pt-2;
+}
+
+.title-user-list{
+	@apply text-xl font-bold text-center pt-2;
+}
+
+.list-icons{
+	@apply flex items-center justify-center;
+}
+
+.subtitle-home{
+	@apply text-xl font-bold;
+}
+
+.subtitle-colaboration{
+	@apply subtitle-home text-center md:text-left;
+}
+
+.title-info-pages{
+	@apply text-xl font-bold;
+}
+
+.subtitle-info-pages{
+	@apply text-lg font-bold;
+}
+
+#internal-info-title{
+	@apply font-bold text-center;
+	@apply mt-4 pt-2;
+}
+
+.title-subsection{
+	@apply text-xl font-bold text-center mb-4;
+}
+
+.user-title{
+	@apply text-lg font-bold mb-2 text-center;
+}
+
+p{
+	@apply mb-4;
+}
+
+a{
+	@apply app-text-color break-all;
+}
+
+.link-selected{
+	@apply font-bold underline;
+}
+
+#logo-home{
+	width: 100%;
+	max-width: 100px;
+}
+
+.lightmode #logo-text{
+	@apply text-black;
+}
+
+.darkmode #logo-text{
+	@apply text-white;
+}
+
+#logo-text{
+	@apply font-bold text-2xl text-black text-opacity-70;
+}
+
+.language-item-generic{
+	@apply py-4;
+}
+
+.lightmode .language-item{
+	@apply language-item-generic text-black;
+}
+
+.darkmode .language-item{
+	@apply language-item-generic text-white;
+}	
+
+.language-item-selected{
+	@apply font-bold text-orange-400;
+}
+
+.lightmode .MuiAppBar-root{
+	@apply main-background-color-lightmode;
+}
+
+.darkmode .MuiAppBar-root{
+	@apply main-background-color-darkmode;
+}
+
+.lightmode .MuiAppBar-root #language,.lightmode .MuiAppBar-root #contact{
+	@apply text-black;	
+}
+
+.darkmode .MuiAppBar-root #language,.darkmode .MuiAppBar-root #contact{
+	@apply text-white;	
+}
+
+.MuiAppBar-root #logout{
+	@apply text-red-600;
+}
+
+.MuiAppBar-root #contact-selected{
+	@apply app-text-color;	
+}
+
+.lightmode .MuiTab-root{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.darkmode .MuiTab-root{
+	@apply text-white;
+}
+
+#barbottom{
+    /*@apply app-width*/;
+}
+
+.animal-name,.person-name{
+	@apply font-bold ml-2;
+}
+
+.app-button{
+	@apply rounded !important;
+	color: white;
+	/*border-radius: 5px;*/
+	border-style: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	line-height: 20px;
+	list-style: none;
+	margin: 0;
+	outline: none;
+	padding: 10px 16px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: color 100ms;
+	vertical-align: baseline;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.login-button,.policy-link,.terms-link{
+	@apply app-button app-background-color;
+}
+
+.google-button{
+	@apply app-button text-white bg-black;
+}
+
+.apple-button{
+	@apply app-button text-white bg-black;
+}
+
+.login-button,.google-button,.apple-button{
+	width: 200px;
+}
+
+.animal-link,.person-link{
+	@apply app-button app-background-color;
+}
+
+.animal-link-edit,.person-link-edit{
+	@apply app-button app-background-color;
+}
+
+.animal-link-delete{
+	@apply app-button bg-red-600;
+}
+
+.animal-search,.person-search{
+	@apply app-button bg-blue-500;
+}
+
+.animal-search-box{
+	/*height: 350px;*/
+}
+
+.lightmode .back-button, .lightmode .cancel-button{
+	@apply app-button;
+	@apply bg-black;
+}
+
+.darkmode .back-button, .darkmode .cancel-button{
+	@apply app-button;
+	@apply app-background-color;
+}
+
+.lightmode .error-button{
+	@apply app-button;
+	@apply bg-black;
+	@apply pt-2 px-4 !important;
+}
+
+.darkmode .error-button{
+	@apply app-button;
+	@apply app-background-color;
+	@apply p-0 !important;
+}
+
+.lightmode .info-button{
+	@apply app-button w-full;
+	@apply app-background-color;
+}
+
+.darkmode .info-button{
+	@apply app-button w-full;
+	@apply app-background-color;
+}
+
+.lightmode .notifications-button{
+	@apply app-button w-full;
+	@apply app-background-color;
+}
+
+.darkmode .notifications-button{
+	@apply app-button w-full;
+	@apply app-background-color;
+}
+
+.lightmode .install-app-button{
+	@apply app-button;
+	@apply app-background-color;
+}
+
+.darkmode .install-app-button{
+	@apply app-button;
+	@apply app-background-color;
+}
+
+.load-more-button{
+	@apply app-button;
+	@apply app-background-color;
+}
+
+.darkmode .Mui-error, .darkmode .Mui-error .MuiOutlinedInput-notchedOutline{
+	@apply text-red-300 !important;
+}
+
+input,textarea{
+	box-shadow: none !important;
+}
+
+/* hide type number arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+ 	-webkit-appearance: none;
+ 	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+ 	-moz-appearance: textfield;
+}
+
+.delete-button{
+	@apply app-button bg-red-600;
+}
+
+.loading{
+	@apply text-center;
+	height: 1000px;
+}
+
+/*
+.animal-link:hover, .animal-link:focus,
+.animal-link-edit:hover, .animal-link-edit:focus,
+.person-link:hover, .person-link:focus,
+.person-link-edit:hover, .person-link-edit:focus,
+.login-button:hover,.login-button:focus,
+.back-button:hover,.back-button:focus 
+*/
+.app-button:hover,.app-button:focus
+{
+ 	background-color: #F082AC;
+}
+
+.login-remember{
+	@apply ms-2 text-sm text-gray-600;
+}
+
+.login-status{
+	@apply mb-4 font-medium text-sm text-green-600;
+}
+
+.login-label{
+	/*@apply block font-medium text-sm text-gray-700;*/
+	@apply block;
+}
+/*
+.tox-tinymce {
+    border-radius: 0.375rem !important;
+    border: 1px solid #2e2e2e !important;
+}
+*/
+/*
+fieldset{
+	border-color: #2e2e2e !important;
+}
+*/
+
+.lightmode .Mui-focused .MuiOutlinedInput-notchedOutline{
+	@apply app-border-color !important;
+}
+
+.darkmode .Mui-focused .MuiOutlinedInput-notchedOutline{
+	@apply border-white !important;
+}
+
+.app-input-generic{
+	@apply rounded-md shadow-sm;
+	@apply w-full;	
+	padding: 16.5px 14px;
+}
+
+.app-input-generic-select{
+	@apply rounded-md shadow-sm;
+	@apply w-full;	
+	/*padding: 16.5px 14px;*/
+}
+
+.app-input-lightmode{
+	@apply border-gray-600 bg-white focus:border-orange-500 focus:ring-orange-500 !important;
+}
+
+.app-input-white-orange {
+    background-color: white !important;
+}
+.app-input-white-orange .MuiOutlinedInput-notchedOutline {
+    border-color: #BDBDBD !important;
+}
+.app-input-white-orange:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #FF8C00 !important;
+}
+.app-input-white-orange.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #FF8C00 !important;
+    border-width: 2px !important;
+}
+.app-input-white-orange .MuiChip-root {
+    background-color: #FF8C00 !important;
+    color: white !important;
+}
+.app-input-white-orange .MuiChip-deleteIcon {
+    color: white !important;
+    opacity: 0.8;
+}
+.app-input-white-orange .MuiChip-deleteIcon:hover {
+    color: white !important;
+    opacity: 1;
+}
+
+.app-input-darkmode{
+	@apply bg-neutral-500 text-white focus:border-white focus:ring-white !important;
+}
+
+.lightmode .app-input{
+	@apply app-input-generic app-input-lightmode; 
+}
+
+.darkmode .app-input{
+	@apply app-input-generic app-input-darkmode;
+}
+
+.lightmode .app-input-select{
+	@apply app-input-generic-select app-input-lightmode; 
+}
+
+.darkmode .app-input-select{
+	@apply app-input-generic-select app-input-darkmode;
+}
+
+.darkmode .MuiAutocomplete-inputFocused{
+	color: #FFFFFF !important;
+}
+
+.lightmode .app-input-readonly{
+	@apply app-input-generic border-gray-600 bg-slate-100 focus:border-orange-500 focus:ring-orange-500 !important;
+}
+
+.darkmode .app-input-readonly{
+	@apply app-input-generic bg-neutral-600 text-white !important;
+}
+
+.home-div-icon{
+	@apply flex items-center text-center justify-center;
+}
+
+.social-div{
+	@apply flex items-center justify-center;
+}
+
+.social-div-icon{	
+	@apply px-2;
+}
+
+#bizum{
+	@apply mx-auto w-full;
+}
+
+.home-icon{
+	font-size: 85px !important;
+	@apply mb-2;
+}
+
+.home-image-icon{
+	width: 100%;
+	max-width: 150px;
+	@apply mb-2;
+}
+
+.social-icon{
+	width: 100%;
+	max-width: 50px;
+	font-size: 40px !important;
+}
+
+#social-icon-whatsapp{
+	@apply text-green-700;
+}
+
+#social-icon-email{
+	@apply text-rose-700;
+}
+
+#social-icon-telegram{
+	@apply text-cyan-700;
+}
+
+#social-icon-facebook{
+	@apply text-blue-500;
+}
+
+#social-icon-instagram{
+	@apply text-rose-500;
+}
+
+#social-icon-twitter{
+	@apply text-cyan-700;
+}
+
+#social-icon-youtube{
+	@apply text-rose-500;
+}
+
+#social-icon-blog{
+	@apply text-blue-700;
+}
+
+#social-icon-tiktok{
+	@apply text-blue-500;
+}
+
+#social-icon-soundcloud{
+	@apply text-orange-500;
+}
+
+#social-icon-ladridos{
+	@apply text-orange-500;
+}
+
+.border-app-lightmode{
+	@apply border-neutral-800;
+}
+
+.border-app-darkmode{
+	@apply border-neutral-50;
+}
+
+.box{
+	@apply border rounded md:p-4 p-2 mb-8;
+}
+
+.box-lightmode{
+	@apply box border-app-lightmode;
+}
+
+.box-darkmode{
+	@apply box border-app-darkmode;
+}
+
+.lightmode .home-div-box{
+	@apply box-lightmode box-background-color-lightmode;
+}
+
+.darkmode .home-div-box{
+	@apply box-darkmode box-background-color-darkmode;
+}
+
+.lightmode .social-div-box{
+	@apply box-lightmode box-background-color-lightmode;
+}
+
+.darkmode .social-div-box{
+	@apply box-darkmode box-background-color-darkmode;
+}
+
+.lightmode .news-div-box{
+	@apply box-lightmode box-background-color-lightmode;
+}
+
+.darkmode .news-div-box{
+	@apply box-darkmode box-background-color-darkmode;
+}
+
+.lightmode .settings-div-box{
+	@apply box-lightmode box-background-color-lightmode;
+}
+
+.darkmode .settings-div-box{
+	@apply box-darkmode box-background-color-darkmode;
+}
+
+.lightmode .account-div-box{
+	@apply box-lightmode box-background-color-lightmode;
+}
+
+.darkmode .account-div-box{
+	@apply box-darkmode box-background-color-darkmode;
+}
+
+
+.news-title{
+	@apply text-xl font-bold text-center;
+}
+
+.news-date{
+	@apply text-center text-sm;
+}
+
+.news-image{
+	width: 100%;
+	max-width: 200px;
+	@apply mx-auto border border-black;
+}
+
+.news-description{
+	@apply mt-4 text-center;
+}
+
+.home-colaboration-list{
+	@apply pl-4 font-bold;
+}
+
+ul{
+	list-style: unset !important;
+}
+
+.list-info-pages{
+	@apply pl-6;
+}
+
+#home-colaboration-sponsorship-list{
+	@apply pl-4;
+}
+
+#home-adopt-info-list{
+	@apply pl-6;
+}
+
+#home-colaboration-sponsorship-list li,#home-adopt-info-list li{
+	@apply pt-2;
+}
+
+.partners-div-generic-even{
+	@apply border rounded p-1 sm:mb-2 mb-0;
+}
+
+.partners-div-generic-odd{
+	@apply border rounded p-1 mb-2;
+}
+
+.lightmode .partners-div-even, .lightmode .apu-div{
+	@apply partners-div-generic-even border-app-lightmode;
+}
+
+.lightmode .partners-div-odd, .lightmode .apu-div{
+	@apply partners-div-generic-odd border-app-lightmode;
+}
+
+.darkmode .partners-div-even, .darkmode .apu-div{
+	@apply partners-div-generic-even border-app-darkmode;
+}
+
+.darkmode .partners-div-odd, .darkmode .apu-div{
+	@apply partners-div-generic-odd border-app-darkmode;
+}
+
+.partners-title{
+	@apply text-center font-bold mb-2;
+}
+
+.partners-image, .apu-image{
+	@apply mx-auto;
+	height: 200px;
+	max-width: 100%;
+}
+
+.paragraph-top-separation{
+	@apply mt-4;
+}
+
+.pagination-div{
+	list-style: none !important;
+	@apply py-2;
+}
+
+.items-per-page-div{
+	@apply py-2 text-center;
+}
+
+.pagination{
+	@apply flex justify-center w-full;
+}
+
+.record-div{
+	@apply border rounded p-1 text-center;
+}
+
+.lightmode .animal-record-div, 
+.lightmode .person-record-div, 
+.lightmode .news-record-div,
+.lightmode #animal-parents
+{
+	@apply record-div border-neutral-800;
+}
+
+.darkmode .animal-record-div, 
+.darkmode .person-record-div, 
+.darkmode .news-record-div,
+.darkmode #animal-parents
+{
+	@apply record-div border-white;
+}
+
+.animal-record-title{
+	@apply font-bold;
+}
+
+.person-record-title{
+	@apply text-right font-bold;
+}
+
+.person-record-value{
+	@apply text-left;
+}
+
+.news-record-title{
+	@apply text-right font-bold;
+}
+
+.news-record-value{
+	@apply text-left;
+}
+
+#filter,#add,#export,#sort{
+	@apply app-text-color;	
+}
+
+.lightmode .hiddenIcon{
+	@apply text-white !important;
+}
+
+.darkmode .hiddenIcon{
+	@apply text-black !important;
+}
+
+.genericIcon{
+	@apply p-0 !important;
+}
+
+.deleteIcon{
+	@apply genericIcon text-red-600 !important;
+}
+
+.viewIcon, .editIcon, .searchIcon, .saveIcon{
+	@apply genericIcon app-text-color !important;
+}
+
+.lightmode .closeIcon{
+	@apply genericIcon text-black !important;
+}
+
+.darkmode .closeIcon{
+	@apply genericIcon text-red-300 !important;
+}
+
+.shareIcon{
+	@apply genericIcon text-green-600 !important;
+}
+
+.video{
+	width: 100%;
+	/*max-width: 450px;*/
+    height: 300px;
+}
+
+.carousel-image{
+	/*height: 100% !important;*/
+	@apply md:h-52 sm:h-36 h-24	border !important;
+}
+
+/* tinymce */
+.darkmode .tox-editor-header,
+.darkmode .tox-menubar,
+.darkmode .tox-toolbar-overlord,
+.darkmode .tox-toolbar,
+.darkmode .tox-toolbar__overflow,
+.darkmode .tox-toolbar__primary,
+.darkmode .mce-content-body,
+.darkmode .tox-statusbar,
+.darkmode .tox-mbtn,
+.darkmode .tox-tbtn,
+.darkmode .tox-tbtn--bespoke,
+.darkmode .tox-menu,
+.darkmode .tox-collection__item-label/*,
+.darkmode .tox-insert-table-picker*/
+{
+	@apply main-background-color-darkmode !important;
+}
+
+.darkmode .tox-tinymce{
+	@apply border border-white !important;
+}
+
+.MuiImageListItem-img {
+    object-fit: fill !important;
+}
+
+.animals-sanctuary-info-list ul{
+	@apply pl-4;
+}

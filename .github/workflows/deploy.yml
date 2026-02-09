@@ -1,0 +1,13 @@
+name: Protectoras
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    placeholder:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Primer Push
+              run: echo "Archivo YAML detectado. Preparado para configurar el despliegue más adelante."
