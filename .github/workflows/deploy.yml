@@ -41,8 +41,7 @@ jobs:
                   VITE_PUSHER_APP_CLUSTER: ${{ secrets.VITE_PUSHER_APP_CLUSTER }}
                   VITE_PUSHER_PORT: ${{ secrets.VITE_PUSHER_PORT }}
                   VITE_PUSHER_SCHEME: ${{ secrets.VITE_PUSHER_SCHEME }}
-                  VITE_APP_NAME: ${{ vars.VITE_APP_NAME }}
-                  DEPLOY_PATH: ${{ env.DEPLOY_PATH }}
+                  VITE_APP_NAME: ${{ vars.VITE_APP_NAME }}                  
 
             # --- 2. Despliegue con Rsync (Sincronización + Limpieza) ---
             # Borra archivos remotos que no existan localmente (--delete),
