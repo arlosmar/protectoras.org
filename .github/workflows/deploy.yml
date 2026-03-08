@@ -74,12 +74,33 @@ jobs:
                 port: 22                
                 script: |
                     cd ${{ env.DEPLOY_PATH }}
-                    echo "Ejecutando Composer y comandos de Laravel..."
+                    
+                    # 1. Limpieza preventiva
+                    rm -f public/hot
+                    
+                    # 2. Permisos (Asegura que Laravel pueda escribir sus propios caches)
+                    # Intentamos dar permisos al grupo (donde debería estar nginx)
+                    chmod -R 775 storage bootstrap/cache
+                    
+                    echo "--- Instalando dependencias de PHP ---"
                     composer install --no-dev --prefer-dist --optimize-autoloader
-                    php artisan cache:clear
+                    
+                    echo "--- Limpiando y regenerando Caches ---"
+                    # Es mejor limpiar antes de cachear de nuevo
+                    php artisan config:clear
+                    php artisan route:clear
+                    php artisan view:clear
+                    
+                    # Cacheamos para mejorar rendimiento en producción
                     php artisan config:cache
                     php artisan route:cache
                     php artisan view:cache
+                    
+                    echo "--- Enlaces de Storage ---"
+                    php artisan storage:link || true
+                    
+                    echo "--- Estado de la Aplicación ---"
+                    php artisan about
 
             - name: Despliegue completado
               run: echo "✅ ¡Despliegue incremental completado!"
