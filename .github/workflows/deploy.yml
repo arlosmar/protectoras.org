@@ -58,12 +58,12 @@ jobs:
                   rsync -avz --delete \
                       --exclude='.env' \
                       --exclude='.git' \
-                      --exclude='.gitignore' \                      
+                      --exclude='.gitignore' \
                       --exclude='vendor' \
                       --exclude='node_modules' \
                       --exclude='bootstrap/cache/*' \
-                      --exclude='resources/js' \                                                                  
-                      ./ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ vars.DEPLOY_PATH }}
+                      --exclude='resources/js' \
+                      ./ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ env.DEPLOY_PATH }}
 
             - name: Ejecutar acciones con ssh en el server
               uses: appleboy/ssh-action@v1.0.0
@@ -73,7 +73,7 @@ jobs:
                 key: ${{ secrets.SSH_PRIVATE_KEY }}
                 port: 22                
                 script:
-                    cd ${{ vars.DEPLOY_PATH }}
+                    cd ${{ env.DEPLOY_PATH }}
                     echo "Ejecutando Composer y comandos de Laravel..."
                     composer install --no-dev --prefer-dist --optimize-autoloader
                     php artisan cache:clear
