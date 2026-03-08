@@ -13,6 +13,17 @@ jobs:
             - name: Checkout del código
               uses: actions/checkout@v4
 
+            - name: Set Deploy Path
+              run: |
+                  if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+                    echo "DEPLOY_PATH=${{ vars.DEPLOY_PATH_PROD }}" >> $GITHUB_ENV
+                  elif [[ "${{ github.ref }}" == "refs/heads/demo" ]]; then
+                    echo "DEPLOY_PATH=${{ vars.DEPLOY_PATH_DEMO }}" >> $GITHUB_ENV
+                  else
+                    echo "❌ Error: Rama no autorizada para despliegue."
+                    exit 1
+                  fi
+
             # --- 1. Preparación y Compilación de Frontend (React) ---
 
             - name: Instalar Node.js
@@ -31,13 +42,7 @@ jobs:
                   VITE_PUSHER_PORT: ${{ secrets.VITE_PUSHER_PORT }}
                   VITE_PUSHER_SCHEME: ${{ secrets.VITE_PUSHER_SCHEME }}
                   VITE_APP_NAME: ${{ vars.VITE_APP_NAME }}
-                  DEPLOY_PATH_DEMO: ${{ vars.DEPLOY_PATH_DEMO }}
-                  DEPLOY_PATH_PROD: ${{ vars.DEPLOY_PATH_PROD }}
-
-                  if: github.ref == 'refs/heads/main'
-                    DEPLOY_PATH: ${{ vars.DEPLOY_PATH_PROD }}
-                  else if: github.ref == 'refs/heads/demo'
-                    DEPLOY_PATH: ${{ vars.DEPLOY_PATH_DEMO }}
+                  DEPLOY_PATH: ${{ env.DEPLOY_PATH }}
 
             # --- 2. Despliegue con Rsync (Sincronización + Limpieza) ---
             # Borra archivos remotos que no existan localmente (--delete),
