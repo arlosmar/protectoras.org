@@ -24,8 +24,7 @@ import { formatAnimals, datesDif, now } from "@/Utils/Format";
 import { useSwipeable } from 'react-swipeable';
 import Sticky from '@/Components/Sticky';
 
-export default function Animals({user,section,subsection,emails,social,baseUrl,imagesPaths,
-    page,forms,prices,guides,reloadAfterTime,itemsPerPage,shelter}){
+export default function Animals({user,section,subsection,page,baseUrl,reloadAfterTime,itemsPerPage,shelter,imagesPaths}){
 
     const [ alreadyLoaded, setAlreadyLoaded ] = useState([]);
 
@@ -215,18 +214,14 @@ export default function Animals({user,section,subsection,emails,social,baseUrl,i
                             subsection={subtab}
                             setSubsection={setSubtab}
                             t={t}
-                            email_adoptions={emails?.email_adoptions}
-                            social={social}                            
+                            shelter={shelter}
                             imagesPaths={imagesPaths}
                             animals={animals}
                             page={pageInitial}
                             setPage={setPageInitial}
                             loading={loading}
-                            options={options}
-                            forms={forms}
-                            guides={guides}
-                            baseUrl={baseUrl}
-                            prices={prices}
+                            options={options}                                                        
+                            baseUrl={baseUrl}                            
                             itemsPerPage={itemsPerPage}
                         />
                         </Suspense>
@@ -244,9 +239,7 @@ export default function Animals({user,section,subsection,emails,social,baseUrl,i
                                 setPage={setPageInitial}
                                 loading={loading}
                                 options={options}
-                                email_colaboration={emails?.email_colaboration}
-                                forms={forms}
-                                prices={prices}
+                                shelter={shelter}
                                 baseUrl={baseUrl}
                                 itemsPerPage={itemsPerPage}
                             />
@@ -277,14 +270,14 @@ export default function Animals({user,section,subsection,emails,social,baseUrl,i
                                         subsection={subtab}  
                                         setSubsection={setSubtab}                              
                                         t={t}
-                                        imagesPaths={imagesPaths}
-                                        email_info={emails?.email_info}
+                                        imagesPaths={imagesPaths}                                        
                                         animals={animals}                                    
                                         page={pageInitial}
                                         setPage={setPageInitial}
                                         loading={loading}
                                         options={options}
                                         baseUrl={baseUrl}
+                                        shelter={shelter}
                                         itemsPerPage={itemsPerPage}
                                     />
                                     </Suspense>

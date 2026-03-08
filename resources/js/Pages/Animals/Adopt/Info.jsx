@@ -1,6 +1,6 @@
 //import { useTranslation } from "react-i18next";
 
-export default function Info({t,email_adoptions,social,forms,guides,prices}){
+export default function Info({t,shelter}){
 
     //const { i18n } = useTranslation('global');
 
@@ -58,7 +58,7 @@ export default function Info({t,email_adoptions,social,forms,guides,prices}){
             </div>
             <div 
                 className='paragraph-top-separation'
-                dangerouslySetInnerHTML={{__html: t('animals.adopt.info.line5',{email_adoptions:email_adoptions})}}
+                dangerouslySetInnerHTML={{__html: t('animals.adopt.info.line5',{email_adoptions:shelter?.emails?.email_adoptions})}}
             >                
             </div>
             <div 
@@ -67,7 +67,7 @@ export default function Info({t,email_adoptions,social,forms,guides,prices}){
             >                
             </div>
             <div>
-                <a href={forms?.adoption} target='_new'>
+                <a href={shelter?.forms?.adoption} target='_new'>
                     {t('animals.adopt.info.form')}
                 </a>
             </div>
@@ -78,7 +78,7 @@ export default function Info({t,email_adoptions,social,forms,guides,prices}){
             </div>
             <div 
                 className='paragraph-top-separation'
-                dangerouslySetInnerHTML={{__html: t('animals.adopt.info.line8',{price_donative:prices?.price_adoption+'€'})}}
+                dangerouslySetInnerHTML={{__html: t('animals.adopt.info.line8',{price_donative:shelter?.prices?.price_adoption+'€'})}}
             >                
             </div>
             <div 
@@ -102,13 +102,13 @@ export default function Info({t,email_adoptions,social,forms,guides,prices}){
             >                
             </div>
             {
-                guides?.adoption[lang]?.names && guides?.adoption[lang]?.names.length > 0 &&
+                shelter?.guides?.adoption[lang]?.names && shelter?.guides?.adoption[lang]?.names.length > 0 &&
                 <div id='home-adopt-info-list'>
                     <ul>
                         {
-                            guides?.adoption[lang]?.names.map((item,index) => (
+                            shelter?.guides?.adoption[lang]?.names.map((item,index) => (
                                 <li>
-                                    <a href={guides?.adoption[lang]?.links[index]} target='_blank'>
+                                    <a href={shelter?.guides?.adoption[lang]?.links[index]} target='_blank'>
                                         {item}
                                     </a>
                                 </li>

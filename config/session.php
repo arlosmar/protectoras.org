@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Str;
 
+// para evitar el error de telegram
+$driver = env('SESSION_DRIVER', 'database');
+if(isDomain(['protectoras','protectoras.org','www.protectoras.org','demolanding.protectoras.org','demolanding'])){
+    $driver = 'file';
+}
+
 return [
 
     /*
@@ -18,7 +24,7 @@ return [
     |
     */
 
-    'driver' => env('SESSION_DRIVER', 'database'),
+    'driver' => $driver,
 
     /*
     |--------------------------------------------------------------------------

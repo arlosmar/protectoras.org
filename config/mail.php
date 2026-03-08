@@ -124,9 +124,9 @@ return [
         'address' => env('MAIL_FROM_ADDRESS_ADOPTIONS', ''),
         'name' => env('MAIL_FROM_NAME_ADOPTIONS', ''),
     ],
-    'colaboration' => [
-        'address' => env('MAIL_FROM_ADDRESS_COLABORATION', ''),
-        'name' => env('MAIL_FROM_NAME_COLABORATION', ''),
+    'collaboration' => [
+        'address' => env('MAIL_FROM_ADDRESS_COLLABORATION', ''),
+        'name' => env('MAIL_FROM_NAME_COLLABORATION', ''),
     ],
     'volunteering' => [
         'address' => env('MAIL_FROM_ADDRESS_VOLUNTEERING', ''),

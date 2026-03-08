@@ -1,0 +1,523 @@
+{
+    "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:" : "Si tienes problemas al pulsar el botón de \":actionText\", pulsa el siguiente enlace o cópialo y pégalo\nen el navegador:",
+    "trans": {      
+        "Back" : "Volver",
+        "Save" : "Guardar",
+        "Saved-Male" : "Guardado",
+        "Saved-Error" : "Error al guardar",
+        "Sent-Male" : "Enviado",
+        "Search" : "Buscar",
+        "Reset" : "Borrar",
+        "Policy" : "Política de privacidad",
+        "Terms" : "Términos de uso",
+        "Close" : "Cerrar",
+        "Yes"   :   "Sí",
+        "No"    :   "No",
+        "Person"    :   "Persona",
+        "Create"    :   "Crear",
+        "Edit"  :   "Editar",
+        "Deleted"   :   "Borrado correctamente",
+        "removeFilters" :  "Quitar filtros",
+        "Images"    :   "Imágenes",
+        "newImage"  :   "Nueva imagen",
+        "currentImage"  :   "Imagen actual",
+        "Remove"    :   "Quitar",
+        "Videos"    :   "Vídeos",
+        "Filter"    :   "Filtrar",
+        "Delete"    :   "Borrar",
+        "DeleteConfirm" :   "¿Seguro que quieres borrar?",
+        "Share" :   "Compartir",
+        "Copy"  :   "Copiar",
+        "Copied"    :   "Copiado",
+        "Export"    :   "Exportar",
+        "Link"  :   "Enlace",
+        "Form"  :   "Formulario",
+        "Field-Empty" :   "Campo vacío",
+        "All-Male-Singular"  :   "Todo",
+        "All-Plural"  :   "Tod@s",
+        "Update"    :   "Actualizar",
+        "noElementsSelected" : "No has seleccionado ningún elemento" 
+    },
+    "pwa"   :   {
+        "text" : "¡Instala la app!",
+        "button" : "Instalar APP",
+        "apple" : {
+            "title" : "Instala la app",
+            "subtitle" : "SPAX",
+            "description" : "Añade nuestra app para mayor comodidad.",
+            "share" : "Pulsa el botón 'Compartir'",
+            "add" : "Pulsa 'Agregar a inicio'"
+        }
+    },
+    "notifications"   :   {
+        "text" : "Activa las notificaciones",
+        "button" : "Activar notificaciones"
+    },
+    "Cookies" : {
+        "button-accept" : "Aceptar",
+        "message" : "Esta web usa las cookies mínimas necesarias para funcionar. No se recopila información de ningún tipo. Puedes consultar la política de cookies desde ",
+        "here"  :   "aquí"
+    },
+    "Title" : {
+        "Landing": "",
+        "Home" : "Inicio",
+        "Animals" : "Animales",
+        "News" : "Noticias",
+        "Contact" : "Contacto",
+        "User" : "Usuario",
+        "Login" : "Login"
+    },
+    "MenuBar": {
+        "Home" : "Inicio",
+        "Animals" : "Animales",
+        "News" : "Noticias",
+        "Contact" : "Contacto",
+        "User"  :   "Usuario",
+        "Menu"  :   "Menú",
+        "Language" : "Idioma",
+        "Contact" : "Contacto",
+        "Logout" : "Salir",
+        "Whatsapp" : "Whatsapp"
+    },
+    "under-development" : "En desarrollo",
+    "news"    :   {
+        "title" : "Noticias",
+        "empty" :   "No hay noticias",
+        "load-more" :   "Cargar más",
+        "record"    :   {
+            "user"  :   "Usuari@",
+            "user_name"  :   "Usuari@",
+            "name"  :   "Usuari@",
+            "date"  :   "Fecha",
+            "hidden"  :   "Oculto",
+            "title"  :   "Título",
+            "description"   :   "Descripción",
+            "image" :   "Imagen"
+        }
+    },
+    "animals":   {
+        "title" :   "Animales",
+        "order" : {
+            "name" : "Ordenado por nombre",
+            "date" : "Ordenador por fecha más reciente"
+        },
+        "adopt" :   {
+            "icon"  :   "Adoptar",
+            "title" :   "Adoptar",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Información",
+                "title-preadoptions"    :   "Pre-Adopción",
+                "line1" :   "Si estás interesad@ en adoptar un perr@ o gat@ de nuestra asociación descarga el siguiente formulario:",
+                "form"  :   "Formulario",
+                "line2" :   "Tienes que rellenarlo y mandarlo al siguiente email:",
+                "title-protocol" :  "¿QUIERES ADOPTAR A UNO DE NUESTROS PELUDITOS?",
+                "line3" :   "Antes de realizar cualquier trámite, debes ser consciente de si realmente vas a poder cuidar del animal y ofrecerle una vida digna durante todos los años de su vida. Un animal necesita cuidados básicos como alimentación, paseos, socializarse, cuidados veterinarios, higiene, ejercicio…",
+                "line4" :   "Es por ello que desde la SPAX apostamos por las adopciones responsables. Los animales adoptados normalmente necesitan un período de adaptación aproximadamente de entre 1 a 3 meses y siempre buscamos encontrar un hogar en el que les brinden una vida digna, pues ya han sufrido el abandono una vez.",
+                "line5" :   "Para adoptar, primero debes acceder al apartado en donde aparecen todos nuestros animales para poder elegir quien será el afortunado para compartir contigo el resto de su vida. Una vez hayas decidido al afortunado, puedes contactar con nosotros mandándonos un correo electrónico a <a href='mailto:{{email_adoptions}}' target='_blank'>{{email_adoptions}}</a> indicándonos el nombre del animal. ¡HAZ ESTE PASO SOLO SI ESTÁS COMPLETAMENTE DECIDIDO A CUIDAR DE ÉL PARA SIEMPRE Y SER COMPRENSIVO DURANTE EL PERÍODO DE ADAPTACIÓN A TU HOGAR! Si no, no malgastemos nuestro tiempo.",
+                "line6" :   "Una vez recibido el correo, nos pondremos en contacto contigo para mandarte un cuestionario que debes cumplimentar para poder conocerte mejor y así asesorarte mejor según las características del animal. POR FAVOR, MANTEN TU MENTE ABIERTA Y DÉJATE ASESORAR POR NOSOTROS. También recibirás las indicaciones de nuestro protocolo de adopción e información importante para mejorar su adaptación o consejos en el caso de perros con necesidades especiales. También puedes acceder a nuestro cuestionario entrado en el siguiente enlace:",
+                "line7" :   "Todos los animales son entregados con microchip, vacuna antirrábica y Versican DHPPi y las respectivas desparasitaciones internas y externas, así como esterilizados. En el momento de la adopción, se te hará entrega del pasaporte europeo, su ficha veterinaria y se te informará del estado de salud del animal antes de su adopción.",
+                "line8" :   "Spax informa a los adoptantes que deberán hacer un donativo económico de {{price_donative}} a la asociación en concepto de ayuda para cubrir los gastos veterinarios. LAS ADOPCIONES SON GRATUITAS.",
+                "line9" :   "En el momento de la adopción, firmarás un contrato que garantizará que el animal va a estar bien atendido y con los cuidados necesarios para una tenencia responsable. Para ello, deberás facilitarnos el DNI original para poder hacer copia.",
+                "line10":   "Es IMPORTANTE recalcar que el donativo en el momento de la adopción para ayudarnos a hacer frente a los costes veterinarios ocasionados por el animal ya que este se entrega con todos los requisitos que exige la nueva Ley de Protección Animal, así la protectora puede seguir ayudando a otros animales. Todo el dinero recaudado se destina íntegramente a cubrir los gastos veterinarios y de alimentación de los animales custodiados.",
+                "line11"    :   "Casi se nos olvida, para poder llevarte a tu animal, deberás traer su arnés y una correa. Si el arnés es de seguridad, mucho mejor porque el nuevo miembro de tu familia aun no te conoce y no sabe que vas a cambiar su vida.",                
+                "line12"    :   "A continuación, te dejamos unas guías con consejos importantes a la hora de adoptar un peludito."                
+            },
+            "animals"  :   {
+                "icon"  :   "Adoptar",
+                "title" :   "Adoptar"
+            },
+            "adopted"  :   {
+                "icon"  :   "Finales felices",
+                "title" :   "Finales felices"
+            }
+        },
+        "sponsor" :   {
+            "icon"  :   "Apadrinar",
+            "title" :   "Apadrinar",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Información",
+                "title-details"    :   "Detalles",
+                "line1" :   "Esta sección está dedicada tanto al apadrinamiento/amadrinamiento de nuestr@s animales albergados como a los particulares o empresas que por su colaboración o donación han apadrinado/amadrinado algunas necesidades del refugio y, con ello, que la vida que hay dentro de él pueda mejorar o, por lo menos, mantenerse.",
+                "line2" :   "Respecto a los animales aquí expuestos, algunos se encuentra en el apartado de adopción, otros son recién llegados y otros, sin embargo, por sus circunstancias, edad, patología, enfermedades crónicas, secuelas físicas o traumas que arrastran, carácter, inadaptación o características peculiares, son igualmente adoptables pero tal vez (y desgraciadamente) con menos posibilidades que el resto.",
+                "line3" :   "Nunca entenderemos por qué pero es así. Hay animales que llevan toda su vida en el refugio y pensamos que morirán de viejos en él. A los animales mayores muy poca gente les quiere.",
+                "line4" :   "Por ello y para que no nos olvidemos de su existencia, de que están vivos, de que necesitan el mismo cariño y atención que el resto, te ofrecemos la posibilidad de que los apadrines si no puedes adoptarlos.",
+                "line5" :   "Si deseas información sobre cualquiera de ellos no tienes más que pedirla. Te la enviaremos encantad@s porque normalmente nadie se acuerda ni se fija en ellos.",
+                "line6" :   "En cuanto a los particulares y empresas que han colaborado y colaboran desde hace años con algunas de las necesidades de nuestro refugio, a los que nos puedan ayudar a partir de ahora o en su proyecto se encuentre tal colaboración en forma de apadrinamiento/amadrinamiento de Apu, nuestro agradecimiento será permanente.",
+                "line7" :   "Tanto a los padrinos/madrinas de nuestros animales como de las necesidades del refugio sólo podemos decirles algo que sentimos y sentiremos siempre muy profundamente: <b>GRACIAS</b>",
+                "title-steps"    :   "Pasos",                
+                "line8"    :   "La cuota mínima mensual es de {{price_sponsorship}}€.",
+                "line9"    :   "Pueden colaborar tanto personas físicas como empresas.",
+                "form-sponsor-line1"    :   "Si quieres apadrinar debes rellenar el siguiente formulario:",
+                "form-sponsor-line2"    :   "Formulario",
+                "form-sponsor-line3"    :   "Acto seguido a rellenar el formulario, debes descargar, rellenar y enviar el siguiente mandato:",
+                "form-sponsor-line4"    :   "SEPA",
+                "form-sponsor-line5"    :   "A la dirección:"
+            },
+            "animals"  :   {
+                "icon"  :   "Apadrinar",
+                "title" :   "Apadrinar"
+            },
+            "sponsored"  :   {
+                "icon"  :   "Apadrinados",
+                "title" :   "Apadrinados"
+            },
+            "apu"  :   {
+                "icon"  :   "APU",
+                "title" :   "Padrinos/madrinas APU"
+            }
+        },
+        "sanctuary" :   {
+            "icon"  :   "Santuario",
+            "title" :   "Santuario de animales",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Información",
+                "title-target" : "Objetivo general",
+                "line1" : "Convertir parte del refugio SPAX en un espacio de santuario permanente para animales que, por su historia, edad, enfermedad o carácter, no pueden ser adoptados, garantizando su bienestar físico, emocional y social durante el resto de su vida.",
+                "title-destinataries" : "Animales destinatarios",
+                "line2" : "<ul><li>Perros y gatos geriátricos.</li><li>Animales con discapacidad física o neurológica.</li><li>Perros y gatos con traumas severos o agresividad crónica no rehabilitable.</li><li>Animales con enfermedades crónicas que requieren cuidados especiales.</li><li>Casos de abandono extremo o maltrato severo con secuelas permanentes.</li></ul>",
+                "title-characteristics" : "Características del santuario",
+                "line3" : "<ul><li>Zona delimitada dentro de SPAX con acceso controlado.</li><li>Ambientes enriquecidos: zonas verdes, sombras, camas adaptadas, estímulos sensoriales.</li><li>Acceso a veterinaria continuada y planes individuales de cuidados.</li><li>Relación estable con cuidadores y voluntariado especializado.</li><li>Baja rotación, rutina estable, cero presión de adopción.</li></ul>",
+                "title-focus" : "Enfoque ético",
+                "line4" : "<ul><li>Respeto absoluto a la individualidad y límites del animal.</li><li>Prioridad al confort, seguridad y tranquilidad del entorno.</li><li>Cuidado hasta el final de la vida con acompañamiento digno.",
+                "title-operation" : "Funcionamiento",
+                "line5" : "<ul><li>Valoración de entrada al programa por el equipo técnico SPAX.</li><li>Elaboración de un plan individualizado de cuidados.</li><li>Registro como “animal en santuario” y seguimiento mensual.</li><li>Coordinación con voluntariado estable y formación específica.</li><li>Documentación de la historia del animal tras su fallecimiento.</li></ul>",
+                "title-agents" : "Agentes implicados",
+                "line6" : "<ul><li>Equipo técnico de SPAX.</li><li>Voluntarios.</li><li>Entidades colaboradoras: clínicas, donantes, padrinos/as, asociaciones sociales.</li><li>Posible colaboración con escuelas de educación especial y terapias asistidas.</li></ul>",
+                "title-diffusion" : "Difusión y sensibilización",
+                "line7" : "<ul><li>Historias de vida contadas en redes.</li><li>Programa de apadrinamiento ético.</li><li>Visitas pedagógicas organizadas bajo supervisión.</li></ul>",
+                "title-funding" : "Financiación",
+                "line8" : "<ul><li>Campañas de donación continua.</li><li>Subvenciones públicas.</li><li>Acuerdos con clínicas para atención veterinaria solidaria.</li><li>Venta de merchandising con historias reales del santuario.</li></ul>",
+                "title-relationship" : "Relación con el resto del refugio",
+                "line9" : "<ul><li>Programa complementario: no sustituye la adopción, la refuerza con ética.</li><li>Evita la eutanasia de animales no adoptables por criterios humanos.</li><li>Espacio de aprendizaje sobre cuidados compasivos y final de vida.</li></ul>"
+            },
+            "animals"   :   {
+                "icon"  :   "Santuario",
+                "title" :   "Santuario"
+            }
+        },
+        "heaven" :   {
+            "icon"  :   "Cielo",
+            "title" :   "Durmiendo con las estrellas",
+            "info"  :   {
+                "icon"  :   "Info",
+                "title" :   "Información",
+                "line1" :   "Una mención especial en este apartado a todos aquellos animales que se nos fueron, que nos atravesaron el corazón y que nunca podremos olvidar. Dedicado a todos ellos.",
+                "line2" :   "Para aquell@s compañer@s de viaje que se fueron y dejaron un gran vacío en nuestro corazón y en el de nuestra familia. También para aquell@s que con especial cariño murieron sin haberla encontrado o en trágicas circunstancias. Va dedicado a todos los animales del mundo y de todas las especies.",
+                "line3" :   "Si quieres que tu querida mascota duerma con las estrellas envíanos una foto y una breve frase o dedicatoria y la pondremos para que brille junto al resto de pequeñas estrellas que anidan allá en lo alto del hermoso cielo.",
+                "line4" :   "Para añadir una mascota o mas información:",
+                "line5" :   "En este espacio hemos querido rendirle tributo a aquellas mascotas que ya no están con nosotr@s.",
+                "line6" :   "No olvidaremos nunca a aquel/aquella compañer@ de juego, sus típicos ladridos, sus ronroneos, su relinchar o simplemente su mirada.",
+                "line7" :   "Dedicado además a todas aquellas personas que, a gritos o en silencio, lloraron por la partida de sus mascotas...",
+                "poem-title"    :   "No llores por mi...",
+                "poem" :   "Me has dado un hogar donde cobijarme,<br/>me has proporcionado alimento y sobre todo,<br/>me has dado tu amor y tu compañía.<br/>Lo último que me gustaría es verte sufrir por mi.<br/><br/>Ahora que no estoy contigo,<br/>no quiero verte triste.<br/>Deseo que cuando pienses en mi sonrías,<br/>pues así sabré que mi recuerdo te hace feliz.<br/><br/>Quiero que recuerdes los buenos momentos que compartíamos,<br/>nuestras muestras de cariño, nuestros juegos...<br/>y si alguna vez te defraudé, o me porte mal, perdóname...<br/><br/>Por favor, no tires mis juguetes, ni mi cama, ni mis cosas,<br/>porque en este mundo hay muchos otros colegas que viven en soledad, tristes y sin cariño...<br/>muchos que darían su vida por compartir la tuya.<br/><br/>No, no lo digas, no digas que no quieres tener mas animales...<br/>eso me hace pensar que el tiempo que estuve contigo no te hice feliz.<br/>Por favor, que mi muerte no sea en vano,<br/>que sirva para que otro tenga la suerte de poder vivir<br/>y conocer lo maravillosa que es tu amistad,<br/>que conozca la verdadera \"vida de perro\",<br/>que descubra el cariño.<br/><br/>No estés triste... <br/>Yo no lo estoy, <br/>porque se que guardas ese rinconcito especial para mi en tu corazón."
+            },
+            "animals"   :   {
+                "icon"  :   "Animales",
+                "title" :   "Cementerio Virtual"
+            }
+        },
+        "record"    :   {
+            "Parents"  :   "Padres/Madres",
+            "Sponsors"  :   "Padrinos/Madrinas",
+            "Code"  :   "Código",
+            "Name"  :   "Nombre",
+            "Status"    :   {
+                "title" :   "Estado",
+                "adopt" :   "Adoptar",
+                "adopted"   :   "Adoptado",
+                "sanctuary"   :   "Santuario",
+                "heaven"    :   "Cielo",
+                "hidden" :   "Oculto"
+            },
+            "Sponsored"  :   {
+                "title" :   "Apadrinado",
+                "not-sponsored" :   "No",
+                "sponsored" :   "Sí",
+                "potentially-sponsor" :   "Potencial apadrinamiento"
+            },
+            "Type"  :   {
+                "title" :   "Tipo",
+                "dog" :   "Perr@",
+                "cat" :   "Gat@"
+            },
+            "Age"  :   {
+                "title" :   "Edad",                
+                "puppy" :   "Cachorr@",
+                "adult" :   "Adult@"
+            },
+            "Gender"  :   {
+                "title" :   "Género",                
+                "male" :   "Macho",
+                "female" :   "Hembra"
+            },
+            "Size"  :   {
+                "title" :   "Tamaño",
+                "xs" :   "Muy pequeñ@",
+                "s" :   "Pequeñ@",
+                "m" :   "Median@",
+                "l" :   "Grande",
+                "xl" :   "Muy grande"
+            },
+            "Breed"  :   {
+                "title" :   "Raza"
+            },
+            "Weight"  :   "Peso",
+            "Location"  :   "Localización",
+            "Birthdate" :   "Fecha nacimiento",
+            "Dead"  :   "Fallecido",
+            "Hidden"    :   "Oculto",
+            "Deathdate" :   "Fecha fallecimiento",
+            "Description"   :   "Descripción",
+            "Image" :   "Imagen",
+            "Image2"    :   "Imagen2",
+            "Image-Sponsored"   :   "Imagen apadrinado/adoptado",
+            "Person"    :   "Responsables",
+            "Video" :   "Vídeo",
+            "Video2" :   "Vídeo2",
+            "Updated"   :   "Actualizado",
+            "Internal-Info" :   "Información interna",
+            "vaccines"  :   "Vacunas",
+            "treatment"  :   "Tratamiento",
+            "castrated"  :   "Castrad@",
+            "date_entry"  :   "Fecha entrada",
+            "date_exit"  :   "Fecha salida",
+            "date_entry2"  :   "Fecha entrada2",
+            "date_exit2"  :   "Fecha salida2",
+            "internal"  :   "Notas internas"
+        }
+    },
+    "people"    :   {
+        "record"    :   {
+            "name"  :   "Nombre",
+            "surname"  :   "Apellidos",
+            "dni"  :   "DNI/NIE/CIF",
+            "birthdate"  :   "Fecha nacimiento",
+            "email" :   "Email",
+            "phone"  :   "Teléfono",
+            "address" :   "Dirección",
+            "name2"  :   "Nombre2",
+            "surname2"  :   "Apellidos2",
+            "dni2"  :   "DNI2/NIE2/CIF2",
+            "birthdate2"  :   "Fecha nacimiento2",
+            "email2" :   "Email2",
+            "phone2"  :   "Teléfono2",
+            "address2" :   "Dirección2",
+            "others"  :   "Otr@s",
+            "other_people"  :   "Otr@s",
+            "description"   :   "Descripción",
+            "animals"   :   "Animales",
+            "users" :   "Usuarios"
+        }
+    },
+    "user": {
+        "title" : "Usuario",
+        "news": {
+            "icon"  :   "Noticias",
+            "title"  :   "Noticias",
+            "empty" :   "No hay noticias"
+        },
+        "profile": {
+            "icon"  :   "Perfil",
+            "title"  :   "Perfil",
+            "information": {
+                "icon"  :   "info",                
+                "title" : "Actualizar información",
+                "name" : "Nombre",
+                "email" : "Email",
+                "email-not-verified" : "Tu dirección de email no está verificada.",
+                "email-verify" : "Enviar email verificación",
+                "email-sent" : "Un nuevo email de verificación ha sido enviado a tu dirección de email.",
+                "personal-data" : "Datos personales",
+                "update-personal-data" : "Si quieres actualizar los datos personales ponte en contacto con la protectora, por favor:"
+            },
+            "animals": {
+                "icon"  :   "Animales",
+                "title" :   "Animales"                
+            },
+            "settings": {
+                "icon"  :   "Config",
+                "title" :   "Configuración",
+                "description" : "Aquí puedes cambiar diferentes ajustes de tu cuenta",
+                "dark-mode" : "Modo oscuro",
+                "biometric" :   "Login con biometría",
+                "notifications" :   {
+                    "switch"    :   "Notificaciones",
+                    "enabled"   :   "Notificaciones habilitadas",
+                    "setup"  :   "Debes habilitar las notificaciones de tu dispositivo para poder activar este ajuste",
+                    "disabled"    :   "Las notificaciones de tu dispositivo están desactivadas para esta app. Debes habilitarlas para poder cambiar este ajuste.",
+                    "push" : "Push",
+                    "email" : "Email",
+                    "method" : "Métodos",
+                    "type" : "Categorías",
+                    "appDisabled" : "Debes dar permiso a la aplicación para poder recibir notifications"
+                },
+                "authentication" : {
+                    "notAllowed" : "Este dispositivo/navegador no permite usar autenticación con biometría"
+                }
+            },
+            "password": {
+                "icon"  :   "Contraseña",
+                "title" :   "Cambiar contraseña",                
+                "password" : "Contraseña",
+                "password-current" : "Contraseña actual",
+                "password-new" : "Contraseña nueva",
+                "password-confirm" : "Confirmar contraseña"
+            },
+            "account": {
+                "icon" : "Cuenta",
+                "title" : "Borrar cuenta",
+                "description" : "Una vez tu cuenta ha sido borrada, todos los datos y recursos son borrados permanentemente. Antes de borrar tu cuenta guarda los datos que necesites, por favor.",
+                "confirm" : "Borrar cuenta",
+                "password-confirm" : "Por favor, introduce tu contraseña para borrar la cuenta permanentemente.",
+                "password" : "Contraseña",
+                "cancel" : "Cancelar",
+                "delete" : "Borrar",
+                "deleted" : "Cuenta borrada"
+            }         
+        },
+        "animals"   :   {
+            "icon"  :   "Animales",
+            "title" :   "Animales",
+            "create"    :   "Crear",
+            "edit"  :   "Editar",
+            "borrar"  :   "Borrar",
+            "empty" :   "No hay animales",
+            "images-sponsored" : "Imagen apadrinado/adoptado",
+            "adopt" :   {
+                "icon"  :   "Adoptar",
+                "title" :   "Adoptar"
+            },
+            "adopted"   : {
+                "icon"  :   "Adoptados",
+                "title" :   "Adoptados"
+            },
+            "sanctuary"   : {
+                "icon"  :   "Santuario",
+                "title" :   "Santuario"
+            },
+            "heaven"    :   {
+                "icon"  :   "Cielo",
+                "title" :   "Cielo"
+            },
+            "hidden"    :   {
+                "icon"  :   "Ocultos",
+                "title" :   "Ocultos"
+            }
+        },
+        "people"  :   {
+            "icon"  :   "Personas",
+            "title"  :   "Personas",
+            "create"    :   "Crear",
+            "edit"  :   "Editar",
+            "borrar"  :   "Borrar",
+            "empty" :   "No hay personas"
+        },
+        "notifications": {
+            "icon"  :   "Notificaciones",
+            "title"  :   "Notificaciones",
+            "form" : {
+                "title" : "Título",            
+                "message" : "Mensaje",
+                "users" : "Usuarios",
+                "peopleAll" : "Todo el mundo",
+                "usersAll" : "Usuarios registrados",
+                "type" : "Tipo"
+            },
+            "success" : "Notificación enviada",
+            "error" : "Error enviando la notificación",
+            "button" : "Enviar",
+            "empty" : "No se puede enviar un mensaje vacío"            
+        },
+        "email": {
+            "title" : "Verificar email",
+            "description" : "Te hemos enviado un email para verificar tu cuenta. Si no lo has recibido prueba a reenviártelo, por favor.",
+            "verified" : "Email verificado",
+            "verification-link-sent" : "Email enviado",
+            "resend-link" : "Reenviar"
+        }
+    },
+    "login": {
+        "title" : "Identificarse",
+        "description"   :   "Esta zona es para el personal del refugio, no para usuarios.",
+        "title-forgot" : "Recordar contraseña",
+        "login" : "Acceder",
+        "login2" : "Login",
+        "name" : "Nombre",
+        "email" : "Email",
+        "password" : "Contraseña",
+        "password-confirm": "Confirmar contraseña",
+        "remember" : "Recuérdame",
+        "forgot" : "Recordar contraseña",
+        "forgot-sentence" : "Indica tu email para enviarte un enlace para poder resetear la contraseña",
+        "forgot-send" : "Enviar",
+        "reset" : "Resetear",
+        "register" : "Registrarse",
+        "google" : "Google",
+        "apple" : "Apple"
+    },
+    "landing":{
+        "shelters":{
+            "search" : "Buscar",
+            "location" : "Localización",
+            "reset" : "Limpiar filtros",
+            "no_results" : "No se encontraron resultados",
+            "paragraph1": "Aquí está el listado de protectoras/asociaciones adheridas al proyecto. Puedes filtrar por nombre o localización.",            
+            "paragraph2": "Si quieres saber de qué va el proyecto tienes más información <a href='/info'>aquí</a>."            
+        },
+        "info":{
+            "paragraph1": "Este proyecto se ha realizado de manera altruista para ayudar a las diferentes protectoras y asociaciones de animales a tener un espacio web donde poder gestionar las adopciones, apadrinamientos, etc. y dar visibilidad a los animales para que lleguen a más personas.",            
+            "paragraph2": "Muchas de ellas no tienen recursos para poder desarrollar una web o plataforma de gestión. De esta manera se les ofrece tener su propia web autogestionada y sin coste alguno.",
+            "paragraph3": "Tanto los servidores como el dominio corren a mi cargo. Sólo se tiene que pagar un dominio propio para aquellas asociaciones que prefieran tener el suyo propio o ya lo tuvieran de antes. Para las que no se ofrece un subdominio gratuito del estilo de valencia.protectoras.org.",
+            "paragraph4": "No se cobra absolutamente nada por el uso de esta plataforma ni se pretende recaudar dinero. Las colaboraciones se hacen en cada una de las protectoras o asocaciones con la información que se muestra en su espacio web.",
+            "paragraph5": "Lo único por lo que se podría pedir colaboración a futuro es si el proyecto creciese tanto (ojalá llegue ese día) que el coste de los servidores fuera elevado. En tal caso como mucho se pediría colaboración para pagar los mismos, aportanto en todo momento justificante del dinero recibido y del coste mensual de mantenerlos. Ni un solo euro se usaría fuera de ese contexto",
+            "paragraph6": "Este proyecto no pretende ser un Kiwoko donde se engloban todas las protectoras para tener las fichas de los animales y que el usuario filtre por diferentes parámetros. Aquí cada protectora/asociación tiene su propia web. Simplemente se ofrece el desarrollo conjunto para que no tengan que gestionar su propia web con el gasto de tiempo y recursos que ello conlleva. Y cada una tiene su base de datos independiente.",
+            "paragraph7": "Si se quieren aportar ideas o mejoras de la plataforma se puede hacer desde la sección <a href='/contact'>contacto</a>.",
+            "paragraph8": "También puedes colaborar y ver el código del proyecto en <a  href='https://github.com/arlosmar/protectoras.org' target='_blank'>GitHub</a>"
+        },
+        "social":{
+            "paragraph1": "De momento no hay redes sociales para promocionar las protectoras. Más adelante se estudiará si es viable en tiempo y forma.",
+            "paragraph2": "No obstante cada protectora/asociación tiene sus propias redes sociales."
+        },
+        "partners":{
+            "paragraph1": "Aquí se publicitarán los diferentes patrocinadores que colaboren con las protectoras/asociaciones de manera global. No se incluyen los patrocinadores de cada una en concreto porque eso ya aparece en su espacio web.",
+            "paragraph2": "Estos patrocinadores no van a aportar dinero al proyecto ya que es totalmente gratuito. La aportación será directamente a las protectoras/asociaciones o en forma de publicidad para fomentar las adopciones. Ni un solo euro de este dinero se usará para beneficio propio."
+        },
+        "contact": {                 
+            "form" : {
+                "title" : "Contactar",
+                "name" : "Nombre",
+                "email" : "Email",
+                "message" : "Mensaje",
+                "send" : "Enviar"
+            },     
+            "title1"  :   "Información",
+            "phone" : "Teléfono",
+            "email" : "Email",
+            "whatsapp": "Whatsapp"                
+        },        
+        "terms" : {
+            "icon": "Términos",
+            "title" :   "Términos de uso",
+            "content" : ""
+        },
+        "policy" : {
+            "icon": "Privacidad",
+            "title" :   "Política de privacidad",
+            "content" : ""
+        },
+        "cookies" : {
+            "icon": "Cookies",
+            "title" :   "Política de cookies",
+            "content" : "Le informamos que este sitio web instala cookies propias y de terceros al navegar sus páginas con el fin de facilitar su navegación y obtener datos estadísticos. Si continúa navegando consideramos que acepta su uso e instalación.<br/><br/><h1 class='subtitle-info-pages'>Definición y función de las cookies</h1><br/><b>¿Qué son las cookies?</b><br/>Una cookie es un fichero de texto no ejecutable que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario. Las cookies también pueden ser utilizadas para registrar información anónima acerca de cómo un visitante utiliza un sitio. Por ejemplo, desde qué página Web ha accedido, o si ha utilizado un banner publicitario para llegar.<br/><br/><b>¿Por qué este sitio utiliza cookies?</b><br/>utiliza cookies estrictamente necesarias y esenciales para que usted utilice nuestro sitio Web y le permita moverse libremente, utilizar áreas privadas, opciones personalizadas, etc. Además, utiliza cookies que recogen datos relativos al análisis de uso de la Web. Éstas se utilizan para ayudar a mejorar el servicio al visitante, midiendo el uso y el rendimiento de la página, para optimizarla y personalizarla.<br/><br/>¿Qué tipos de cookies utilizan esta página web?<br/><br/>Según su finalidad:<ul class='list-info-pages'><li><b>Cookies técnicas:</b><br/>Las cookies técnicas son aquellas imprescindibles y estrictamente necesarias para el correcto funcionamiento de un portal Web y la utilización de las diferentes opciones y servicios que ofrece.<br/><br/>Por ejemplo, las que sirven para el mantenimiento de la sesión, la gestión del tiempo de respuesta, rendimiento o validación de opciones, utilizar elementos de seguridad, compartir contenido con redes sociales, etc.</li><br/><li><b>Cookies de personalización:</b><br/>Estas cookies permiten al usuario especificar o personalizar algunas características de las opciones generales de la página Web.<br/><br/>Por ejemplo, definir el idioma, configuración regional o tipo de navegador.</li><br/><li><b>Cookies de análisis (Google Analytics):</b><br/>Las cookies analíticas son las utilizadas por nuestro portal Web, para elaborar perfiles de navegación y poder conocer las preferencias de los usuarios del mismo con el fin de mejorar la oferta de productos y servicios.<br/><br/>Por ejemplo, mediante una cookie analítica se controlarían las áreas geográficas de mayor interés de un usuario, cuál es el producto de más aceptación, etc.</li><br/><li><b>Cookies publicitarias / de publicidad comportamental (Google Adsense):</b><br/>Las cookies publicitarias permiten la gestión de los espacios publicitarios en base a criterios concretos.<br/><br/>Por ejemplo la frecuencia de acceso, el contenido editado, etc.<br/><br/>Las cookies de publicidad comportamental permiten a través de la gestión de la publicidad almacenar información del comportamiento a través de la observación de hábitos, estudiando los accesos y formando un perfil de preferencias del usuario, para ofrecerle publicidad relacionada con los intereses de su perfil.</li></ul><br/>Consulte en este enlace donde puede consultar la política de privacidad de esto servicios de Google.<br/><br/>Según el plazo de tiempo que permanecen activadas:<ul class='list-info-pages'><li><b>Cookies de sesión:</b> Las cookies de sesión son aquellas que duran el tiempo que el usuario está navegando por la página Web y se borran al término.</li><li><b>Cookies persistentes:</b> Estas cookies quedan almacenadas en el terminal del usuario, por un tiempo más largo, facilitando así el control de las preferencias elegidas sin tener que repetir ciertos parámetros cada vez que se visite el sitio Web.</li></ul><br/><h1 class='subtitle-info-pages'>Revocación y eliminación de cookies</h1><br/>Puedes permitir, bloquear o eliminar las cookies instaladas en tu ordenador mediante la configuración de las opciones del navegador instalado en tu ordenador.<ul class='list-info-pages'><li>Para más información sobre el navegador Firefox pulse <a href='https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-' target='_blank'>aquí</a>.</li><li>Para más información sobre el navegador Chrome pulse <a href='https://support.google.com/chrome/answer/95647?hl=es' target='_blank'>aquí</a>.</li><li>Para más información sobre el navegador Explorer pulse <a href='https://support.microsoft.com/en-gb/windows/manage-cookies-in-microsoft-edge-view-allow-block-delete-and-use-168dab11-0753-043d-7c16-ede5947fc64d#ie=ie-11' target='_blank'>aquí</a>.</li><li>Para más información sobre el navegador Safari desde <a href='https://support.apple.com/es-es/105082' target='_blank'>aquí</a>.</li><li>Para más información sobre el navegador Opera desde <a href='https://help.opera.com/en/latest/web-preferences/#cookies' target='_blank'>aquí</a>.</li>"
+        }  
+    },
+    "share" :   {
+        "title" :   "Compartir",
+        "title-native"  :   "SPAX - protectoraxativa",
+        "title-email"  :   "SPAX - protectoraxativa",
+        "text"  :   "Mira este animalito"
+    }
+}

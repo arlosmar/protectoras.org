@@ -11,7 +11,7 @@ export default function Partners({t,shelter}){
         <>
         {/*
         <h1 className='title-home'>
-            {t('introduction.'+shelter?.id+'.partners.title')}
+            {t('introduction.partners.title')}
         </h1>
         */}
         {
@@ -19,7 +19,7 @@ export default function Partners({t,shelter}){
             <> 
             {/*
             <h1 className='title-subsection'>
-                {t('introduction.'+shelter?.id+'.partners.companies.title')}
+                {t('introduction.partners.companies.title')}
             </h1>
             */}
             {
@@ -40,14 +40,14 @@ export default function Partners({t,shelter}){
                                                 <img
                                                     className='partners-image'
                                                     alt={companies.logos[index]}
-                                                    src={shelter?.files?.bucket+'/images/partners/partners/'+companies.logos[index]}
+                                                    src={companies.logos[index]}
                                                 />
                                             </a>
                                         :
                                             <img
                                                 className='partners-image'
                                                 alt={companies.logos[index]}
-                                                src={shelter?.files?.bucket+'/images/partners/partners/'+companies.logos[index]}
+                                                src={companies.logos[index]}
                                             />
                                     }
                                 </Grid>
@@ -64,14 +64,14 @@ export default function Partners({t,shelter}){
                                                     <img
                                                         className='partners-image'
                                                         alt={companies.logos[index+1]}
-                                                        src={shelter?.files?.bucket+'/images/partners/partners/'+companies.logos[index+1]}
+                                                        src={companies.logos[index+1]}
                                                     />
                                                 </a>
                                             :
                                                 <img
                                                     className='partners-image'
                                                     alt={companies.logos[index+1]}
-                                                    src={shelter?.files?.bucket+'/images/partners/partners/'+companies.logos[index+1]}
+                                                    src={companies.logos[index+1]}
                                                 />
                                         }
                                     </Grid>                                    
@@ -87,7 +87,7 @@ export default function Partners({t,shelter}){
             friends?.logos && friends.logos.length > 0 &&
             <>
             <h1 className='title-subsection pt-4'>
-                {t('introduction.'+shelter?.id+'.partners.friends.title')}
+                {t('introduction.partners.friends.title')}
             </h1>
             {
                 friends.logos.map((item,index) => {
@@ -107,14 +107,14 @@ export default function Partners({t,shelter}){
                                                 <img
                                                     className='partners-image'
                                                     alt={friends.logos[index]}
-                                                    src={shelter?.files?.bucket+'/images/partners/friends/'+friends.logos[index]}
+                                                    src={friends.logos[index]}
                                                 />
                                             </a>
                                         :
                                             <img
                                                 className='partners-image'
                                                 alt={friends.logos[index]}
-                                                src={shelter?.files?.bucket+'/images/partners/friends/'+friends.logos[index]}
+                                                src={friends.logos[index]}
                                             />
                                     }
                                 </Grid>
@@ -131,14 +131,14 @@ export default function Partners({t,shelter}){
                                                     <img
                                                         className='partners-image'
                                                         alt={friends.logos[index+1]}
-                                                        src={shelter?.files?.bucket+'/images/partners/friends/'+friends.logos[index+1]}
+                                                        src={friends.logos[index+1]}
                                                     />
                                                 </a>
                                             :
                                                 <img
                                                     className='partners-image'
                                                     alt={friends.logos[index+1]}
-                                                    src={shelter?.files?.bucket+'/images/partners/friends/'+friends.logos[index+1]}
+                                                    src={friends.logos[index+1]}
                                                 />
                                         }
                                     </Grid>
@@ -154,7 +154,7 @@ export default function Partners({t,shelter}){
             apus?.logos && apus.logos.length > 0 &&
             <>
             <h1 className='title-subsection pt-4'>
-                {t('introduction.'+shelter?.id+'.partners.apu.title')}
+                {t('introduction.partners.apu.title')}
             </h1>
             {
                 apus.logos.map((item,index) => {
@@ -170,14 +170,14 @@ export default function Partners({t,shelter}){
                                                 <img
                                                     className='apu-image'
                                                     alt={apus.logos[index]}
-                                                    src={shelter?.files?.bucket+'/images/partners/apu/'+apus.logos[index]}
+                                                    src={apus.logos[index]}
                                                 />
                                             </a>
                                         :
                                             <img
                                                 className='apu-image'
                                                 alt={apus.logos[index]}
-                                                src={shelter?.files?.bucket+'/images/partners/apu/'+apus.logos[index]}
+                                                src={apus.logos[index]}
                                             />
                                     }
                                 </Grid>
@@ -190,14 +190,14 @@ export default function Partners({t,shelter}){
                                                     <img
                                                         className='apu-image'
                                                         alt={apus.logos[index+1]}
-                                                        src={shelter?.files?.bucket+'/images/partners/apu/'+apus.logos[index+1]}
+                                                        src={apus.logos[index+1]}
                                                     />
                                                 </a>
                                             :
                                                 <img
                                                     className='apu-image'
                                                     alt={apus.logos[index+1]}
-                                                    src={shelter?.files?.bucket+'/images/partners/apu/'+apus.logos[index+1]}
+                                                    src={apus.logos[index+1]}
                                                 />
                                         }
                                     </Grid>
@@ -213,10 +213,10 @@ export default function Partners({t,shelter}){
             subsidized?.logos && subsidized.logos.length > 0 &&
             <>
             <h1 className='title-subsection pt-4'>
-                {t('introduction.'+shelter?.id+'.partners.subsidized.title')}
+                {t('introduction.partners.subsidized.title')}
             </h1>
             <div className='text-center mb-2'>
-                {t('introduction.'+shelter?.id+'.partners.subsidized.line1')}                
+                {t('introduction.partners.subsidized.line1')}                
             </div>
             {
                 subsidized.logos.map((item,index) => {

@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 // to change the message: unauthorized for the api
 use Illuminate\Auth\AuthenticationException;
 
-return Application::configure(basePath: dirname(__DIR__))
+$app = Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
         web: __DIR__.'/../routes/web.php',
         api: __DIR__.'/../routes/api.php',
@@ -71,3 +71,5 @@ return Application::configure(basePath: dirname(__DIR__))
         // to do things before initialization        
     })
     ->create();
+
+return $app;

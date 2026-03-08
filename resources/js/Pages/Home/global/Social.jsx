@@ -14,7 +14,7 @@ export default function Social({t,social,shelter}){
         <>
         {/*
         <h1 className='title-home'>
-            {t('introduction.'+shelter?.id+'.social.title')}
+            {t('introduction.social.title')}
         </h1>
         */}
         <div className='social-div-box'>
@@ -27,7 +27,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={'https://wa.me/'+shelter?.social?.whatsapp} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.whatsapp')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.whatsapp')}}
                         >                
                         </div>
                     </a>
@@ -42,7 +42,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.instagram} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.instagram')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.instagram')}}
                         >                
                         </div>
                     </a>
@@ -57,7 +57,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.facebook} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.facebook')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.facebook')}}
                         >                
                         </div>
                     </a>
@@ -73,7 +73,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.twitter} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.twitter')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.twitter')}}
                         >                
                         </div>
                     </a>
@@ -89,7 +89,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.youtube} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.youtube')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.youtube')}}
                         >                
                         </div>
                     </a>
@@ -104,7 +104,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.soundcloud} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.soundcloud')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.soundcloud')}}
                         >                
                         </div>
                     </a>
@@ -119,7 +119,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.tiktok} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.tiktok')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.tiktok')}}
                         >                
                         </div>
                     </a>
@@ -135,7 +135,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.blog} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.blog')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.blog')}}
                         >                
                         </div>
                     </a>
@@ -150,7 +150,7 @@ export default function Social({t,social,shelter}){
                 <div className=''>                
                     <a href={shelter?.social?.ladridos} target='_blank' className='social-link'>
                         <div 
-                            dangerouslySetInnerHTML={{__html: t('introduction.'+shelter?.id+'.social.ladridos')}}
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.ladridos')}}
                         >                
                         </div>
                     </a>

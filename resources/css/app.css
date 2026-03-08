@@ -119,7 +119,7 @@ body{
 }
 
 #bartop{
-	@apply app-width mx-auto mb-1;
+	@apply app-width mx-auto;
 }
 
 .pwa-banner,.notifications-banner{
@@ -228,7 +228,7 @@ body{
 	@apply text-xl font-bold;
 }
 
-.subtitle-colaboration{
+.subtitle-collaboration{
 	@apply subtitle-home text-center md:text-left;
 }
 
@@ -760,7 +760,7 @@ fieldset{
 	@apply mt-4 text-center;
 }
 
-.home-colaboration-list{
+.home-collaboration-list{
 	@apply pl-4 font-bold;
 }
 
@@ -772,7 +772,7 @@ ul{
 	@apply pl-6;
 }
 
-#home-colaboration-sponsorship-list{
+#home-collaboration-sponsorship-list{
 	@apply pl-4;
 }
 
@@ -780,7 +780,7 @@ ul{
 	@apply pl-6;
 }
 
-#home-colaboration-sponsorship-list li,#home-adopt-info-list li{
+#home-collaboration-sponsorship-list li,#home-adopt-info-list li{
 	@apply pt-2;
 }
 

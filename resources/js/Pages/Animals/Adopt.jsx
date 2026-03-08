@@ -12,8 +12,8 @@ import AdoptedIcon from '@mui/icons-material/InsertEmoticon';
 import Info from '@/Pages/Animals/Adopt/Info';
 import CarouselAnimals from '@/Pages/Animals/CarouselAnimals';
 
-export default function Adopt({user,t,subsection,setSubsection,animals,email_adoptions,
-    social,baseUrl,imagesPaths,page,setPage,loading,options,forms,guides,prices,itemsPerPage}){
+export default function Adopt({user,t,subsection,setSubsection,animals,shelter,
+    baseUrl,imagesPaths,page,setPage,loading,options,itemsPerPage}){
 
     const [ tab, setTab ] = useState(subsection ? subsection : "info");
 
@@ -88,11 +88,7 @@ export default function Adopt({user,t,subsection,setSubsection,animals,email_ado
                     :
                         <Info 
                             t={t} 
-                            email_adoptions={email_adoptions} 
-                            social={social}
-                            forms={forms}
-                            guides={guides}
-                            prices={prices}
+                            shelter={shelter}
                         />
             }
             </div>

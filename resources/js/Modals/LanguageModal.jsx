@@ -20,6 +20,7 @@ export default function LanguageModal({show,setShow,language,languages,handleLan
                     {
                         languagesLength > 0 && languages.map((item,index) => (
                             <div 
+                                key={item.value}
                                 className={`language-item ${index !== lastElement ? 'border-b' : ''}`} 
                                 id={item.value} 
                                 onClick={handleLanguage}

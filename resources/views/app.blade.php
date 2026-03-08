@@ -92,6 +92,9 @@
             };
             registerServiceWorker();
         </script>
+        <script>
+            window.domain_id = "{{ getDomainTranslation() }}";
+        </script>
         @routes
         @viteReactRefresh
         @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])

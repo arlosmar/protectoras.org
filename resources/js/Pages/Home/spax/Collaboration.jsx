@@ -9,7 +9,7 @@ import ChairIcon from '@mui/icons-material/Chair';
 import CasinoIcon from '@mui/icons-material/Casino';
 import HomeIcon from '@mui/icons-material/Home';
 
-export default function Comments({t,email_collaboration,email_volunteering,prices,forms,social,guides}){
+export default function Collaboration({t,shelter}){
 
     //const { i18n } = useTranslation('global');
 
@@ -24,9 +24,8 @@ export default function Comments({t,email_collaboration,email_volunteering,price
             {t('introduction.collaboration.title')}
         </h1>
         */}
-        {/*
         <Grid container spacing={0} className='home-div-box'>
-            <Grid size={{ xs: 12, md: 2 }} className='home-div-icon'>              
+            <Grid size={{ xs: 12, md: 2 }} className='home-div-icon'>
                 <MobileScreenShareIcon className="home-icon"/>
             </Grid>
             <Grid size={{ xs: 12, md: 10 }}>
@@ -130,17 +129,17 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 </h1>
                 <div 
                     className='paragraph-top-separation'   
-                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line14',{price_partner:prices?.price_partner})}}
+                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line14',{price_partner:shelter?.prices?.price_partner})}}
                 >                
                 </div>
                 <div
                     className='paragraph-top-separation'
-                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line15',{price_retired:prices?.price_retired})}}
+                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line15',{price_retired:shelter?.prices?.price_retired})}}
                 >                
                 </div>
                 <div
                     className='paragraph-top-separation'
-                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line16',{price_child:prices?.price_child})}}
+                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line16',{price_child:shelter?.prices?.price_child})}}
                 >                
                 </div>
                 <div
@@ -149,7 +148,7 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>
                 <div>
-                    <a href={forms?.partner} target='_blank'>
+                    <a href={shelter?.forms?.partner} target='_blank'>
                         {t('introduction.collaboration.form-line1')}
                     </a>
                 </div>
@@ -159,7 +158,7 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>
                 <div>
-                    <a href={forms?.sepa} target='_blank'>
+                    <a href={shelter?.forms?.sepa} target='_blank'>
                         {t('introduction.collaboration.form-line3')}
                     </a>
                 </div>  
@@ -169,8 +168,8 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>              
                 <div>
-                    <a href={'mailto:'+email_collaboration} target='_blank'>
-                        {email_collaboration}
+                    <a href={'mailto:'+shelter?.email?.collaboration?.address} target='_blank'>
+                        {shelter?.email?.collaboration?.address}
                     </a>
                 </div>
             </Grid>
@@ -185,7 +184,7 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 </h1>
                 <div 
                     className='paragraph-top-separation'   
-                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line18',{price_sponsorship:prices?.price_sponsorship})}}
+                    dangerouslySetInnerHTML={{__html: t('introduction.collaboration.line18',{price_sponsorship:shelter?.prices?.price_sponsorship})}}
                 >                
                 </div>
                 <div
@@ -199,7 +198,7 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>
                 <div>
-                    <a href={forms?.sponsor} target='_blank'>
+                    <a href={shelter?.forms?.sponsor} target='_blank'>
                         {t('introduction.collaboration.form-sponsor-line2')}
                     </a>
                 </div>
@@ -209,7 +208,7 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>
                 <div>
-                    <a href={forms?.sepa} target='_blank'>
+                    <a href={shelter?.forms?.sepa} target='_blank'>
                         {t('introduction.collaboration.form-sponsor-line4')}
                     </a>
                 </div>  
@@ -219,8 +218,8 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>              
                 <div>
-                    <a href={'mailto:'+email_collaboration} target='_blank'>
-                        {email_collaboration}
+                    <a href={'mailto:'+shelter?.email?.collaboration?.address} target='_blank'>
+                        {shelter?.email?.collaboration?.address}
                     </a>
                 </div>
                 <div
@@ -262,8 +261,8 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>
                 <div>
-                    <a href={'mailto:'+email_volunteering} target='_blank'>
-                        {email_volunteering}
+                    <a href={'mailto:'+shelter?.email?.volunteering?.address} target='_blank'>
+                        {shelter?.email?.volunteering?.address}
                     </a>
                 </div>
             </Grid>
@@ -292,8 +291,8 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>                
                 <div>
-                    <a href={'https://wa.me/'+social?.whatsapp} target='_blank'>
-                        {social?.whatsapp_noprefix}
+                    <a href={'https://wa.me/'+shelter?.social?.whatsapp} target='_blank'>
+                        {shelter?.social?.whatsapp_noprefix}
                     </a>
                 </div>
                 <div
@@ -302,7 +301,7 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>     
                 <div>
-                    <a href={forms?.hosting} target='_blank'>
+                    <a href={shelter?.forms?.hosting} target='_blank'>
                         {t('trans.Form')}
                     </a>
                 </div>
@@ -312,7 +311,7 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>     
                 <div>
-                    <a href={guides?.hosting[lang]} target='_blank'>
+                    <a href={shelter?.guides?.hosting[lang]} target='_blank'>
                         {t('trans.Link')}
                     </a>
                 </div>
@@ -347,13 +346,12 @@ export default function Comments({t,email_collaboration,email_volunteering,price
                 >                
                 </div>
                 <div>
-                    <a href={'mailto:'+email_collaboration} target='_blank'>
-                        {email_collaboration}
+                    <a href={'mailto:'+shelter?.email?.collaboration?.address} target='_blank'>
+                        {shelter?.email?.collaboration?.address}
                     </a>
                 </div>
             </Grid>
         </Grid>
-        */}
         </>
     )
 }

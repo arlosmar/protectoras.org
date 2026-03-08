@@ -10,12 +10,11 @@ import { styleTabs } from '@/Utils/Styles';
 import Header from '@/Pages/Header/Header';
 import { setLanguage } from "@/Utils/Cookies";
 
-//import CommentsIcon from '@mui/icons-material/Comment';
+import EuroIcon from '@mui/icons-material/Euro';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import ShareIcon from '@mui/icons-material/Share';
 import InfoIcon from '@mui/icons-material/Info';
 import PartnersIcon from '@mui/icons-material/Handshake';
-import SheltersIcon from '@mui/icons-material/Pets';
 import LegalIcon from '@mui/icons-material/Copyright';
 
 import Tabs from '@mui/material/Tabs';
@@ -23,17 +22,25 @@ import Tab from '@mui/material/Tab';
 
 import { setDarkMode } from "@/Utils/Cookies";
 
-const Shelters = lazy(() => import("@/Pages/Landing/Shelters"));
-const Info = lazy(() => import("@/Pages/Landing/Info"));
-//const Comments = lazy(() => import("@/Pages/Landing/Comments"));
-const Social = lazy(() => import("@/Pages/Landing/Social"));
-const Partners = lazy(() => import("@/Pages/Landing/Partners"));
-const Legal = lazy(() => import("@/Pages/Landing/Legal"));
-
 import { useSwipeable } from 'react-swipeable';
 import Sticky from '@/Components/Sticky';
 
-export default function Landing({language,message,darkmode,deviceId,section,domains}){
+const Collaboration = lazy(() => import(`./Collaboration.jsx`));
+const Social = lazy(() => import(`./Social.jsx`));
+const Partners = lazy(() => import(`./Partners.jsx`));
+const Info = lazy(() => import(`./Info.jsx`));
+const Legal = lazy(() => import(`./Legal.jsx`));
+
+export default function Home({user,language,section,message,darkmode,deviceId,shelter}){
+
+    /*
+    const shelterId = shelter?.id && (shelter.id === 'local' || shelter?.id === 'demo') ? 'spax' : shelter?.id;
+    const Collaboration = useMemo(() => lazy(() => import(`./Home/${shelterId}/Collaboration.jsx`)), [shelterId]);
+    const Social = useMemo(() => lazy(() => import(`./Home/${shelterId}/Social.jsx`)), [shelterId]);
+    const Partners = useMemo(() => lazy(() => import(`./Home/${shelterId}/Partners.jsx`)), [shelterId]);
+    const Info = useMemo(() => lazy(() => import(`./Home/${shelterId}/Info.jsx`)), [pages/]);
+    const Legal = useMemo(() => lazy(() => import(`./Home/${shelterId}/Legal.jsx`)), [shelterId]);
+    */
 
 	const { t, i18n } = useTranslation('global');
 
@@ -55,15 +62,14 @@ export default function Landing({language,message,darkmode,deviceId,section,doma
 
     }, []);
 
-
-	const [ tab, setTab ] = useState(
+    const [ tab, setTab ] = useState(
         section ? 
             section === 'legal' || section === 'terms' || section === 'policy' || section === 'cookies' ? 
                 'legal' 
             : 
                 section
         : 
-            'shelters'
+            'info'
     );
 
     const { stickyRef, sticky, offset, height, isApplicationOrWebApp } = Sticky();
@@ -77,13 +83,13 @@ export default function Landing({language,message,darkmode,deviceId,section,doma
         }
 
         // change url on the browser
-        var url = route("landing")+'/'+newValue;
+        var url = route("home")+'/'+newValue;
         window.history.pushState({path:url},'',url);
     };
 
     const { sxTabs, sx, sxIcon } = styleTabs();
 
-    const [ tabsArray , setTabsArray ] = useState(['shelters','info','social','partners','legal']);
+    const [ tabsArray , setTabsArray ] = useState(['info','collaboration','social','partners','legal']);
     const [ tabsLength , setTabsLength ] = useState(4);
     const [ posTab , setPosTab ] = useState(0);
 
@@ -124,14 +130,14 @@ export default function Landing({language,message,darkmode,deviceId,section,doma
             message={toastMsg}
             error={toastErrorMsg}
         />
-    	<Header t={t} from='landing'/>
+    	<Header user={user} t={t} from='home' shelter={shelter}/>
     	<main {...handlers}>            
-    		{/*
+    		{
                 !isApplicationOrWebApp &&
                 <h1 className="text-center mt-4 text-lg font-bold">
                     {t('introduction.title')}
                 </h1>
-            */}            
+            }            
             {/*
 			<div className='text-center'>
 				<img
@@ -152,41 +158,41 @@ export default function Landing({language,message,darkmode,deviceId,section,doma
                     onChange={handleTabChange}
 					variant="scrollable"                    
                 >
-                    <Tab icon={<SheltersIcon sx={sxIcon}/>} value="shelters" sx={sx}/>
-                    <Tab icon={<InfoIcon sx={sxIcon}/>} value="info" sx={sx}/>                    
+                    <Tab icon={<InfoIcon sx={sxIcon}/>} value="info" sx={sx}/>
+                    <Tab icon={<EuroIcon sx={sxIcon}/>} value="collaboration" sx={sx}/>
                     <Tab icon={<ShareIcon sx={sxIcon}/>} value="social" sx={sx}/>
 					<Tab icon={<PartnersIcon sx={sxIcon}/>} value="partners" sx={sx}/>
                     <Tab icon={<LegalIcon sx={sxIcon}/>} value="legal" sx={sx}/>
-                    {/*<Tab icon={<CommentsIcon sx={sxIcon}/>} value="comments" sx={sx}/>*/}
                 </Tabs>
                 
                 <div className='content-container'>
                 {
-                    tab === 'info' ?
+                    tab === 'collaboration' ?
                         <Suspense>
-                        <Info t={t}/>
+                        <Collaboration 
+                            t={t} 
+                            shelter={shelter}
+                        />
                         </Suspense>
-                    :
+                    :						
                         tab === 'social' ?
                             <Suspense>
-                            <Social 
-                                t={t}                                
-                            />
+                            <Social t={t} shelter={shelter}/>
                             </Suspense>
-                        :						    						
+                        :
                             tab === 'partners' ?
                                 <Suspense>
-                                <Partners t={t}/>
+                                <Partners t={t} shelter={shelter}/>
                                 </Suspense>
-                            :    
-                                tab === 'legal' ?							    								
-                                <Suspense>
-                                <Legal t={t} section={section}/>
-                                </Suspense>
-                                :							    								
+                            :
+                                tab === 'legal' ?
                                     <Suspense>
-                                    <Shelters t={t} domains={domains}/>
+                                    <Legal t={t} section={section} shelter={shelter}/>
                                     </Suspense>
+                                :                                                        
+                                    <Suspense>
+                                    <Info t={t} shelter={shelter}/>
+                                    </Suspense>                                
                 }
                 </div>
             </div>

@@ -2,6 +2,7 @@ import BarBottom from '@/Pages/Header/BarBottom';
 import { useState, lazy, Suspense, useEffect } from "react";
 import { getCookie, setCookie } from "@/Utils/Cookies";
 import { isApp, isAppOrWebApp } from "@/Utils/Device";
+import { isMobile, isTablet } from 'react-device-detect';
 
 import { notificationsSupported, requestPermission, notificationsListeners } from '@/Utils/Notifications';
 
@@ -23,10 +24,10 @@ const BarTop = lazy(() => import("@/Pages/Header/BarTop"));//.then((module) => (
 const Title = lazy(() => import("@/Pages/Header/Title"));
 const Cookies = lazy(() => import("@/Components/Cookies"));
 const LanguageModal = lazy(() => import("@/Modals/LanguageModal"));
-const BannerInstallApp = lazy(() => import("@/Components/BannerInstallApp"));
+//const BannerInstallApp = lazy(() => import("@/Components/BannerInstallApp"));
 const BannerNotifications = lazy(() => import("@/Components/BannerNotifications"));
 
-export default function Header({user,t,from,config,shelter}){
+export default function Header({user,t,from,shelter}){
 
     const { i18n } = useTranslation('global');
 
@@ -54,40 +55,23 @@ export default function Header({user,t,from,config,shelter}){
         setLang(iso);
         
          // update user language if logged in
-        axios.put(route('language.update'),{language: iso})
-        .then(function (response){            
-            /*
-            if(response.result){
-                // success
-            }
-            else{
-                // error
-            }
-            */
-        })
-        .catch(function (error){
-            
-        });     
-
-        //put(route('language.update'));
-        /*
-        fetch(route('language.update'), {
-            method: 'PUT',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                language: 'a'
+         if(from !== 'landing' && from !== 'contactlanding'){
+            axios.put(route('language.update'),{language: iso})
+            .then(function (response){            
+                /*
+                if(response.result){
+                    // success
+                }
+                else{
+                    // error
+                }
+                */
             })
-        })
-        .then(function (response) {
-            
-        })
-        .catch(function (error) {
-            
-        });
-        */  
+            .catch(function (error){
+                
+            });     
+        }
+ 
     };
 
     const handleLogout = () => {
@@ -95,11 +79,12 @@ export default function Header({user,t,from,config,shelter}){
     };
 
     const handleContact = () => {
-        window.location = route('contact');
-    };
-
-    const handleWhatsapp = () => {
-    	window.open('https://wa.me/34671870889','_blank');        
+        if(from === 'landing' || from === 'contactlanding'){
+            window.location = route('contact.landing');
+        }
+        else{
+            window.location = route('contact');
+        }
     };
 
 	// is webview on app
@@ -108,7 +93,10 @@ export default function Header({user,t,from,config,shelter}){
 	// is app
 	const [ isApplication , setIsApplication ] = useState(isApp());
 
-	const [ installAppClosed, setInstallAppClosed ] = useState(getCookie('app-closed'));	
+    // is PC
+    const [ isPC, setIsPC ] = useState(!isMobile && !isTablet && !isApplicationOrWebApp);
+
+	//const [ installAppClosed, setInstallAppClosed ] = useState(getCookie('app-closed'));	
 	const [ notificationsAvailable, setNotificationsAvailable ] = useState(notificationsSupported());
 	const [ openNotifications, setOpenNotifications ] = useState(false);	
 	const [ notificationsClosed, setNotificationsClosed ] = useState(!notificationsAvailable ? true : getCookie('notifications-closed'));
@@ -151,23 +139,23 @@ export default function Header({user,t,from,config,shelter}){
         window.scrollTo({ top: 0, behavior: 'smooth' })
     }
 
-    const [ appInstalled, setAppInstalled ] = useState(false);
+    //const [ appInstalled, setAppInstalled ] = useState(false);
     
     //https://web.dev/articles/get-installed-related-apps?hl=es-419
+    /*
     const checkAppInstalled = async () => {
         
         const relatedApps = await navigator.getInstalledRelatedApps();    
 
         if(relatedApps && relatedApps.length > 0){
             setAppInstalled(true);   
-
-            /*
-            relatedApps.forEach((app) => {            
-            	alert(app.id+app.platform+app.url);            
-        	});
-        	*/        	
+            
+            //relatedApps.forEach((app) => {            
+            //	alert(app.id+app.platform+app.url);            
+        	//});        	        	
         }
     }
+    */
 
     // notifications
 	useEffect(() => {
@@ -181,10 +169,11 @@ export default function Header({user,t,from,config,shelter}){
 		if(!isApplication){   
         	notificationsListeners(user);
         }
-
+        /*
         if(!isApplication){
         	checkAppInstalled();
         }
+        */
     },[]);
 
 
@@ -218,7 +207,7 @@ export default function Header({user,t,from,config,shelter}){
 				<Title t={t} from={from}/>
 			</Suspense>
 			<Suspense>
-				<Cookies t={t}/>		
+				<Cookies t={t} from={from}/>		
 			</Suspense>
 			<Suspense>
 				<BarTop 
@@ -229,16 +218,17 @@ export default function Header({user,t,from,config,shelter}){
 					handleLogout={handleLogout}
 					handleContact={handleContact}
                     shelter={shelter}
+                    isPC={isPC}
 				/>
 			</Suspense>
-			{
+			{/*
 				(!isApplication && !installAppClosed && !appInstalled) ?
 					<Suspense>
 						<BannerInstallApp t={t} shelter={shelter}/>
 					</Suspense>
 				:
 					''
-			}
+			*/}
 			{
 	            !notificationsClosed ?
 	                <Suspense>
@@ -257,13 +247,12 @@ export default function Header({user,t,from,config,shelter}){
 		<BarBottom 
 			user={user}
 			t={t} 
-			from={from}
-			config={config} 
+			from={from}			
 			changeLanguage={changeLanguage}
 			handleLogout={handleLogout}
 			handleContact={handleContact}
-			handleWhatsapp={handleWhatsapp}
             shelter={shelter}
+            isPC={isPC}
 		/>
 		<Fade in={trigger}>
             <Box

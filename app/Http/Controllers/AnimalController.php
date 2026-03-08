@@ -25,26 +25,9 @@ class AnimalController extends Controller{
             }
         }
 
-        $user = auth()->user();
-
-        $emails = [
-            'email_colaboration' => config('mail.colaboration.address'),
-            'email_volunteering' => config('mail.volunteering.address'),
-            'email_adoptions' => config('mail.adoptions.address'),
-            'email_info' => config('mail.info.address')
-        ];
-
-        $social = config('social.social');
-
-        $forms = config('forms.forms');
+        $user = auth()->user();        
 
         $imagesPaths = config('paths.images');
-
-        $prices = config('prices.prices');
-
-        $guides = config('guides');
-
-        $baseUrl = URL::to('/');
 
         $reloadAfterTime = config('variables.refresh.animals');
 
@@ -56,8 +39,11 @@ class AnimalController extends Controller{
 
         $shelter = getDomainConfig();
 
-        return Inertia::render('Animals/Animals',compact('user','section','subsection','emails','social',
-            'baseUrl','imagesPaths','page','forms','prices','guides','reloadAfterTime','itemsPerPage','shelter'));
+        //$baseUrl = URL::to('/');
+        $baseUrl = $shelter['files']['bucket'];
+
+        return Inertia::render('Animals/Animals',compact('user','section','page','subsection','baseUrl',
+        'reloadAfterTime','itemsPerPage','shelter','imagesPaths'));
     }
 
     public function clearCache(){

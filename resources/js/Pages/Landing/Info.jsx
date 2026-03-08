@@ -39,7 +39,12 @@ export default function Info({t}){
                 className='mt-8 text-center'
                 dangerouslySetInnerHTML={{__html: t('landing.info.paragraph7')}}
             >
-            </div>                 
+            </div>    
+            <div 
+                className='mt-8 text-center'
+                dangerouslySetInnerHTML={{__html: t('landing.info.paragraph8')}}
+            >
+            </div>              
         </div>        
         </>
     )

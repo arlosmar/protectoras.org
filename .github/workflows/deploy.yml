@@ -4,10 +4,78 @@ on:
     push:
         branches:
             - main
+            - demo
 
 jobs:
-    placeholder:
+    deploy:
         runs-on: ubuntu-latest
         steps:
-            - name: Primer Push
-              run: echo "Archivo YAML detectado. Preparado para configurar el despliegue más adelante."
+            - name: Checkout del código
+              uses: actions/checkout@v4
+
+            # --- 1. Preparación y Compilación de Frontend (React) ---
+
+            - name: Instalar Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20" # Usa tu versión de Node.js
+
+            - name: Instalar dependencias de React
+              run: npm install --legacy-peer-deps
+
+            - name: Compilar React (Generar 'public/build/')
+              run: npm run build
+              env:
+                  VITE_PUSHER_APP_KEY: ${{ secrets.VITE_PUSHER_APP_KEY }}
+                  VITE_PUSHER_APP_CLUSTER: ${{ secrets.VITE_PUSHER_APP_CLUSTER }}
+                  VITE_PUSHER_PORT: ${{ secrets.VITE_PUSHER_PORT }}
+                  VITE_PUSHER_SCHEME: ${{ secrets.VITE_PUSHER_SCHEME }}
+                  VITE_APP_NAME: ${{ vars.VITE_APP_NAME }}
+                  DEPLOY_PATH_DEMO: ${{ vars.DEPLOY_PATH_DEMO }}
+                  DEPLOY_PATH_PROD: ${{ vars.DEPLOY_PATH_PROD }}
+
+                  if: github.ref == 'refs/heads/main'
+                    DEPLOY_PATH: ${{ vars.DEPLOY_PATH_PROD }}
+                  else if: github.ref == 'refs/heads/demo'
+                    DEPLOY_PATH: ${{ vars.DEPLOY_PATH_DEMO }}
+
+            # --- 2. Despliegue con Rsync (Sincronización + Limpieza) ---
+            # Borra archivos remotos que no existan localmente (--delete),
+            # pero respeta las exclusiones (--exclude) para no tocar archivos de usuario/generados.
+            - name: Configurar llave SSH
+              run: |
+                  mkdir -p ~/.ssh/
+                  echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+                  chmod 600 ~/.ssh/id_rsa
+                  ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+
+            - name: Desplegar archivos (Rsync)
+              run: |
+                  rsync -avz --delete \
+                      --exclude='.env' \
+                      --exclude='.git' \
+                      --exclude='.gitignore' \                      
+                      --exclude='vendor' \
+                      --exclude='node_modules' \
+                      --exclude='bootstrap/cache/*' \
+                      --exclude='resources/js' \                                                                  
+                      ./ ${{ secrets.USERNAME }}@${{ secrets.HOST }}:${{ vars.DEPLOY_PATH }}
+
+            - name: Ejecutar acciones con ssh en el server
+              uses: appleboy/ssh-action@v1.0.0
+              with:
+                host: ${{ secrets.HOST }}
+                username: ${{ secrets.USERNAME }}
+                key: ${{ secrets.SSH_PRIVATE_KEY }}
+                port: 22                
+                script:
+                    cd ${{ vars.DEPLOY_PATH }}
+                    echo "Ejecutando Composer y comandos de Laravel..."
+                    composer install --no-dev --prefer-dist --optimize-autoloader
+                    php artisan cache:clear
+                    php artisan config:cache
+                    php artisan route:cache
+                    php artisan view:cache
+
+            - name: Despliegue completado
+              run: echo "✅ ¡Despliegue incremental completado!"

@@ -14,26 +14,33 @@ import EuroIcon from '@mui/icons-material/Euro';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import ShareIcon from '@mui/icons-material/Share';
 import InfoIcon from '@mui/icons-material/Info';
-import HandshakeIcon from '@mui/icons-material/Handshake';
+import PartnersIcon from '@mui/icons-material/Handshake';
+import LegalIcon from '@mui/icons-material/Copyright';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
 import { setDarkMode } from "@/Utils/Cookies";
 
-//import Colaboration from '@/Pages/Home/Colaboration';
-//import Social from '@/Pages/Home/Social';
-//import Partners from '@/Pages/Home/Partners';
-//import Info from '@/Pages/Home/Info';
-const Colaboration = lazy(() => import("@/Pages/Home/Colaboration"));
-const Social = lazy(() => import("@/Pages/Home/Social"));
-const Partners = lazy(() => import("@/Pages/Home/Partners"));
-const Info = lazy(() => import("@/Pages/Home/Info"));
-
 import { useSwipeable } from 'react-swipeable';
 import Sticky from '@/Components/Sticky';
 
+const Collaboration = lazy(() => import(`./Collaboration.jsx`));
+const Social = lazy(() => import(`./Social.jsx`));
+const Partners = lazy(() => import(`./Partners.jsx`));
+const Info = lazy(() => import(`./Info.jsx`));
+const Legal = lazy(() => import(`./Legal.jsx`));
+
 export default function Home({user,language,section,message,darkmode,deviceId,shelter}){
+
+    /*
+    const shelterId = shelter?.id && (shelter.id === 'local' || shelter?.id === 'demo') ? 'spax' : shelter?.id;
+    const Collaboration = useMemo(() => lazy(() => import(`./Home/${shelterId}/Collaboration.jsx`)), [shelterId]);
+    const Social = useMemo(() => lazy(() => import(`./Home/${shelterId}/Social.jsx`)), [shelterId]);
+    const Partners = useMemo(() => lazy(() => import(`./Home/${shelterId}/Partners.jsx`)), [shelterId]);
+    const Info = useMemo(() => lazy(() => import(`./Home/${shelterId}/Info.jsx`)), [pages/]);
+    const Legal = useMemo(() => lazy(() => import(`./Home/${shelterId}/Legal.jsx`)), [shelterId]);
+    */
 
 	const { t, i18n } = useTranslation('global');
 
@@ -55,8 +62,15 @@ export default function Home({user,language,section,message,darkmode,deviceId,sh
 
     }, []);
 
-
-	const [ tab, setTab ] = useState(section ? section : "info");
+    const [ tab, setTab ] = useState(
+        section ? 
+            section === 'legal' || section === 'terms' || section === 'policy' || section === 'cookies' ? 
+                'legal' 
+            : 
+                section
+        : 
+            'info'
+    );
 
     const { stickyRef, sticky, offset, height, isApplicationOrWebApp } = Sticky();
 
@@ -75,7 +89,7 @@ export default function Home({user,language,section,message,darkmode,deviceId,sh
 
     const { sxTabs, sx, sxIcon } = styleTabs();
 
-    const [ tabsArray , setTabsArray ] = useState(['info','colaboration','social','partners']);
+    const [ tabsArray , setTabsArray ] = useState(['info','collaboration','social','partners','legal']);
     const [ tabsLength , setTabsLength ] = useState(4);
     const [ posTab , setPosTab ] = useState(0);
 
@@ -121,7 +135,7 @@ export default function Home({user,language,section,message,darkmode,deviceId,sh
     		{
                 !isApplicationOrWebApp &&
                 <h1 className="text-center mt-4 text-lg font-bold">
-                    {t('introduction.'+shelter?.id+'.title')}
+                    {t('introduction.title')}
                 </h1>
             }            
             {/*
@@ -145,38 +159,40 @@ export default function Home({user,language,section,message,darkmode,deviceId,sh
 					variant="scrollable"                    
                 >
                     <Tab icon={<InfoIcon sx={sxIcon}/>} value="info" sx={sx}/>
-                    <Tab icon={<EuroIcon sx={sxIcon}/>} value="colaboration" sx={sx}/>
+                    <Tab icon={<EuroIcon sx={sxIcon}/>} value="collaboration" sx={sx}/>
                     <Tab icon={<ShareIcon sx={sxIcon}/>} value="social" sx={sx}/>
-					<Tab icon={<HandshakeIcon sx={sxIcon}/>} value="partners" sx={sx}/>
+					<Tab icon={<PartnersIcon sx={sxIcon}/>} value="partners" sx={sx}/>
+                    <Tab icon={<LegalIcon sx={sxIcon}/>} value="legal" sx={sx}/>
                 </Tabs>
                 
                 <div className='content-container'>
                 {
-                    tab === 'info' ?
+                    tab === 'collaboration' ?
                         <Suspense>
-                        <Info t={t} shelter={shelter}/>
+                        <Collaboration 
+                            t={t} 
+                            shelter={shelter}
+                        />
                         </Suspense>
-                    :
-                        tab === 'colaboration' ?
+                    :						
+                        tab === 'social' ?
                             <Suspense>
-                            <Colaboration 
-                                t={t} 
-                                shelter={shelter}
-                            />
+                            <Social t={t} shelter={shelter}/>
                             </Suspense>
-                        :						
-    						tab === 'social' ?
+                        :
+                            tab === 'partners' ?
                                 <Suspense>
-    							<Social t={t} shelter={shelter}/>
+                                <Partners t={t} shelter={shelter}/>
                                 </Suspense>
-    						:
-    							tab === 'partners' ?
+                            :
+                                tab === 'legal' ?
                                     <Suspense>
-    								<Partners t={t} shelter={shelter}/>
+                                    <Legal t={t} section={section} shelter={shelter}/>
                                     </Suspense>
-    							:
-    								
-    								''
+                                :                                                        
+                                    <Suspense>
+                                    <Info t={t} shelter={shelter}/>
+                                    </Suspense>                                
                 }
                 </div>
             </div>

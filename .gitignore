@@ -1,11 +1,6 @@
 node_modules
 vendor
 .env
-storage/app/images/people
-storage/app/images/animals
-storage/app/images/animals_external
-storage/app/images/animalsOld
-storage/app/images/fotosOld
 .sftp-config.json
 .env.example
 public/build

@@ -1,4 +1,4 @@
-export default function Info({t,email_colaboration,forms,prices}){
+export default function Info({t,email_collaboration,forms,prices}){
 
     return (
         <>
@@ -87,8 +87,8 @@ export default function Info({t,email_colaboration,forms,prices}){
             >                
             </div>              
             <div>
-                <a href={'mailto:'+email_colaboration} target='_blank'>
-                    {email_colaboration}
+                <a href={'mailto:'+email_collaboration} target='_blank'>
+                    {email_collaboration}
                 </a>
             </div>            
         </div>

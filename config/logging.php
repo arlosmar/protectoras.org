@@ -144,10 +144,13 @@ return [
 
         "telegram" => [
             'driver'  => 'monolog',
-            'handler' => FilterHandler::class,
+            //'handler' => FilterHandler::class,
+            'handler' => TelegramBotHandler::class, // Solo el nombre de la clase
             'level' => 'critical',//env('LOG_LEVEL', 'debug'),
-            'with' => [
-                'handler' => new TelegramBotHandler($apiKey = env('TELEGRAM_API_KEY',''), $channel = env('TELEGRAM_CHANNEL',''))
+            'with' => [                
+                'apiKey'  => env('TELEGRAM_API_KEY', ''),
+                'channel' => env('TELEGRAM_CHANNEL', '')
+                //'handler' => new TelegramBotHandler($apiKey = env('TELEGRAM_API_KEY',''), $channel = env('TELEGRAM_CHANNEL',''))
             ]
         ]
 

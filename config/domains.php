@@ -2,140 +2,34 @@
 
 $bucket = env('AWS_BUCKET_URL','');
 
-return [
-    'localhost' => [   
+$domains = [
+    'local' => [   
         'id' => 'local',
-        'name' => 'Local',         
-        'database' => 'local',        
-        'location' => ['Xàtiva'],
-        'files' => [
-            'bucket' => $bucket.'/local',
-            'logo' => 'spax.png',
-            'favicon' => 'spax.png',
-        ],
-        'email' => [            
-            'noreply' => [
-                'address' => 'noreply@protectoras.org',
-                'name' => 'Protectoras',
-            ],
-            'contact' => [
-                'address' => 'protectoras.org@gmail.com',
-                'name' => 'Protectoras',
-            ]
-        ],
-        'social'  =>  [
-            'phone' => '644714407',
-            'phone_noprefix' => '644714407',
-            'whatsapp' => '34644714407',
-            'whatsapp_noprefix' => '644714407',
-            'telegram' => '@arlosmar'            
-        ],
-        'contact' => [
-            'title1' => true,
-            'email' => true,
-            'whatsapp' => true
-        ]
-    ],
-    '127.0.0.1' => [   
-        'id' => 'local',
-        'name' => 'Local',         
-        'database' => 'local',
-        'files' => [
-            'bucket' => $bucket.'/local',
-            'logo' => 'protectoras.png',
-            'favicon' => 'protectoras.png',
-        ],
-        'email' => [            
-            'noreply' => [
-                'address' => 'noreply@protectoras.org',
-                'name' => 'Protectoras',
-            ],
-            'contact' => [
-                'address' => 'protectoras.org@gmail.com',
-                'name' => 'Protectoras',
-            ]
-        ],
-        'social'  =>  [
-            'phone' => '644714407',
-            'phone_noprefix' => '644714407',
-            'whatsapp' => '34644714407',
-            'whatsapp_noprefix' => '644714407',
-            'telegram' => '@arlosmar'            
-        ],
-        'contact' => [
-            'title1' => true,
-            'email' => true,
-            'whatsapp' => true
-        ]
-    ],
-    'demolanding' => [   
-        'id' => 'demolanding',
-        'name' => 'Demo Landing',         
+        'domains' => ['localhost'],
+        'name' => 'Local',
         'database' => 'demo',
-        'files' => [
-            'bucket' => $bucket.'/demo',
-            'logo' => 'protectoras.png',
-            'favicon' => 'protectoras.png',
-        ],
-        'email' => [            
-            'noreply' => [
-                'address' => 'noreply@protectoras.org',
-                'name' => 'Protectoras',
-            ],
-            'contact' => [
-                'address' => 'protectoras.org@gmail.com',
-                'name' => 'Protectoras',
-            ]
-        ],
-        'social'  =>  [
-            'phone' => '644714407',
-            'phone_noprefix' => '644714407',
-            'whatsapp' => '34644714407',
-            'whatsapp_noprefix' => '644714407',
-            'telegram' => '@arlosmar'            
-        ],
-        'contact' => [
-            'title1' => true,
-            'email' => true,
-            'whatsapp' => true
-        ]
+        // rest of info from spax
     ],
     'demo' => [   
         'id' => 'demo',
+        'domains' => ['demo'],
         'name' => 'Demo',         
-        'database' => 'demo',
-        'files' => [
-            'bucket' => $bucket.'/demo',
-            'logo' => 'protectoras.png',
-            'favicon' => 'protectoras.png',
-        ],
-        'email' => [            
-            'noreply' => [
-                'address' => 'noreply@protectoras.org',
-                'name' => 'Protectoras',
-            ],
-            'contact' => [
-                'address' => 'protectoras.org@gmail.com',
-                'name' => 'Protectoras',
-            ]
-        ],
-        'social'  =>  [
-            'phone' => '644714407',
-            'phone_noprefix' => '644714407',
-            'whatsapp' => '34644714407',
-            'whatsapp_noprefix' => '644714407',
-            'telegram' => '@arlosmar'            
-        ],
-        'contact' => [
-            'title1' => true,
-            'email' => true,
-            'whatsapp' => true
-        ]
+        'database' => 'demo'
+        // rest of info from spax
     ],
-    'protectoras.org' => [  
+    'demolanding' => [   
+        'id' => 'demolanding',
+        'domains' => ['demolanding'],
+        'name' => 'Demo Landing',         
+        'database' => 'demo'
+        // rest of info from spax
+    ],
+    'protectoras.org' => [          
         'id' => 'protectoras',
+        'domains' => ['protectoras.org'],
         'name' => 'Protectoras',         
         'database' => 'protectoras',
+        'location' => ['Valencia'],
         'files' => [
             'bucket' => $bucket.'/global',
             'logo' => 'protectoras.png',
@@ -164,9 +58,12 @@ return [
             'whatsapp' => true
         ]
     ],
-    'protectoraxativa.org' => [  
+    'spax' => [  
         'id' => 'spax',
-        'name' => 'SPAX',         
+        'name' => 'SPAX',     
+        'header' => 'Sociedad Protectora de Animales Xativa',
+        'domains' => ['spax'/*, 'protectoraxativa.org'*/],
+        'location' => ['Xàtiva'],    
         'database' => 'spax',
         'files' => [
             'bucket' => $bucket.'/spax',
@@ -186,7 +83,7 @@ return [
                 'address' => 'adopciones@protectoraxativa.org',
                 'name' => 'SPAX',
             ],
-            'colaboration' => [
+            'collaboration' => [
                 'address' => 'colabora@protectoraxativa.org',
                 'name' => 'SPAX',
             ],
@@ -242,26 +139,26 @@ return [
                     "Canes de Xàtiva"
                 ],
                 "logos" => [
-                    "santmiquelclinica.jpeg",
-                    "salvapla.jpeg",
-                    "amicscentreveterinari.png",
-                    "lauraserraclinica.jpg",
-                    "farmaciallanderal.jpg",
-                    "animalia.svg",
-                    "escuelakeiko.png",
-                    "santantoniveterinaris.jpg",
-                    "saetabissport.jpg",
-                    "guaitaveterinari.svg",
-                    "miscota.png",
-                    "cadell.jpg",
-                    "dentalcarralero.jpg",
-                    "opticavicentesancho.jpg",
-                    "caixaontinyent.jpg",
-                    "caixapopular.jpg",
-                    "fasnet.jpg",
-                    "graficastormo.jpg",
-                    "joaquinvidal.jpg",
-                    "canesxativa.jpg"
+                    $bucket.'/spax/images/partners/partners/santmiquelclinica.jpeg',
+                    $bucket.'/spax/images/partners/partners/salvapla.jpeg',
+                    $bucket.'/spax/images/partners/partners/amicscentreveterinari.png',
+                    $bucket.'/spax/images/partners/partners/lauraserraclinica.jpg',
+                    $bucket.'/spax/images/partners/partners/farmaciallanderal.jpg',
+                    $bucket.'/spax/images/partners/partners/animalia.svg',
+                    $bucket.'/spax/images/partners/partners/escuelakeiko.png',
+                    $bucket.'/spax/images/partners/partners/santantoniveterinaris.jpg',
+                    $bucket.'/spax/images/partners/partners/saetabissport.jpg',
+                    $bucket.'/spax/images/partners/partners/guaitaveterinari.svg',
+                    $bucket.'/spax/images/partners/partners/miscota.png',
+                    $bucket.'/spax/images/partners/partners/cadell.jpg',
+                    $bucket.'/spax/images/partners/partners/dentalcarralero.jpg',
+                    $bucket.'/spax/images/partners/partners/opticavicentesancho.jpg',
+                    $bucket.'/spax/images/partners/partners/caixaontinyent.jpg',
+                    $bucket.'/spax/images/partners/partners/caixapopular.jpg',
+                    $bucket.'/spax/images/partners/partners/fasnet.jpg',
+                    $bucket.'/spax/images/partners/partners/graficastormo.jpg',
+                    $bucket.'/spax/images/partners/partners/joaquinvidal.jpg',
+                    $bucket.'/spax/images/partners/partners/canesxativa.jpg'
                 ],
                 "links" => [
                     "https://www.facebook.com/share/zAb2HPyNMQ6dw5GQ/",
@@ -300,16 +197,16 @@ return [
                     "Animal Help Espania e.V."
                 ],
                 "logos" => [
-                    "tierschutz.jpg",
-                    "fadaa.png",
-                    "rivia.png",
-                    "affinity.png",
-                    "institutoproteccionanimal.svg",
-                    "arcadys.png",
-                    "miwuki.png",
-                    "centrocaninomiraflores.png",
-                    "clubcaninosomontes.png",
-                    "animalhelpespania.webp"
+                    $bucket.'/spax/images/partners/friends/tierschutz.jpg',
+                    $bucket.'/spax/images/partners/friends/fadaa.png',
+                    $bucket.'/spax/images/partners/friends/rivia.png',
+                    $bucket.'/spax/images/partners/friends/affinity.png',
+                    $bucket.'/spax/images/partners/friends/institutoproteccionanimal.svg',
+                    $bucket.'/spax/images/partners/friends/arcadys.png',
+                    $bucket.'/spax/images/partners/friends/miwuki.png',
+                    $bucket.'/spax/images/partners/friends/centrocaninomiraflores.png',
+                    $bucket.'/spax/images/partners/friends/clubcaninosomontes.png',
+                    $bucket.'/spax/images/partners/friends/animalhelpespania.webp'
                 ],
                 "links" => [            
                     "https://www.tierschutz-pur.org/",
@@ -325,8 +222,13 @@ return [
                 ]
             ],
             'apus'  =>  [/*
-                "logos" => ["canesxativa.jpg","lauraserraclinica.jpg","santantoniveterinaris.jpg",
-                "santmiquelclinica.jpeg","sarrimar.jpg"],
+                "logos" => [
+                    $bucket.'/spax/images/partners/apus/canesxativa.jpg",
+                    $bucket.'/spax/images/partners/apus/lauraserraclinica.jpg",
+                    $bucket.'/spax/images/partners/apus/santantoniveterinaris.jpg",
+                    $bucket.'/spax/images/partners/apus/santmiquelclinica.jpeg",
+                    $bucket.'/spax/images/partners/apus/sarrimar.jpg"
+                ],
                 "links" => [            
                     "",
                     "",
@@ -337,9 +239,9 @@ return [
             */],
             'subsidized' =>  [
                 "logos" => [
-                    "xativaajuntament.jpeg",
-                    "ministerioderechossociales.jpeg",
-                    "gva.jpeg"
+                    $bucket.'/spax/images/partners/subsidized/xativaajuntament.jpeg',
+                    $bucket.'/spax/images/partners/subsidized/ministerioderechossociales.jpeg',
+                    $bucket.'/spax/images/partners/subsidized/gva.jpeg'
                 ],
                 "links" => [
                     "http://www.xativa.es/",
@@ -350,7 +252,7 @@ return [
         ],
         'guides' => [
             'hosting' => [
-                'es' => '/guides/es/casa_acogida.pdf'
+                'es' => $bucket.'/spax/guides/es/casa_acogida.pdf'
             ],
             'adoption' => [
                 'es'  =>  [
@@ -365,14 +267,14 @@ return [
                         'Manual de tenencia responsable'
                     ],
                     'links' => [
-                        '/guides/es/guia_tenencia_responsable.pdf',
-                        '/guides/es/reflexiones_antes_adoptar.pdf',
-                        '/guides/es/guia_adopcion_cachorro.pdf',
-                        '/guides/es/cuidar_animal_hola_calor.pdf',
-                        '/guides/es/adoptar_animal_companyia.pdf',
-                        '/guides/es/cuidador_responsable.pdf',
-                        '/guides/es/obligaciones_tenedor.pdf',
-                        '/guides/es/manual_tenencia_responsable.pdf'
+                        $bucket.'/spax/guides/es/guia_tenencia_responsable.pdf',
+                        $bucket.'/spax/guides/es/reflexiones_antes_adoptar.pdf',
+                        $bucket.'/spax/guides/es/guia_adopcion_cachorro.pdf',
+                        $bucket.'/spax/guides/es/cuidar_animal_hola_calor.pdf',
+                        $bucket.'/spax/guides/es/adoptar_animal_companyia.pdf',
+                        $bucket.'/spax/guides/es/cuidador_responsable.pdf',
+                        $bucket.'/spax/guides/es/obligaciones_tenedor.pdf',
+                        $bucket.'/spax/guides/es/manual_tenencia_responsable.pdf'
                     ]
                 ]
             ]
@@ -381,7 +283,7 @@ return [
             'partner'   => 'https://forms.gle/B7HxA5TJuv6mVmWZ9',
             'sponsor'   => 'https://forms.gle/5uLAvgKmXAWsEwNr7',
             'adoption'  => 'https://forms.gle/9WMRXEGRWSBPkvit7',
-            'sepa'      => '/forms/sepa.pdf',
+            'sepa'      => $bucket.'/spax/forms/sepa.pdf',
             'hosting'   => 'https://forms.gle/ofKPn8MPsYw8vLKRA'
         ],
         'prices'  =>  [
@@ -393,3 +295,5 @@ return [
         ]
     ]
 ];
+
+return $domains;

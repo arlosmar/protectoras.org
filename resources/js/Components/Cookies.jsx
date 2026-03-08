@@ -1,7 +1,7 @@
 // https://www.npmjs.com/package/react-cookie-consent
 import CookieConsent from "react-cookie-consent";
 
-export default function Cookies({t}){
+export default function Cookies({t, from}){
 
     return (
         <CookieConsent
@@ -36,7 +36,7 @@ export default function Cookies({t}){
             containerClasses="alert alert-warning col-lg-12"
             */
         >
-            {t('Cookies.message')}<a href={route('cookies')}>{t('Cookies.here')}</a>.
+            {t('Cookies.message')}<a href={from === 'landing' || from === 'contactlanding' ? route('landing.cookies') : route('cookies')}>{t('Cookies.here')}</a>.
         </CookieConsent>
     )
 }

@@ -22,13 +22,32 @@ class ContactController extends Controller{
 
         $user = auth()->user();
 
-        $config = getDomainConfig(['email','social','contact','domain']);
-
         $status = session('status');
 
         $shelter = getDomainConfig();
 
-        return Inertia::render('Contact/Contact',compact('user','config','status','shelter'));
+        if(!isset($shelter['id'])){
+            $shelterId = '';
+        }
+        else{
+            if($shelter['id'] === 'local' || $shelter['id'] === 'demo'){
+                $shelterId = 'spax';
+            }
+            else{
+                $shelterId = $shelter['id'];
+            }
+        }
+
+        return Inertia::render('Contact/'.$shelterId.'/Contact',compact('user','status','shelter'));
+    }
+
+    public function indexLanding(){
+
+        $shelter = getDomainConfig(['email','social','contact','domain'],'protectoras.org');
+
+        $status = session('status');
+        
+        return Inertia::render('Landing/Contact',compact('shelter','status'));
     }
 
     public function contactSend(ContactSendRequest $request){
@@ -38,11 +57,17 @@ class ContactController extends Controller{
         if(
             isset($values['email']) && !empty($values['email']) &&
             isset($values['message']) && !empty($values['message'])
-        ){
+        ){            
 
-            $config = getDomainConfig(['email','social']);
-            $toEmail = $config['email']['contact']['address'] ?? '';
-            $toName = $config['email']['contact']['name'] ?? '';
+            if(isDomain(['localhost','demo'])){                
+                $config = getDomainConfig('email','protectoras.org');                
+            }
+            else{
+                $config = getDomainConfig('email');
+            }
+
+            $toEmail = $config['contact']['address'] ?? '';
+            $toName = $config['contact']['name'] ?? '';
 
             $to = [
                 [                    
@@ -55,7 +80,46 @@ class ContactController extends Controller{
                 Mail::to($to)->send(new Contact($values));            
             }
             catch(\Exception $e){
-                echo '<pre>'.print_r($e->getMessage(),true).'</pre>';die;
+                //echo '<pre>'.print_r($e->getMessage(),true).'</pre>';die;
+                throw ValidationException::withMessages([
+                    'error' => [trans('mail.contact.error')]
+                ]);
+            }
+        }
+        else{
+            throw ValidationException::withMessages([
+                'error' => [trans('mail.contact.error')]
+            ]);
+        }
+        
+        return back();
+    }
+
+    public function contactSendLanding(ContactSendRequest $request){
+
+        $values = $request->validated();
+
+        if(
+            isset($values['email']) && !empty($values['email']) &&
+            isset($values['message']) && !empty($values['message'])
+        ){
+
+            $config = getDomainConfig('email','protectoras.org');
+            $toEmail = $config['contact']['address'] ?? '';
+            $toName = $config['contact']['name'] ?? '';
+
+            $to = [
+                [                    
+                    'email' => $toEmail,
+                    'name' => $toName                     
+                ]
+            ];
+            
+            try{                
+                Mail::to($to)->send(new Contact($values));            
+            }
+            catch(\Exception $e){
+                //echo '<pre>'.print_r($e->getMessage(),true).'</pre>';die;
                 throw ValidationException::withMessages([
                     'error' => [trans('mail.contact.error')]
                 ]);

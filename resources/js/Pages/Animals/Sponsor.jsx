@@ -14,7 +14,7 @@ import Info from '@/Pages/Animals/Sponsor/Info';
 import CarouselAnimals from '@/Pages/Animals/CarouselAnimals';
 
 export default function Sponsor({user,t,subsection,setSubsection,animals,sponsored,
-    baseUrl,imagesPaths,page,setPage,options,email_colaboration,forms,prices,itemsPerPage}){
+    baseUrl,imagesPaths,page,setPage,options,email_collaboration,forms,prices,itemsPerPage}){
 
     const [ tab, setTab ] = useState(subsection ? subsection : "info");
 
@@ -58,7 +58,7 @@ export default function Sponsor({user,t,subsection,setSubsection,animals,sponsor
                 tab === 'info' ?
                     <Info 
                         t={t}
-                        email_colaboration={email_colaboration}
+                        email_collaboration={email_collaboration}
                         forms={forms}
                         prices={prices}
                     />

@@ -15,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Move the default PHP translations to lang/backend so they don't clutter the root
+        //app()->useLangPath(base_path('lang/backend'));
     }
 
     /**
@@ -29,6 +30,16 @@ class AppServiceProvider extends ServiceProvider
             $logo = isset($shelter['files']['logo']) ? $shelter['files']['bucket'].'/logos/'.$shelter['files']['logo'] : url('storage/protectoras.png');
             $view->with('logo', $logo);
         });
+
+        // Load base global JSON translations
+        \Illuminate\Support\Facades\Lang::addJsonPath(base_path('lang/frontend/global'));
+
+        // Load domain-specific JSON translations (overrides the global ones if the key exists)
+        $domainId = getDomainTranslation();
+
+        if(isset($domainId) && !empty($domainId)){
+            \Illuminate\Support\Facades\Lang::addJsonPath(base_path("lang/frontend/{$domainId}"));
+        }
 
         // overwrite redirect if authenticated
         // redirect to when going to /login and already logged in

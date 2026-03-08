@@ -13,12 +13,10 @@ import Collapse from '@mui/material/Collapse';
 
 import PWAPrompt from 'react-ios-pwa-prompt';
 import { checkIsApple, checkIsAndroid, isApp } from '@/Utils/Device';
-import { getDomain } from '@/Utils/URL';
 
-export default function Contact({user,status,config,shelter}) {
+export default function Contact({user,status,shelter}) {
 
     const { t } = useTranslation('global');
-    const domain = getDomain();
 
     const [ isApplication , setIsApplication ] = useState(isApp());
 
@@ -149,7 +147,7 @@ export default function Contact({user,status,config,shelter}) {
             message={recentlySuccessful ? t('trans.Sent-Male') : null}
             error={errors?.error}
         />
-        <Header user={user} t={t} from='contact' config={config} shelter={shelter}/>
+        <Header user={user} t={t} from='contact' shelter={shelter}/>
         <main>
             {/*
             <h1 className="title">
@@ -182,108 +180,65 @@ export default function Contact({user,status,config,shelter}) {
                             </>
                         </Collapse>
                     }
-                    {
-                        config?.contact?.title1 &&
-                        <>
-                        <h1 className={`subtitle-home ${!appInstalled && showInstallApp ? 'paragraph-top-separation' : ''}`}>
-                            {t('contact.'+domain+'.title1')}
-                        </h1>
-                        <a href={`mailto:${config?.email?.info?.address || config?.email?.contact?.address}`} target='_blank'>
-                            {config?.email?.info?.address || config?.email?.contact?.address}
-                        </a>
-                        </>
-                    }
-                    {
-                        config?.social?.phone &&
-                        <>
-                        <h1 className='subtitle-home paragraph-top-separation'>
-                            {t('contact.'+domain+'.phone')}
-                        </h1>
-                        <a href={'tel:'+config?.social?.phone} target='_blank'>
-                            {config?.social?.phone}
-                        </a>
-                        </>
-                    }
-                    {
-                        config?.social?.whatsapp &&
-                        <>
-                        <h1 className='subtitle-home paragraph-top-separation'>
-                            {t('contact.'+domain+'.whatsapp')}
-                        </h1>
-                        <a href={'https://wa.me/'+config?.social?.whatsapp} target='_blank'>
-                            {config?.social?.whatsapp}
-                        </a>
-                        </>
-                    }
-                    {
-                        config?.contact?.title2 &&
-                        <>
-                        <h1 className='subtitle-home paragraph-top-separation'>
-                            {t('contact.'+domain+'.title2')}
-                        </h1>
-                        <a href={'mailto:'+config?.email?.colaboration?.address} target='_blank'>
-                            {config?.email?.colaboration?.address}
-                        </a>
-                        </>
-                    }
-                    {
-                        config?.contact?.title3 &&
-                        <>
-                        <h1 className='subtitle-home paragraph-top-separation'>
-                            {t('contact.'+domain+'.title3')}
-                        </h1>
-                        <div>
-                            {t('contact.info.shift-adoptions')}
-                        </div>
-                        <a href={'mailto:'+config?.email?.adoptions?.address} target='_blank'>
-                            {config?.email?.adoptions?.address}
-                        </a>
-                        </>
-                    }
-                    {
-                        config?.contact?.title4 &&
-                        <>
-                        <h1 className='subtitle-home paragraph-top-separation'>
-                            {t('contact.'+domain+'.title4')}
-                        </h1>
-                        <a href={'mailto:'+config?.email?.volunteering?.address} target='_blank'>
-                            {config?.email?.volunteering?.address}
-                        </a>
-                        </>
-                    }
-                    {
-                        config?.contact?.shift_phone_title &&
-                        <>
-                        <h1 className='subtitle-home paragraph-top-separation'>
-                            {t('contact.'+domain+'.shift-phone-title')}
-                        </h1>
-                        <div>
-                            {t('contact.'+domain+'.shift-phone-line1')}<br/>
-                            {t('contact.'+domain+'.shift-phone-line2')}
-                        </div>
-                        <div className='paragraph-top-separation'>
-                            {t('contact.'+domain+'.shift-phone-footer1')}<br/>
-                            {t('contact.'+domain+'.shift-phone-footer2')}
-                        </div>
-                        </>
-                    }
-                    {
-                        config?.contact?.shift_live_title &&
-                        <>
-                        <h1 className='subtitle-home paragraph-top-separation'>
-                            {t('contact.'+domain+'.shift-live-title')}
-                        </h1>
-                            <div>
-                            {t('contact.'+domain+'.shift-live-line1')}
-                        </div>
-                        </>
-                    }
-                    {
-                        config?.contact?.title5 &&                        
-                        <div className='paragraph-top-separation'>
-                            {t('contact.info.title5')}
-                        </div>                        
-                    }
+                    <h1 className={`subtitle-home ${!appInstalled && showInstallApp ? 'paragraph-top-separation' : ''}`}>
+                        {t('contact.title1')}
+                    </h1>
+                    <a href={`mailto:${shelter?.email?.info?.address || shelter?.email?.contact?.address}`} target='_blank'>
+                        {shelter?.email?.info?.address || shelter?.email?.contact?.address}
+                    </a>
+                    <h1 className='subtitle-home paragraph-top-separation'>
+                        {t('contact.phone')}
+                    </h1>
+                    <a href={'tel:'+shelter?.social?.phone} target='_blank'>
+                        {shelter?.social?.phone}
+                    </a>
+                    <h1 className='subtitle-home paragraph-top-separation'>
+                        {t('contact.whatsapp')}
+                    </h1>
+                    <a href={'https://wa.me/'+shelter?.social?.whatsapp} target='_blank'>
+                        {shelter?.social?.whatsapp}
+                    </a>
+                    <h1 className='subtitle-home paragraph-top-separation'>
+                        {t('contact.title2')}
+                    </h1>
+                    <a href={'mailto:'+shelter?.email?.collaboration?.address} target='_blank'>
+                        {shelter?.email?.collaboration?.address}
+                    </a>
+                    <h1 className='subtitle-home paragraph-top-separation'>
+                        {t('contact.title3')}
+                    </h1>
+                    <div>
+                        {t('contact.shift-adoptions')}
+                    </div>
+                    <a href={'mailto:'+shelter?.email?.adoptions?.address} target='_blank'>
+                        {shelter?.email?.adoptions?.address}
+                    </a>
+                    <h1 className='subtitle-home paragraph-top-separation'>
+                        {t('contact.title4')}
+                    </h1>
+                    <a href={'mailto:'+shelter?.email?.volunteering?.address} target='_blank'>
+                        {shelter?.email?.volunteering?.address}
+                    </a>
+                    <h1 className='subtitle-home paragraph-top-separation'>
+                        {t('contact.shift-phone-title')}
+                    </h1>
+                    <div>
+                        {t('contact.shift-phone-line1')}<br/>
+                        {t('contact.shift-phone-line2')}
+                    </div>
+                    <div className='paragraph-top-separation'>
+                        {t('contact.shift-phone-footer1')}<br/>
+                        {t('contact.shift-phone-footer2')}
+                    </div>
+                    <h1 className='subtitle-home paragraph-top-separation'>
+                        {t('contact.shift-live-title')}
+                    </h1>
+                    <div>
+                        {t('contact.shift-live-line1')}
+                    </div>
+                    <div className='paragraph-top-separation'>
+                        {t('contact.title5')}
+                    </div>                        
                 </Grid>
                 <Grid size={{ xs: 12, md: 7 }} className=''>
                     <form onSubmit={submit}>

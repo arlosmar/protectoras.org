@@ -143,40 +143,46 @@ export default function Info({t,domains}){
                 <div className='mt-8'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                         {
-                            filteredDomains.map((domain) => (
-                                <div key={domain.id || domain.name} className='p-2 rounded-lg bg-white border app-border-color'>
-                                    <h3 className='text-lg font-bold text-center'>{domain.name}</h3>                                
-                                    <div className='text-center text-sm'>{domain.location ? domain.location.join(', ') : ''}</div>
-                                    <div className='flex justify-center mt-2'>
-                                        <img 
-                                            className='h-20'
-                                            src={`${domain?.files?.bucket}/logos/${domain?.files?.logo}`} 
-                                            alt={domain.name}
-                                        />
-                                    </div>                                
-                                    {
-                                        domain.domains && domain.domains.length > 0 &&
-                                        <p className='text-center'>
-                                            {   
-                                                domain.domains.map((d) => (
-                                                    d.includes('.') ?
-                                                        <div className='mt-2' key={d}>
-                                                            <a href={`https://${d}`} target='_blank'>
-                                                                {d}
-                                                            </a>
-                                                        </div>
-                                                    :
-                                                        <div className='mt-2' key={d}>
-                                                            <a href={`https://${d}.protectoras.org`} target='_blank'>
-                                                                {d}.protectoras.org
-                                                            </a>
-                                                        </div>
+                            filteredDomains.map((domain) => {
+                                const primaryDomain = (domain.domains && domain.domains.length > 0) ? domain.domains[0] : null;
+                                const url = primaryDomain 
+                                    ? (primaryDomain.includes('.') ? `https://${primaryDomain}` : `https://${primaryDomain}.protectoras.org`)
+                                    : null;
+
+                                return (
+                                    <div 
+                                        key={domain.id || domain.name} 
+                                        className={`p-2 rounded-lg bg-white border app-border-color ${url ? 'hover:shadow-lg transition-shadow' : ''}`}
+                                        //onClick={() => url && window.open(url, '_blank')}
+                                    >
+                                        <h3 className='text-lg font-bold text-center'>{domain.name}</h3>                                
+                                        <div className='text-center text-sm'>{domain.location ? domain.location.join(', ') : ''}</div>
+                                        <div className='flex justify-center mt-2'>
+                                            <img 
+                                                className='h-20'
+                                                src={`${domain?.files?.bucket}/logos/${domain?.files?.logo}`} 
+                                                alt={domain.name}
+                                            />
+                                        </div>                                
+                                        {
+                                            domain.domains && domain.domains.length > 0 &&
+                                            <div className='text-center mt-4'>
+                                                {   
+                                                    domain.domains.map((d) => (
+                                                        <a 
+                                                            href={d.includes('.') ? `https://${d}` : `https://${d}.protectoras.org`}
+                                                            target='_blank'
+                                                            className='mt-2' 
+                                                            key={d}>
+                                                            {d.includes('.') ? d : `${d}.protectoras.org`}
+                                                        </a>
                                                     ))
-                                            }
-                                        </p>
-                                    }
-                                </div>
-                            ))
+                                                }
+                                            </div>
+                                        }
+                                    </div>
+                                )
+                            })
                         }
                     </div>
                 </div>
@@ -187,6 +193,7 @@ export default function Info({t,domains}){
                     </div>
                 )
             }
+            {/*
             <div className='flex justify-between mt-8'>
                 <div className='w-1/3 px-1'>
                     <a className='info-button' href={route('terms')}>
@@ -204,6 +211,7 @@ export default function Info({t,domains}){
                     </a>
                 </div>
             </div>
+            */}
             
         </div>        
         </>

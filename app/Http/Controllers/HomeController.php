@@ -84,18 +84,9 @@ class HomeController extends Controller{
         
         // read from json file
         //App::setLocale('es');
-        //echo print_r(trans('introduction')['title'],true);die;
-        
-        $user = auth()->user();
-
         $domains = getDomains();
 
-        return Inertia::render('Landing',compact('user','section','domains'));
-    }
-
-    public function landingInfo($section = null){
-        $user = auth()->user();
-        return Inertia::render('Landing/Info',compact('user','section'));
+        return Inertia::render('Landing',compact('section','domains'));
     }
 
     public function index(Request $request, $lang = null){
@@ -127,8 +118,11 @@ class HomeController extends Controller{
 
         $shelter = getDomainConfig();
 
-        return Inertia::render('Home',compact('user','language','message','darkmode','deviceId','shelter'));
-        //return view('welcome');
+        $domainPages = getDomainPages();        
+        $page = 'Home/'.$domainPages.'/Home';
+
+        return Inertia::render($page,compact('user','language','message','darkmode','deviceId','shelter'));
+        //return view('welcome');   
     }
 
     public function section($section = null){
@@ -141,15 +135,10 @@ class HomeController extends Controller{
 
         $shelter = getDomainConfig();
 
-        return Inertia::render('Home',compact('user','section','shelter'));
+        $domainPages = getDomainPages();        
+        $page = 'Home/'.$domainPages.'/Home';
+
+        return Inertia::render($page,compact('user','section','shelter'));
     }
 
-    public function info($section = null){
-
-        $user = auth()->user();
-
-        $shelter = getDomainConfig();
-
-        return Inertia::render('Info/Info',compact('user','section','shelter'));
-    }
 }

@@ -36,7 +36,7 @@ const darkTheme = createTheme({
 });
 */
 
-export default function BarBottom({user,t,from,changeLanguage,handleLogout,handleContact,handleWhatsapp,config,shelter}){
+export default function BarBottom({user,t,from,changeLanguage,handleLogout,handleContact,shelter,isPC}){
 
     const [ openMenu, setOpenMenu ] = useState(false);
 
@@ -56,13 +56,13 @@ export default function BarBottom({user,t,from,changeLanguage,handleLogout,handl
             highlighted = 'news';
             break;
 
-        case 'contact':
-            if(config?.domain === 'protectoras.org' || config?.domain === 'demolanding'){
-                show = false;
-            }
-            else{
-                highlighted = 'contact';
-            }
+        case 'contactlanding':
+            show = false;
+            highlighted = 'contact'; 
+            break;
+
+        case 'contact':            
+            highlighted = 'contact';            
             break;
 
         case 'user':
@@ -73,23 +73,23 @@ export default function BarBottom({user,t,from,changeLanguage,handleLogout,handl
             highlighted = 'menu';
             break;
 
-        case 'landing':
-            highlighted = 'landing';
+        case 'landing':            
             show = false;
             break;
     }
 
-    const [value, setValue] = useState(highlighted);    
-    const [ showMenu, setShowMenu ] = useState(show);
+    const [ value, setValue ] = useState(highlighted);    
+    const [ showMenu, setShowMenu ] = useState(show && !isPC);
 
     const clickIcon = (e, newValue) => {
 
-        setValue(newValue);
+        const id = newValue;
+
+        if (id !== 'menu') {
+            setValue(newValue);
+        }
 
         var link = '';
-
-        //const id = e.currentTarget.id;
-        const id = newValue;
         
         switch(id){
 
@@ -105,7 +105,7 @@ export default function BarBottom({user,t,from,changeLanguage,handleLogout,handl
                 link = 'news';
                 break;
 
-            case 'contact':
+            case 'contact':            
                 link = 'contact';
                 break;
 
@@ -178,8 +178,7 @@ export default function BarBottom({user,t,from,changeLanguage,handleLogout,handl
             setOpen={setOpenMenu} 
             changeLanguage={changeLanguage}
             handleLogout={handleLogout}
-            handleContact={handleContact}
-            handleWhatsapp={handleWhatsapp}
+            handleContact={handleContact}            
             shelter={shelter}
         />
         <Paper 

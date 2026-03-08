@@ -14,7 +14,7 @@ import LogoutIcon from '@mui/icons-material/PowerSettingsNew';
 import WhatsappIcon from '@mui/icons-material/WhatsApp';
 import { getDarkMode } from "@/Utils/Cookies";
 
-export default function Menu({user,t,from,open,setOpen,changeLanguage,handleLogout,handleContact,handleWhatsapp,shelter}){
+export default function Menu({user,t,from,open,setOpen,changeLanguage,handleLogout,handleContact,shelter}){
 
 	const darkmode = getDarkMode();
 
@@ -114,7 +114,7 @@ export default function Menu({user,t,from,open,setOpen,changeLanguage,handleLogo
                             <ListItemText primary={t('MenuBar.Language')} />
                         </ListItemButton>
                     </ListItem>
-
+                    {/*
                     <ListItem key='whatsapp' disablePadding>
                         <ListItemButton onClick={handleWhatsapp}>
                             <ListItemIcon sx={sxListItemIcon}>
@@ -123,7 +123,7 @@ export default function Menu({user,t,from,open,setOpen,changeLanguage,handleLogo
                             <ListItemText primary={t('MenuBar.Whatsapp')} />
                         </ListItemButton>
                     </ListItem>
-
+                    */}
                     {
                     	from !== 'contact' &&
 	                    <ListItem key='contact' disablePadding>

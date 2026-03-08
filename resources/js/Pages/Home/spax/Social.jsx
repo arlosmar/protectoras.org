@@ -8,37 +8,24 @@ import SoundcloudIcon from '@mui/icons-material/MusicNote';
 //import LadridosIcon from '@mui/icons-material/RssFeed';
 import TikTokIcon from '@mui/icons-material/Videocam';
 
-export default function Social({t,social}){
+export default function Social({t,social,shelter}){
 
     return (    	
         <>
-        <div className='social-div-box'>
-            <div 
-                className='text-center'
-                dangerouslySetInnerHTML={{__html: t('landing.social.paragraph1')}}
-            >                
-            </div>
-            <div 
-                className='mt-8 text-center'
-                dangerouslySetInnerHTML={{__html: t('landing.social.paragraph2')}}
-            >                
-            </div>
-        </div>
         {/*
         <h1 className='title-home'>
             {t('introduction.social.title')}
         </h1>
         */}
-        {/*
         <div className='social-div-box'>
             <div className='social-div'>
                 <div className='social-div-icon'>
-                    <a href={'https://wa.me/'+social?.whatsapp} target='_blank'>
+                    <a href={'https://wa.me/'+shelter?.social?.whatsapp} target='_blank'>
                         <WhatsappIcon id='social-icon-whatsapp' className="social-icon"/>
                     </a>
                 </div>
                 <div className=''>                
-                    <a href={'https://wa.me/'+social?.whatsapp} target='_blank' className='social-link'>
+                    <a href={'https://wa.me/'+shelter?.social?.whatsapp} target='_blank' className='social-link'>
                         <div 
                             dangerouslySetInnerHTML={{__html: t('introduction.social.whatsapp')}}
                         >                
@@ -48,12 +35,12 @@ export default function Social({t,social}){
             </div>
             <div className='social-div paragraph-top-separation'>
                 <div className='social-div-icon'>
-                    <a href={social?.instagram} target='_blank'>
+                    <a href={shelter?.social?.instagram} target='_blank'>
                         <InstagramIcon id='social-icon-instagram' className="social-icon"/>
                     </a>
                 </div>
                 <div className=''>                
-                    <a href={social?.instagram} target='_blank' className='social-link'>
+                    <a href={shelter?.social?.instagram} target='_blank' className='social-link'>
                         <div 
                             dangerouslySetInnerHTML={{__html: t('introduction.social.instagram')}}
                         >                
@@ -63,12 +50,12 @@ export default function Social({t,social}){
             </div>
             <div className='social-div paragraph-top-separation'>
                 <div className='social-div-icon'>
-                    <a href={social?.facebook} target='_blank'>
+                    <a href={shelter?.social?.facebook} target='_blank'>
                         <FacebookIcon id='social-icon-facebook' className="social-icon"/>
                     </a>
                 </div>
                 <div className=''>                
-                    <a href={social?.facebook} target='_blank' className='social-link'>
+                    <a href={shelter?.social?.facebook} target='_blank' className='social-link'>
                         <div 
                             dangerouslySetInnerHTML={{__html: t('introduction.social.facebook')}}
                         >                
@@ -76,14 +63,31 @@ export default function Social({t,social}){
                     </a>
                 </div>
             </div>
+            {/*
             <div className='social-div paragraph-top-separation'>
                 <div className='social-div-icon'>
-                    <a href={social?.youtube} target='_blank'>
+                    <a href={shelter?.social?.twitter} target='_blank'>
+                        <TwitterIcon id='social-icon-twitter' className="social-icon"/>
+                    </a>
+                </div>
+                <div className=''>                
+                    <a href={shelter?.social?.twitter} target='_blank' className='social-link'>
+                        <div 
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.twitter')}}
+                        >                
+                        </div>
+                    </a>
+                </div>
+            </div>
+            */}
+            <div className='social-div paragraph-top-separation'>
+                <div className='social-div-icon'>
+                    <a href={shelter?.social?.youtube} target='_blank'>
                         <YoutubeIcon id='social-icon-youtube' className="social-icon"/>
                     </a>
                 </div>
                 <div className=''>                
-                    <a href={social?.youtube} target='_blank' className='social-link'>
+                    <a href={shelter?.social?.youtube} target='_blank' className='social-link'>
                         <div 
                             dangerouslySetInnerHTML={{__html: t('introduction.social.youtube')}}
                         >                
@@ -93,12 +97,12 @@ export default function Social({t,social}){
             </div>
             <div className='social-div paragraph-top-separation'>
                 <div className='social-div-icon'>
-                    <a href={social?.soundcloud} target='_blank'>
+                    <a href={shelter?.social?.soundcloud} target='_blank'>
                         <SoundcloudIcon id='social-icon-soundcloud' className="social-icon"/>
                     </a>
                 </div>
                 <div className=''>                
-                    <a href={social?.soundcloud} target='_blank' className='social-link'>
+                    <a href={shelter?.social?.soundcloud} target='_blank' className='social-link'>
                         <div 
                             dangerouslySetInnerHTML={{__html: t('introduction.social.soundcloud')}}
                         >                
@@ -108,21 +112,53 @@ export default function Social({t,social}){
             </div>
             <div className='social-div paragraph-top-separation'>
                 <div className='social-div-icon'>
-                    <a href={social?.tiktok} target='_blank'>
+                    <a href={shelter?.social?.tiktok} target='_blank'>
                         <TikTokIcon id='social-icon-tiktok' className="social-icon"/>
                     </a>
                 </div>
                 <div className=''>                
-                    <a href={social?.tiktok} target='_blank' className='social-link'>
+                    <a href={shelter?.social?.tiktok} target='_blank' className='social-link'>
                         <div 
                             dangerouslySetInnerHTML={{__html: t('introduction.social.tiktok')}}
                         >                
                         </div>
                     </a>
                 </div>
-            </div>                    
+            </div>
+            {/*
+            <div className='social-div paragraph-top-separation'>
+                <div className='social-div-icon'>
+                    <a href={shelter?.social?.blog} target='_blank'>
+                        <BlogIcon id='social-icon-blog' className="social-icon"/>
+                    </a>
+                </div>
+                <div className=''>                
+                    <a href={shelter?.social?.blog} target='_blank' className='social-link'>
+                        <div 
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.blog')}}
+                        >                
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div className='social-div paragraph-top-separation'>
+                <div className='social-div-icon'>
+                    <a href={shelter?.social?.ladridos} target='_blank'>
+                        <LadridosIcon id='social-icon-ladridos' className="social-icon"/>
+                    </a>
+                </div>
+                <div className=''>                
+                    <a href={shelter?.social?.ladridos} target='_blank' className='social-link'>
+                        <div 
+                            dangerouslySetInnerHTML={{__html: t('introduction.social.ladridos')}}
+                        >                
+                        </div>
+                    </a>
+                </div>
+            </div>
+            */
+            }
         </div>
-        */}
         </>
     )
 }

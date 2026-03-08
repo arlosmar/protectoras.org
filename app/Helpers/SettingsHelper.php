@@ -117,23 +117,13 @@ function getDomains(){
     
     $domainsConfig = config('domains');
 
-    // group domains by id field
     $domains = collect($domainsConfig)
     ->filter(function($value, $key){
         return !in_array($value['id'], ['local','demo','demolanding','protectoras']);
     })
     ->map(function($item, $key){
-        $item['domain'] = $key;
+        unset($item['database']);
         return $item;
-    })
-    ->groupBy('id')
-    ->map(function($group){
-            // take the first item info
-            $first = $group->first();
-            // add all domains keys to a new field
-            $first['domains'] = $group->pluck('domain')->toArray();
-            unset($first['database']);
-            return $first;
     })
     ->values()
     ->toArray();
@@ -162,28 +152,28 @@ function getDomainConfig($keys = [],$domain = null){
     
     if(isset($domains) && !empty($domains)){
 
-        if(isset($domains[$myUrl]) && !empty($domains[$myUrl])){
-            $result = $domains[$myUrl];                
-        }
-        else{
-
-            $mainDomain = env('APP_DOMAIN');
-            $myUrl = str_replace('.'.$mainDomain,'',$myUrl);
-            
-            if(!empty($mainDomain) && isset($domains[$myUrl]) && !empty($domains[$myUrl])){
-                $result = $domains[$myUrl];
-            }
-        }
+        $mainDomain = env('APP_DOMAIN');
+        $myUrlWithoutDomain = str_replace('.'.$mainDomain,'',$myUrl);
+        
+        $result = collect($domains)->first(function ($config) use ($myUrl, $mainDomain, $myUrlWithoutDomain) {
+            return isset($config['domains']) 
+                && is_array($config['domains']) 
+                && (in_array($myUrl, $config['domains']) || (!empty($mainDomain) && in_array($myUrlWithoutDomain, $config['domains'])));
+        });
 
         if(!isset($result) || empty($result)){
             return '';
         }
 
-        // local and demo use spax config except database
-        if(isLocalhost() || $myUrl === 'demo'){
-            $resultSpax = $domains['protectoraxativa.org'];
+        // local and demo use spax config except id,name,database        
+        if((!isset($domain) || empty($domain)) && (isLocalhost() || $myUrl === 'demo')){
+            $resultSpax = $domains['spax'];
+            $resultId = $result['id'];
+            $resultName = $result['name'];
             $resultDatabase = $result['database'];
             $result = $resultSpax;
+            $result['id'] = $resultId;
+            $result['name'] = $resultName;
             $result['database'] = $resultDatabase;
         }
 
@@ -219,6 +209,43 @@ function getDomainConfig($keys = [],$domain = null){
     }
 
     return $result;
+}
+
+// equivalent domain id to use for translations
+function getDomainTranslation(){
+    
+    $domainId = getDomainConfig('id');
+
+    // no domain translation if landing
+    if(isset($domainId) && in_array($domainId,['protectoras','demolanding'])){
+        return null;
+    }
+
+    // if local or demo or demolanding use spax
+    if(isset($domainId) && in_array($domainId,['local','demo'])){
+        $domainId = 'spax';
+    }
+
+    return $domainId;
+}
+
+// equivalent domain id to use for pages
+function getDomainPages(){
+    
+    $domainId = getDomainConfig('id');
+
+    // if local or demo or demolanding use spax
+    if(isset($domainId) && in_array($domainId,['local','demo'])){
+        $domainId = 'spax';
+    }
+    else{
+        $ownContent = ['spax'];
+        if(!in_array($domainId,$ownContent)){
+            $domainId = 'global';
+        }
+    }
+
+    return $domainId;
 }
 
 // get app envs
@@ -326,13 +353,21 @@ function getConfig($types = []){
                 
                 // if we want to use the demo database on local                    
                 if($env === 'LOCAL'){
-                    $envDB = 'DEMO';
-                    $databaseName = getDomainConfig('database','demo');
+                    $envDB = 'DEMO';                    
                     $host = env('APP_IP_DEMO','');                  
                 }
-                else{
-                    $databaseName = getDomainConfig('database');
+                
+                $databaseName = getDomainConfig('database');
+
+                // Si entramos por la IP directa (AWS bot) no queremos inundar los logs de "1046 No database selected"
+                // Devolvemos 200 OK directamente y cortamos la ejecución.
+                if (empty($databaseName) && !app()->runningInConsole() && filter_var(request()->getHost(), FILTER_VALIDATE_IP)) {
+                    http_response_code(200);
+                    die('OK');
                 }
+
+                // Si llegamos aquí y databaseName está vacío (ej. subdominio sin registrar en domains.php),
+                // fallará a propósito más adelante (Error 1046) para no cruzar/corromper bases de datos.
 
                 $variables[$tag] = [
                     'DB_CONNECTION' => env('DB_CONNECTION_'.$envDB, 'mysql'),

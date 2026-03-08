@@ -8,6 +8,10 @@ export default function Title({t,from}){
 
 	switch(from){
 
+        case 'landing':
+            title = t('Title.Landing');
+            break;
+
 		case 'home':
 			title = t('Title.Home');
 			break;
@@ -29,6 +33,7 @@ export default function Title({t,from}){
 			break;
 
 		case 'contact':
+        case 'contactlanding':
 			title = t('Title.Contact');
 			break;
 	}
