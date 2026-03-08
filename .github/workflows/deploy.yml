@@ -72,7 +72,7 @@ jobs:
                 username: ${{ secrets.USERNAME }}
                 key: ${{ secrets.SSH_PRIVATE_KEY }}
                 port: 22                
-                script:
+                script: |
                     cd ${{ env.DEPLOY_PATH }}
                     echo "Ejecutando Composer y comandos de Laravel..."
                     composer install --no-dev --prefer-dist --optimize-autoloader
