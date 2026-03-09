@@ -164,7 +164,7 @@ function getDomainConfig($keys = [],$domain = null){
         if(!isset($result) || empty($result)){
             return '';
         }
-
+        
         // local and demo use spax config except id,name,database        
         if((!isset($domain) || empty($domain)) && (isLocalhost() || $myUrl === 'demo')){
             $resultSpax = $domains['spax'];
