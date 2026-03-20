@@ -28,7 +28,8 @@ class AppServiceProvider extends ServiceProvider
         \Illuminate\Support\Facades\View::composer('app', function ($view) {
             $shelter = getDomainConfig();
             $logo = isset($shelter['files']['logo']) ? $shelter['files']['bucket'].'/logos/'.$shelter['files']['logo'] : url('storage/protectoras.png');
-            $view->with('logo', $logo);
+            $favicon = isset($shelter['files']['favicon']) ? $shelter['files']['bucket'].'/logos/'.$shelter['files']['favicon'] : url('storage/protectoras.png');
+            $view->with('logo', $logo)->with('favicon', $favicon);
         });
 
         // Load base global JSON translations

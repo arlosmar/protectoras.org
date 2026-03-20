@@ -19,11 +19,11 @@
         <meta property="og:title" content="{{config('app.name', '')}}"/>
         <meta property="og:description" content="{{__('meta.description')}}">
         <meta property="og:url" content="{{config('app.url', '')}}"/>
-        <meta property="og:image" content="{{$logo}}" />
+        <meta property="og:image" content="{{$favicon}}" />
         <meta property="og:type" content="website"/>
         <meta property="og:locale" content="{{str_replace('_', '-', app()->getLocale())}}"/>
 
-        <link rel="icon" href="{{$logo}}">
+        <link rel="icon" href="{{$favicon}}">
 
         <!-- pwa -->
         <link rel="manifest" href="{{url('storage/manifest.json')}}"/>

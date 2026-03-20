@@ -68,7 +68,7 @@ $domains = [
         'files' => [
             'bucket' => $bucket.'/spax',
             'logo' => 'logo.png',
-            'favicon' => 'favicon.png',
+            'favicon' => 'favicon.ico',
         ],
         'email' => [
             'noreply' => [
