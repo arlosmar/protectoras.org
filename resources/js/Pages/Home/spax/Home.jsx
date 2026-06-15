@@ -132,12 +132,12 @@ export default function Home({user,language,section,message,darkmode,deviceId,sh
         />
     	<Header user={user} t={t} from='home' shelter={shelter}/>
     	<main {...handlers}>            
-    		{
+    		{/*
                 !isApplicationOrWebApp &&
                 <h1 className="text-center mt-4 text-lg font-bold">
                     {t('introduction.title')}
                 </h1>
-            }            
+            */}            
             {/*
 			<div className='text-center'>
 				<img
